@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hệ thống Đánh giá & Phân cấp Năng lực Điều dưỡng | BV ĐHYD TP.HCM (Cơ sở 2)</title>
+  <meta name="description" content="Phần mềm Đánh giá Năng lực Điều dưỡng UMC: Tự đánh giá, quản lý minh chứng, thẩm định phân cấp, lộ trình phát triển và động viên nhân sự.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- SheetJS for pure Excel export -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+  <!-- Login Screen Overlay -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-glass-card">
+      <div class="login-logo-wrap">
+        <img src="assets/umc_cs2_logo.png" alt="UMC CS2 Logo" class="login-logo-img">
+        <div>
+          <div class="login-title">HỆ THỐNG ĐÁNH GIÁ NĂNG LỰC ĐIỀU DƯỠNG</div>
+          <div class="login-subtitle">Bệnh viện Đại học Y Dược TP.HCM – Cơ sở 2</div>
+        </div>
+      </div>
+
+      <form id="login-form" onsubmit="handleUserLogin(event)">
+        <div class="form-group" style="margin-bottom: 0.9rem;">
+          <label class="form-label">Tên đăng nhập (MSNV hoặc Vai trò):</label>
+          <input type="text" id="login-username" class="form-control" placeholder="VD: admin hoặc D06-009-2" value="admin" required>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label class="form-label">Mật khẩu truy cập:</label>
+          <input type="password" id="login-password" class="form-control" placeholder="••••••••" value="123456" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem; font-size: 0.95rem; font-weight: 700;">
+          🚀 Đăng Nhập Hệ Thống
+        </button>
+      </form>
+
+      <div class="login-quick-roles">
+        <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">
+          ⚡ Đăng nhập nhanh các tài khoản mẫu:
+        </span>
+        <button type="button" class="login-quick-btn" onclick="quickLoginAs('admin')">
+          <div>
+            <strong style="color: #9a3412;">👑 ThS. ĐD. Nguyễn Thị Kim Quyên</strong>
+            <div style="font-size: 0.72rem; color: #c2410c;">Quản trị viên Toàn viện (Admin)</div>
+          </div>
+          <span style="font-size: 0.75rem; background: #fed7aa; color: #9a3412; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Vào ngay</span>
+        </button>
+        <button type="button" class="login-quick-btn" onclick="quickLoginAs('dept_head')">
+          <div>
+            <strong style="color: #0369a1;">🩺 ThS. Phan Thị Tâm Đan</strong>
+            <div style="font-size: 0.72rem; color: #0284c7;">Điều dưỡng Trưởng Bệnh viện / Trưởng Ban Điều dưỡng</div>
+          </div>
+          <span style="font-size: 0.75rem; background: #bae6fd; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Vào ngay</span>
+        </button>
+        <button type="button" class="login-quick-btn" onclick="quickLoginAs('staff')">
+          <div>
+            <strong style="color: #166534;">👤 ĐD / Hộ sinh / Kỹ thuật viên (ĐD/HS/KTV)</strong>
+            <div style="font-size: 0.72rem; color: #15803d;">Khoa Phụ Sản / Xét nghiệm / GMHS</div>
+          </div>
+          <span style="font-size: 0.75rem; background: #bbf7d0; color: #166534; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Vào ngay</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Header (Bố cục 2 tầng: Tiêu đề ngang rộng ở trên, Hàng nút chức năng & Tab ở dưới) -->
+  <header class="app-header">
+    <div class="header-container-tworow">
+      <!-- HÀNG 1: Tiêu đề chính ngang qua rộng rãi & Phiên đăng nhập -->
+      <div class="header-top-row">
+        <div class="brand-info">
+          <img src="assets/umc_icon.png" alt="UMC Logo" class="header-brand-logo">
+          <div class="brand-title">
+            <h1 class="brand-main-heading">HỆ THỐNG ĐÁNH GIÁ & QUẢN TRỊ NĂNG LỰC ĐIỀU DƯỠNG</h1>
+            <p class="brand-sub-heading">BỆNH VIỆN ĐẠI HỌC Y DƯỢC THÀNH PHỐ HỒ CHÍ MINH – CƠ SỞ 2 | UMC NURSING CARE</p>
+          </div>
+        </div>
+
+        <div class="header-user-actions">
+          <div id="user-session-widget" class="user-session-widget" onclick="openSwitchUserModal()" title="Bấm để chuyển đổi người dùng / vai trò">
+            <!-- Rendered by JS -->
+          </div>
+          <button class="btn btn-sm btn-danger header-logout-btn" onclick="handleUserLogout()" title="Đăng xuất khỏi hệ thống">
+            🚪 Đăng Xuất
+          </button>
+        </div>
+      </div>
+
+      <!-- HÀNG 2: Toàn bộ các nút chức năng (Tabs điều hướng & Phím tắt quản trị) -->
+      <div class="header-bottom-row">
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs" id="main-nav-tabs">
+          <button class="nav-tab-btn active" data-tab="tab-self-eval" id="btn-tab-self-eval">
+            📝 <span>Tự đánh giá & Minh chứng</span>
+          </button>
+          <button class="nav-tab-btn" data-tab="tab-manager-review" id="btn-tab-manager-review">
+            ⚖️ <span>Quản lý Thẩm định (3 Cấp)</span>
+            <span class="nav-badge" id="pending-review-count">0</span>
+          </button>
+          <button class="nav-tab-btn" data-tab="tab-portfolio" id="btn-tab-portfolio">
+            📁 <span>Portfolio & CME Hàng Năm</span>
+          </button>
+          <button class="nav-tab-btn" data-tab="tab-analytics" id="btn-tab-analytics">
+            📊 <span>Phân tích & Báo cáo</span>
+          </button>
+          <button class="nav-tab-btn" data-tab="tab-personal-portal" id="btn-tab-personal-portal">
+            🎯 <span>Tra cứu & Lộ trình Cá nhân</span>
+          </button>
+          <button class="nav-tab-btn" data-tab="tab-standards-ref" id="btn-tab-standards-ref">
+            📜 <span>Khung Chuẩn Tiêu Chí Đánh Giá</span>
+          </button>
+        </nav>
+
+        <!-- Administrative Quick Action Buttons -->
+        <div class="header-action-buttons">
+          <button class="btn btn-sm header-action-btn" style="background: rgba(255,255,255,0.2); color: #ffffff; border: 1px solid rgba(255,255,255,0.35);" id="btn-open-switch-user" onclick="openSwitchUserModal()" title="Đổi tài khoản đăng nhập để kiểm tra phân quyền">
+            🔄 Đổi Vai Trò
+          </button>
+          <button class="btn btn-sm header-action-btn" style="background: #f59e0b; color: #1e1b4b; border: 1px solid #fbbf24; font-weight: 700;" id="btn-admin-permissions" onclick="openPermissionsModal()" title="Admin phân quyền cho các thành viên">
+            ⚙️ Phân Quyền Admin
+          </button>
+          <button class="btn btn-sm header-action-btn" style="background: #10b981; color: #ffffff; border: 1px solid #34d399; font-weight: 700;" onclick="resetToInitialData()" title="Đồng bộ và tải lại toàn bộ nhân sự từ 13 khoa phòng">
+            📥 Nạp Dữ Liệu Các Khoa
+          </button>
+          <button class="btn btn-sm header-action-btn" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);" id="btn-open-new-nurse-modal">
+            ➕ Thêm ĐD/HS/KTV
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- =========================================================================
+         TAB 1: NHÂN VIÊN TỰ ĐÁNH GIÁ & UPLOAD MINH CHỨNG
+         ========================================================================= -->
+    <section id="tab-self-eval" class="view-section active">
+      <div class="grid-sidebar">
+        <!-- Sidebar hồ sơ & tóm tắt -->
+        <div class="sidebar-col">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">👤 Thông tin Nhân viên</h3>
+              <div style="display: flex; gap: 0.35rem;">
+                <button class="btn btn-sm btn-primary" id="btn-sidebar-add-nurse" title="Tạo hồ sơ cho điều dưỡng mới">➕ Thêm mới</button>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">🏢 Khoa / Đơn vị:</label>
+              <select id="self-eval-unit-filter" class="form-control" onchange="filterSelfEvalNursesByUnit(this.value)"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Chọn Điều dưỡng đánh giá:</label>
+              <div class="live-search-wrapper" style="width: 100%; margin-bottom: 0.35rem;">
+                <span class="live-search-icon">🔍</span>
+                <input type="text" id="self-nurse-search-input" class="form-control live-search-input" placeholder="Gõ tên hoặc MSNV để lọc nhanh..." style="width: 100%; font-size: 0.85rem;" oninput="filterSelfNurseSearch(this.value)">
+              </div>
+              <select id="self-eval-nurse-select" class="form-control"></select>
+            </div>
+
+            <div id="self-eval-profile-info" style="margin-top: 1rem;">
+              <!-- Render by JS -->
+            </div>
+          </div>
+
+          <!-- Sticky Realtime Score Summary Card -->
+          <div class="card" style="position: sticky; top: 90px;">
+            <div class="card-header">
+              <h3 class="card-title">📈 Điểm Tự Đánh Giá</h3>
+              <span id="self-eval-status-pill" class="status-pill status-draft">Bản nháp</span>
+            </div>
+
+            <div style="text-align: center; margin: 1rem 0;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary);" id="self-eval-total-display">0</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Tổng điểm tự đánh giá / 1.025đ</div>
+              <div style="margin-top: 0.5rem;" id="self-eval-predicted-level">
+                <!-- Render by JS -->
+              </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-color); padding-top: 0.85rem;" id="self-eval-domain-breakdown">
+              <!-- Domain scores breakdown -->
+            </div>
+
+            <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+              <button class="btn btn-primary" id="btn-save-self-eval">💾 Lưu Bản Nháp</button>
+              <button class="btn btn-success" id="btn-submit-self-eval">🚀 Nộp Đánh Giá Lên Quản Lý</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Form 66 Criteria -->
+        <div class="main-form-col">
+          <div class="card" style="background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%); border-color: #bae6fd;">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h2 style="font-size: 1.3rem; font-weight: 800; color: var(--primary-dark);">BẢNG TỰ ĐÁNH GIÁ NĂNG LỰC ĐIỀU DƯỠNG</h2>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                  Đã tích hợp <strong>Chuẩn Diễn Giải Chấm Điểm Chi Tiết (Rubric)</strong> cho từng mức. Vui lòng đối chiếu kỹ và đính kèm file scan minh chứng.
+                </p>
+              </div>
+              <button class="btn btn-secondary btn-sm" id="btn-expand-all-domains">Mở tất cả lĩnh vực</button>
+            </div>
+          </div>
+
+          <!-- Dynamic 5 Domains Container -->
+          <div id="self-eval-domains-container">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         TAB 2: QUẢN LÝ THẨM ĐỊNH & KIỂM DUYỆT 3 CẤP
+         ========================================================================= -->
+    <section id="tab-manager-review" class="view-section">
+      <!-- KHUNG DASHBOARD TIẾN ĐỘ ĐÁNH GIÁ & KIỂM DUYỆT CỦA KHOA -->
+      <div class="card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-top: 4px solid var(--primary);">
+        <div class="card-header" style="margin-bottom: 0.75rem;">
+          <div>
+            <h3 class="card-title" id="manager-progress-title">📌 Tiến Độ Tự Đánh Giá & Kiểm Duyệt Năng Lực (Toàn Bệnh Viện)</h3>
+            <p class="card-subtitle">Theo dõi tình trạng nộp hồ sơ và luồng phê duyệt 3 cấp: ĐD Trưởng Khoa ➔ Ban Điều Dưỡng ➔ Quyết Định Bệnh Viện</p>
+          </div>
+          <button class="btn btn-sm btn-outline" onclick="renderManagerNursesTable()">🔄 Làm mới tiến độ</button>
+        </div>
+
+        <div class="grid-4" id="dept-progress-dashboard" style="margin-bottom: 1rem;">
+          <!-- Rendered dynamically by JS -->
+        </div>
+
+        <!-- Pipeline visual bar -->
+        <div id="dept-pipeline-bar" style="background: #e2e8f0; border-radius: var(--radius-full); height: 10px; overflow: hidden; display: flex;">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title">⚖️ Danh Sách Thẩm Định & Phê Duyệt Hồ Sơ</h2>
+            <p class="card-subtitle">Chọn nhân viên để xem chi tiết tiêu chuẩn cho điểm (Rubric) và thực hiện ký duyệt</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+            <div class="live-search-wrapper">
+              <span class="live-search-icon">🔍</span>
+              <input type="text" id="manager-search-input" class="form-control live-search-input" placeholder="Tìm theo tên / MSNV..." style="width: 220px;" oninput="filterManagerSearch(this.value)">
+            </div>
+            <select id="manager-unit-filter" class="form-control" style="width: 230px; font-weight: 600;" onchange="renderManagerNursesTable()"></select>
+            <select id="review-filter-status" class="form-control" style="width: 200px;">
+              <option value="all">Tất cả trạng thái hồ sơ</option>
+              <option value="draft">Bản nháp (Chưa nộp)</option>
+              <option value="submitted">Chờ ĐD Trưởng khoa duyệt</option>
+              <option value="dept_approved">Chờ Ban Điều Dưỡng duyệt</option>
+              <option value="nursing_board_approved">Chờ BV ra Quyết định</option>
+              <option value="hospital_decided">Đã ban hành Quyết định</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Nurses List Table -->
+        <div class="review-table-container">
+          <table class="review-table" id="manager-nurses-table">
+            <thead>
+              <tr>
+                <th style="width: 50px;">STT</th>
+                <th>Mã NV</th>
+                <th>Họ và Tên</th>
+                <th>Khoa / Đơn vị</th>
+                <th>Trình độ CM</th>
+                <th>Thâm niên</th>
+                <th>Điểm Tự ĐG</th>
+                <th>Điểm Thẩm định</th>
+                <th>Phân cấp</th>
+                <th>Tiến độ Kiểm duyệt (3 Cấp)</th>
+                <th style="text-align: center;">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody id="manager-nurses-tbody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Detail Review Panel of Selected Nurse -->
+      <div id="manager-review-detail-panel" style="display: none;">
+        <div class="card" style="border-top: 4px solid var(--primary);">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title" id="review-detail-title">Thẩm định chi tiết: Nguyễn Thị Kim Quyên</h3>
+              <p class="card-subtitle" id="review-detail-meta">MSNV: D06-009-2 | Trình độ: Thạc sĩ | Thâm niên: 19 năm 2 tháng</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+              <button class="btn btn-sm btn-secondary" id="btn-close-review-panel">✕ Đóng thẩm định</button>
+            </div>
+          </div>
+
+          <!-- Summary comparison banner -->
+          <div class="score-banner" id="review-summary-banner">
+            <!-- Render by JS -->
+          </div>
+
+          <!-- 3-TIER APPROVAL WORKFLOW ACTION BOX -->
+          <div class="card" style="background: #f0fdf4; border: 1px solid #86efac; margin-bottom: 1.25rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: #166534; margin-bottom: 0.75rem;">
+              🏛️ QUY TRÌNH KIỂM DUYỆT 3 CẤP CHÍNH THỨC
+            </h4>
+            <div class="grid-3" id="approval-workflow-steps">
+              <!-- Rendered by JS: Dept Chief -> Nursing Board -> Hospital Decision -->
+            </div>
+          </div>
+
+          <!-- Review Criteria Tabs / Domains with Rubrics -->
+          <div id="review-criteria-container">
+            <!-- Side-by-side criteria rows rendered by JS with collapsible Rubric guidelines -->
+          </div>
+
+          <!-- Manager Final Feedback Box -->
+          <div class="card" style="margin-top: 1.5rem; background: var(--bg-card-alt);">
+            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">📝 Nhận xét & Đánh giá chung của Quản lý:</h4>
+            <textarea id="manager-feedback-input" class="form-control" rows="3" placeholder="Nhập nhận xét, hướng dẫn khắc phục hoặc ghi chú phê duyệt..."></textarea>
+            <div style="margin-top: 0.85rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+              <button class="btn btn-primary" id="btn-save-manager-scores">💾 Lưu Điểm Thẩm Định</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         TAB 3: PORTFOLIO HỒ SƠ NĂNG LỰC & CME HÀNG NĂM
+         ========================================================================= -->
+    <section id="tab-portfolio" class="view-section">
+      <div class="card" style="background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h2 style="font-size: 1.35rem; font-weight: 800; color: #1e1b4b;">📁 Hồ Sơ Cá Nhân & Portfolio Năng Lực Điều Dưỡng</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Quản lý hồ sơ chuyên môn, tích lũy tín chỉ CME hàng năm, lịch sử thăng hạng và kho chứng chỉ số hóa</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+            <div class="live-search-wrapper">
+              <span class="live-search-icon">🔍</span>
+              <input type="text" id="portfolio-search-input" class="form-control live-search-input" placeholder="Tìm kiếm nhân sự..." style="width: 180px;" oninput="filterPortfolioSearch(this.value)">
+            </div>
+            <label style="font-weight: 600; font-size: 0.85rem;">Khoa/Đơn vị:</label>
+            <select id="portfolio-unit-filter" class="form-control" style="width: 200px;" onchange="filterPortfolioNursesByUnit(this.value)"></select>
+            <label style="font-weight: 600; font-size: 0.85rem;">Nhân sự:</label>
+            <select id="portfolio-nurse-select" class="form-control" style="width: 220px;" onchange="switchPortfolioNurse(this.value)"></select>
+            <button class="btn btn-success btn-sm" id="btn-open-cme-modal">➕ Cập Nhật CME Hàng Năm</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hospital-wide CME Tracking Dashboard -->
+      <div id="cme-hospital-dashboard" style="margin-bottom: 1.5rem;">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Portfolio Container rendered dynamically -->
+      <div id="portfolio-content">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         TAB 4: DASHBOARD PHÂN TÍCH & BÁO CÁO TOÀN VIỆN / THEO KHOA
+         ========================================================================= -->
+    <section id="tab-analytics" class="view-section">
+      <!-- Filter and Header Banner -->
+      <div class="card" style="background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border-left: 4px solid var(--primary);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--primary-dark);">📊 Dashboard Thống Kê & Báo Cáo Phân Cấp Năng Lực 2025</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Tổng hợp toàn Bệnh viện (13 Khoa / Đơn vị - 251 Nhân sự) và chi tiết từng Khoa</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <div class="live-search-wrapper">
+              <span class="live-search-icon">🔍</span>
+              <input type="text" id="analytics-search-input" class="form-control live-search-input" placeholder="Lọc theo tên điều dưỡng..." style="width: 220px;" oninput="filterAnalyticsSearch(this.value)">
+            </div>
+            <label style="font-weight: 700; font-size: 0.9rem;">🏢 Xem Báo Cáo:</label>
+            <select id="analytics-unit-filter" class="form-control" style="width: 260px; font-weight: 700; color: var(--primary);" onchange="renderAnalytics()"></select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top metric stats -->
+      <div class="grid-4" style="margin-bottom: 1.5rem;">
+        <div class="card" style="margin-bottom: 0; text-align: center; border-left: 4px solid var(--primary);">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--primary);" id="stat-total-nurses">8</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Tổng Điều dưỡng Đơn vị</div>
+        </div>
+        <div class="card" style="margin-bottom: 0; text-align: center; border-left: 4px solid #8b5cf6;">
+          <div style="font-size: 2rem; font-weight: 800; color: #8b5cf6;" id="stat-level4-count">1 (12.5%)</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Cấp 4 (Thành thạo)</div>
+        </div>
+        <div class="card" style="margin-bottom: 0; text-align: center; border-left: 4px solid var(--success);">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--success);" id="stat-level3-count">2 (25.0%)</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Cấp 3 (Đủ năng lực)</div>
+        </div>
+        <div class="card" style="margin-bottom: 0; text-align: center; border-left: 4px solid var(--info);">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--info);" id="stat-degree-rate">100%</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Trình độ Đại học & ThS</div>
+        </div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">📊 Cơ Cấu Phân Cấp Năng Lực (Cấp 1 - Cấp 7)</h3>
+          </div>
+          <div style="position: relative; height: 280px; display: flex; align-items: center; justify-content: center;">
+            <canvas id="chart-level-distribution" width="400" height="260"></canvas>
+          </div>
+          <div id="level-distribution-legend" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 0.75rem; font-size: 0.8rem;">
+            <!-- Legend rendered by JS -->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">🕸️ Biểu Đồ Radar 5 Lĩnh Vực Đơn Vị</h3>
+          </div>
+          <div style="position: relative; height: 280px; display: flex; align-items: center; justify-content: center;">
+            <canvas id="chart-domain-radar" width="400" height="260"></canvas>
+          </div>
+          <div style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem;">
+            Điểm trung bình thực tế toàn khoa so với Điểm tối đa chuẩn
+          </div>
+        </div>
+      </div>
+
+      <!-- Official Summary Table matching Excel template -->
+      <div class="card" id="printable-report-area">
+        <div class="card-header">
+          <div>
+            <h3 class="card-title">📋 Báo Cáo Kết Quả Phân Cấp Năng Lực Điều Dưỡng Năm 2025</h3>
+            <p class="card-subtitle">Kính gửi: Ban Điều dưỡng – Bệnh viện Đại học Y Dược TP.HCM (Cơ sở 2)</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem;" class="no-print">
+            <button class="btn btn-outline btn-sm" id="btn-export-excel">📥 Xuất File Excel (Mẫu chuẩn UMC)</button>
+            <button class="btn btn-primary btn-sm" id="btn-print-report">🖨️ In Báo Cáo / Xuất PDF</button>
+          </div>
+        </div>
+
+        <div class="review-table-container">
+          <table class="review-table" id="analytics-summary-table">
+            <thead>
+              <tr>
+                <th rowspan="2" style="text-align: center; width: 40px;">STT</th>
+                <th rowspan="2">Mã nhân viên</th>
+                <th rowspan="2">Họ và tên</th>
+                <th rowspan="2" style="text-align: center;">Điểm ĐGNL</th>
+                <th rowspan="2" style="text-align: center;">Phân cấp</th>
+                <th colspan="4" style="text-align: center;">Tiêu chuẩn bắt buộc</th>
+                <th rowspan="2" style="text-align: center;">So với 2024</th>
+              </tr>
+              <tr>
+                <th style="text-align: center;">Điểm thi TB</th>
+                <th>Trình độ CM</th>
+                <th>Thâm niên BV ĐHYD</th>
+                <th style="text-align: center;">Đào tạo - NCKH</th>
+              </tr>
+            </thead>
+            <tbody id="analytics-summary-tbody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Official Signature Section for Printing -->
+        <div style="margin-top: 2rem; display: flex; justify-content: space-between; padding: 0 2rem; text-align: center;">
+          <div>
+            <p style="font-weight: 700; font-size: 0.95rem;">TRƯỞNG KHOA / ĐƠN VỊ</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">(Ký, ghi rõ họ tên và đóng dấu)</p>
+            <div style="height: 70px;"></div>
+          </div>
+          <div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.35rem;">TP. Hồ Chí Minh, ngày 15 tháng 02 năm 2025</p>
+            <p style="font-weight: 700; font-size: 0.95rem;">ĐIỀU DƯỠNG TRƯỞNG KHOA</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">(Ký và ghi rõ họ tên)</p>
+            <div style="height: 70px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KHUYẾN NGHỊ PHÁT TRIỂN TÀI NĂNG & QUY HOẠCH CÁN BỘ -->
+      <div id="talent-recommendations-container" style="margin-top: 1.5rem;">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         TAB 4: CỔNG TRA CỨU CÁ NHÂN, ACTION PLAN & ĐỘNG VIÊN TÍCH CỰC
+         ========================================================================= -->
+    <section id="tab-personal-portal" class="view-section">
+      <div class="card" style="background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--text-main);">🎯 Tra Cứu Kết Quả & Kế Hoạch Hành Động Cá Nhân</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Xem kết quả phân cấp năng lực, nhận diện thế mạnh, lộ trình phát triển và huy hiệu vinh danh</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+            <div class="live-search-wrapper">
+              <span class="live-search-icon">🔍</span>
+              <input type="text" id="portal-search-input" class="form-control live-search-input" placeholder="Tìm tên / MSNV..." style="width: 190px;" oninput="filterPortalSearch(this.value)">
+            </div>
+            <label style="font-weight: 600; font-size: 0.85rem;">Khoa/Đơn vị:</label>
+            <select id="portal-unit-filter" class="form-control" style="width: 200px;" onchange="filterPortalNursesByUnit(this.value)"></select>
+            <label style="font-weight: 600; font-size: 0.85rem;">Nhân sự:</label>
+            <select id="portal-nurse-select" class="form-control" style="width: 220px;"></select>
+            <button class="btn btn-primary btn-sm" id="btn-print-action-plan">🖨️ In Kế Hoạch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container rendered dynamically by ActionPlanEngine -->
+      <div id="personal-portal-content">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         TAB 6: KHUNG CHUẨN TIÊU CHÍ NĂNG LỰC THEO TỪNG KHOA PHÒNG & CHUYÊN NGÀNH
+         ========================================================================= -->
+    <section id="tab-standards-ref" class="view-section">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h2 class="card-title">📜 Sổ Tay Tra Cứu Khung Tiêu Chuẩn Năng Lực Điều Dưỡng UMC</h2>
+            <p class="card-subtitle">Hệ thống 4 bộ tiêu chuẩn chuẩn hóa: Lâm sàng, Gây mê hồi sức, Xét nghiệm & Khoa Khám bệnh</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+            <label style="font-weight: 700; font-size: 0.9rem;">🏢 Chọn Khung Chuẩn Khoa:</label>
+            <select id="ref-framework-select" class="form-control" style="font-weight: 700; color: var(--primary); width: 320px;" onchange="switchRefFramework(this.value)">
+              <option value="clinical">🏥 Điều dưỡng Lâm sàng (66 Tiêu chí)</option>
+              <option value="anesthesia">💉 KTV / Điều dưỡng Gây mê hồi sức (67 Tiêu chí)</option>
+              <option value="lab">🔬 KTV Xét nghiệm & SHPT (63 Tiêu chí)</option>
+              <option value="outpatient">🩺 Điều dưỡng Khoa Khám bệnh (73 Tiêu chí)</option>
+            </select>
+            <div class="live-search-wrapper">
+              <span class="live-search-icon">🔍</span>
+              <input type="text" id="ref-search-input" class="form-control live-search-input" placeholder="Tìm kiếm tiêu chuẩn, tiêu chí, rubric..." style="width: 250px;" oninput="filterRefCriteriaSearch(this.value)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bảng Tổng Quan 4 Bộ Khung Chuyên Khoa -->
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.75rem;">
+            📊 Tổng Quan 4 Bộ Khung Tiêu Chuẩn Năng Lực Theo Chuyên Khoa
+          </h3>
+          <div class="review-table-container">
+            <table class="review-table" id="ref-frameworks-summary-table">
+              <thead>
+                <tr>
+                  <th style="width: 40px;">STT</th>
+                  <th>Bộ Khung Chuẩn</th>
+                  <th style="text-align: center;">Số Tiêu chí</th>
+                  <th style="text-align: center;">Điểm Tối đa</th>
+                  <th>Các Khoa / Đơn vị Áp dụng</th>
+                </tr>
+              </thead>
+              <tbody id="ref-frameworks-summary-tbody">
+                <!-- Rendered by JS from DEPARTMENT_FRAMEWORKS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 7 Levels Matrix Overview -->
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.75rem;">
+            🎯 Ma Trận Chuẩn Bắt Buộc 7 Cấp Năng Lực (Áp dụng Toàn Viện)
+          </h3>
+          <div class="review-table-container">
+            <table class="review-table">
+              <thead>
+                <tr>
+                  <th>Cấp độ</th>
+                  <th>Danh xưng</th>
+                  <th>Tổng điểm tối thiểu</th>
+                  <th>Bằng cấp tối thiểu</th>
+                  <th>Thâm niên lâm sàng</th>
+                  <th>Đào tạo & NCKH bắt buộc</th>
+                  <th>Điểm thi TB</th>
+                </tr>
+              </thead>
+              <tbody id="ref-levels-tbody">
+                <!-- Rendered by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Full Criteria Reference Accordion -->
+        <div id="ref-criteria-accordion">
+          <!-- Rendered dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Evidence Upload / Preview Modal -->
+  <div class="modal-backdrop" id="evidence-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="evidence-modal-title">📎 Đính kèm Minh chứng</h3>
+        <button class="modal-close-btn" id="btn-close-evidence-modal">✕</button>
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <p style="font-size: 0.85rem; color: var(--text-muted);" id="evidence-modal-criterion-desc"></p>
+      </div>
+
+      <div style="border: 2px dashed #cbd5e1; border-radius: var(--radius-md); padding: 1.5rem; text-align: center; background: #f8fafc; cursor: pointer;" id="dropzone-area">
+        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📁</div>
+        <p style="font-weight: 600; font-size: 0.9rem;">Kéo thả file scan / ảnh vào đây hoặc bấm để chọn file</p>
+        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">(Hỗ trợ PDF, PNG, JPG - Định dạng tên chuẩn tự động: <code>Tên - MSNV - TieuChi</code>)</p>
+        <input type="file" id="evidence-file-input" style="display: none;" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx">
+      </div>
+
+      <div style="margin-top: 1.25rem;">
+        <h4 style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem;">Danh sách minh chứng đã đính kèm:</h4>
+        <div id="evidence-modal-list" style="display: flex; flex-direction: column; gap: 0.4rem;">
+          <!-- Evidence files -->
+        </div>
+      </div>
+
+      <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+        <button class="btn btn-primary" id="btn-done-evidence">Xong</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enhanced Document / Scan Preview Modal -->
+  <div class="modal-backdrop" id="preview-modal">
+    <div class="modal-content" style="max-width: 850px; padding: 1.25rem;">
+      <div class="modal-header" style="margin-bottom: 0.75rem;">
+        <div>
+          <h3 class="modal-title" id="preview-modal-title">📄 Xem trước Minh chứng</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted);" id="preview-modal-subtitle">Tệp hồ sơ minh chứng đã xác thực số hóa</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <button class="btn btn-sm btn-secondary" id="btn-print-preview-doc">🖨️ In Minh Chứng</button>
+          <button class="btn btn-sm btn-outline" id="btn-download-preview-doc">📥 Tải về</button>
+          <button class="modal-close-btn" id="btn-close-preview-modal" style="margin-left: 0.5rem;">✕</button>
+        </div>
+      </div>
+
+      <!-- Viewer Container -->
+      <div id="preview-modal-body" style="background: #334155; border-radius: var(--radius-md); padding: 1.25rem; min-height: 450px; max-height: 70vh; overflow-y: auto; display: flex; justify-content: center;">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- New Nurse Profile Creation / Login Modal -->
+  <div class="modal-backdrop" id="new-nurse-modal">
+    <div class="modal-content" style="max-width: 680px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">➕ Đăng Ký / Tạo Hồ Sơ Điều Dưỡng Mới</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Nhập thông tin nhân sự để khởi tạo bản tự đánh giá năng lực</p>
+        </div>
+        <button class="modal-close-btn" id="btn-close-new-nurse-modal">✕</button>
+      </div>
+
+      <form id="new-nurse-form" onsubmit="handleCreateNewNurse(event)">
+        <div class="grid-3">
+          <div class="form-group">
+            <label class="form-label">Mã số nhân viên (MSNV) <span style="color: var(--danger);">*</span>:</label>
+            <input type="text" id="new-nurse-code" class="form-control" placeholder="VD: D26-001-2" required pattern="^[A-Z0-9\-]+$">
+            <small style="font-size: 0.75rem; color: var(--text-muted);">Định dạng chuẩn: Dxx-xxx-2</small>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Họ và tên <span style="color: var(--danger);">*</span>:</label>
+            <input type="text" id="new-nurse-name" class="form-control" placeholder="VD: Lê Thị Thu Thảo" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Năm đánh giá <span style="color: var(--danger);">*</span>:</label>
+            <input type="number" id="new-nurse-eval-year" class="form-control" value="2025" min="2020" max="2035" required style="font-weight: 700; color: var(--primary);">
+            <small style="font-size: 0.75rem; color: var(--text-muted);">Năm thực hiện ĐGNL</small>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-group">
+            <label class="form-label">Giới tính:</label>
+            <select id="new-nurse-gender" class="form-control">
+              <option value="Nữ">Nữ</option>
+              <option value="Nam">Nam</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Khoa / Đơn vị <span style="color: var(--danger);">*</span>:</label>
+            <select id="new-nurse-unit" class="form-control" onchange="updateNewNurseScorePreview()">
+              <option value="Đơn vị Chấn thương Chỉnh hình">Đơn vị Chấn thương Chỉnh hình</option>
+              <option value="Ban Điều dưỡng">Ban Điều dưỡng</option>
+              <option value="Khoa Chẩn đoán hình ảnh">Khoa Chẩn đoán hình ảnh</option>
+              <option value="Khoa Gây mê hồi sức">Khoa Gây mê hồi sức</option>
+              <option value="Khoa Khám bệnh">Khoa Khám bệnh</option>
+              <option value="Khoa Kiểm soát nhiễm khuẩn">Khoa Kiểm soát nhiễm khuẩn</option>
+              <option value="Khoa Ngoại">Khoa Ngoại</option>
+              <option value="Đơn vị Nội soi">Đơn vị Nội soi</option>
+              <option value="Khoa Phục hồi chức năng">Khoa Phục hồi chức năng</option>
+              <option value="Khoa Phụ Sản">Khoa Phụ Sản</option>
+              <option value="Đơn vị Săn sóc hồi tỉnh">Đơn vị Săn sóc hồi tỉnh</option>
+              <option value="Khoa Tai Mũi Họng">Khoa Tai Mũi Họng</option>
+              <option value="Khoa Xét nghiệm">Khoa Xét nghiệm</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Chức danh / Vị trí:</label>
+            <select id="new-nurse-position" class="form-control" onchange="updateNewNurseScorePreview()">
+              <option value="Điều dưỡng Lâm sàng">Điều dưỡng Lâm sàng</option>
+              <option value="Điều dưỡng Chuyên khoa">Điều dưỡng Chuyên khoa</option>
+              <option value="Điều dưỡng Trưởng / Phụ trách">Điều dưỡng Trưởng / Phụ trách</option>
+              <option value="Kỹ thuật viên Y">Kỹ thuật viên Y</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label">Trình độ chuyên môn:</label>
+            <select id="new-nurse-degree" class="form-control">
+              <option value="Đại Học">Đại học (Cử nhân Điều dưỡng)</option>
+              <option value="Thạc sĩ">Thạc sĩ Điều dưỡng</option>
+              <option value="Chuyên khoa 1">Chuyên khoa 1 (CKI)</option>
+              <option value="Tiến sĩ">Tiến sĩ Điều dưỡng</option>
+              <option value="Cao đẳng">Cao đẳng Điều dưỡng</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Cơ sở đào tạo:</label>
+            <select id="new-nurse-school" class="form-control">
+              <option value="Đại học Y Dược TP.HCM">Đại học Y Dược TP.HCM (+20đ ưu tiên)</option>
+              <option value="ĐH Y khoa Phạm Ngọc Thạch">ĐH Y khoa Phạm Ngọc Thạch</option>
+              <option value="ĐH Y Hà Nội">ĐH Y Hà Nội</option>
+              <option value="ĐH Quốc tế Miền Đông">ĐH Quốc tế Miền Đông (+10đ ưu tiên)</option>
+              <option value="ĐH Quốc tế Hồng Bàng">ĐH Quốc tế Hồng Bàng</option>
+              <option value="Trường ĐH khác">Trường ĐH / CĐ khác</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-group">
+            <label class="form-label">Thâm niên công tác (Năm):</label>
+            <input type="number" id="new-nurse-years" class="form-control" value="1" min="0" max="40" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Thâm niên (Tháng):</label>
+            <input type="number" id="new-nurse-months" class="form-control" value="0" min="0" max="11" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Điểm thi TB định kỳ:</label>
+            <select id="new-nurse-exam-type" class="form-control" onchange="toggleExamScoreInput(this.value)">
+              <option value="score">Nhập điểm số (0 - 10)</option>
+              <option value="Chưa thi">Chưa thi</option>
+              <option value="Miễn thi">Miễn thi</option>
+              <option value="Tham gia chấm thi">Tham gia chấm thi</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group" id="exam-score-num-group">
+            <label class="form-label">Điểm kiểm tra tay nghề (0 - 10):</label>
+            <input type="number" id="new-nurse-exam-score" class="form-control" value="8.0" min="0" max="10" step="0.01" oninput="updateNewNurseScorePreview()">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tham gia Đào tạo & NCKH:</label>
+            <select id="new-nurse-research" class="form-control" onchange="updateNewNurseScorePreview()">
+              <option value="no">Chưa tham gia</option>
+              <option value="yes">Có (Giảng dạy ≥2 bài & Chủ nhiệm đề tài)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- BẢNG CẤU HÌNH TIÊU CHÍ & MỨC TỰ ĐÁNH GIÁ BAN ĐẦU CỦA NHÂN VIÊN -->
+        <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: var(--radius-md); padding: 1.1rem; margin-top: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <strong style="color: #166534; font-size: 0.98rem;">📊 Cấu Hình Bộ Tiêu Chí & Điểm Tự Đánh Giá Ban Đầu:</strong>
+              <div style="font-size: 0.82rem; color: #15803d; font-weight: 600; margin-top: 0.15rem;" id="new-nurse-framework-badge">
+                🏥 Khung chuẩn: Khung Tiêu Chuẩn Năng Lực Điều Dưỡng Lâm Sàng (66 Tiêu chí · Tối đa 1025đ)
+              </div>
+            </div>
+            <span class="status-pill" id="new-nurse-preview-score-pill" style="font-size: 0.9rem; font-weight: 800; padding: 0.35rem 0.75rem; background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1;">
+              Tự Đánh Giá: 0 Điểm (Chưa chấm)
+            </span>
+          </div>
+
+          <div class="grid-2" style="margin-top: 0.75rem;">
+            <div class="form-group">
+              <label class="form-label" style="font-weight: 700; color: #166534; font-size: 0.88rem;">Khởi tạo bảng tự chấm điểm:</label>
+              <select id="new-nurse-eval-preset" class="form-control" onchange="updateNewNurseScorePreview()" style="font-weight: 600;">
+                <option value="empty" selected>🌱 Bảng điểm trống (0 điểm - Nhân viên tự chấm điểm sau)</option>
+                <option value="level_3">🏆 Mẫu tham khảo Mức 3 (~750đ · Cấp 3)</option>
+                <option value="level_4">👑 Mẫu tham khảo Mức 4 (~850đ · Cấp 4)</option>
+                <option value="level_2">🌟 Mẫu tham khảo Mức 2 (~650đ · Cấp 2)</option>
+                <option value="level_1">🌱 Mẫu tham khảo Mức 1 (~550đ · Cấp 1)</option>
+                <option value="auto">⚡ Tự động tính chuẩn theo Thâm niên & Bằng cấp</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" style="font-weight: 700; color: #166534; font-size: 0.88rem;">Tự động đính kèm Minh chứng số hóa:</label>
+              <select id="new-nurse-auto-evidence" class="form-control" style="font-weight: 600;">
+                <option value="no" selected>📝 Để trống (Nhân viên tự đính kèm từng tiêu chí sau)</option>
+                <option value="yes">✅ Có (Tạo sẵn file scan Bằng TN & Chứng chỉ CME)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Nút bấm mở rộng xem trước danh sách tiêu chí -->
+          <div style="margin-top: 0.6rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <button type="button" class="btn btn-sm" onclick="toggleNewNurseCriteriaPreview()" style="font-size: 0.8rem; padding: 0.3rem 0.75rem; background: #ffffff; border: 1.5px solid #16a34a; color: #166534; font-weight: 700;">
+              📋 Xem trước bảng phân bổ điểm 5 lĩnh vực
+            </button>
+            <span style="font-size: 0.75rem; color: #15803d; font-style: italic;" id="new-nurse-criteria-hint-text">
+              * Sau khi tạo, hệ thống sẽ mở ngay bảng điểm chi tiết để nhân viên tự chấm điểm và đính kèm minh chứng!
+            </span>
+          </div>
+
+          <div id="new-nurse-criteria-preview-box" style="display: none; background: #ffffff; border: 1px dashed #86efac; border-radius: var(--radius-sm); padding: 0.85rem; margin-top: 0.75rem;">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+          <button type="button" class="btn btn-secondary" id="btn-cancel-new-nurse">Hủy bỏ</button>
+          <button type="submit" class="btn btn-success" style="font-weight: 700; padding: 0.65rem 1.25rem;">🚀 Tạo Hồ Sơ & Mở Bảng Chấm Điểm</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Annual CME Course & Credits Registration Modal -->
+  <div class="modal-backdrop" id="cme-modal">
+    <div class="modal-content" style="max-width: 600px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">➕ Cập Nhật Khóa Học / Tín Chỉ CME Hàng Năm</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Ghi nhận đào tạo y khoa liên tục (Thông tư 22/2013/TT-BYT - Chuẩn 24 tiết/năm)</p>
+        </div>
+        <button class="modal-close-btn" id="btn-close-cme-modal">✕</button>
+      </div>
+
+      <form id="cme-form" onsubmit="handleSaveCme(event)">
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label">Năm hoàn thành <span style="color: var(--danger);">*</span>:</label>
+            <input type="number" id="cme-year" class="form-control" value="2025" min="2015" max="2035" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Số tiết học / Tín chỉ CME <span style="color: var(--danger);">*</span>:</label>
+            <input type="number" id="cme-hours" class="form-control" value="24" min="1" max="300" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Tên khóa học / Chuyên đề đào tạo <span style="color: var(--danger);">*</span>:</label>
+          <input type="text" id="cme-title" class="form-control" placeholder="VD: Kiểm soát nhiễm khuẩn & An toàn người bệnh ngoại khoa" required>
+        </div>
+
+        <!-- NEW: Kiến thức & Kỹ năng thu hoạch được (Học được cái gì) -->
+        <div class="form-group">
+          <label class="form-label">🌟 Kiến thức / Kỹ năng thực hành đắc thu được (Học được những gì?) <span style="color: var(--danger);">*</span>:</label>
+          <textarea id="cme-learning-outcomes" class="form-control" rows="3" placeholder="VD: Đã nắm vững quy trình rửa tay ngoại khoa 6 bước, kỹ thuật chăm sóc ống dẫn lưu kín, quy tắc 5 đúng trong dùng thuốc giảm đau..." required></textarea>
+          <small style="font-size: 0.75rem; color: var(--text-muted);">Hệ thống sẽ tự động đưa ra nhận xét khen thưởng tích cực và ghi nhận vào hồ sơ năng lực</small>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label">Cơ sở / Đơn vị cấp chứng nhận:</label>
+            <input type="text" id="cme-institution" class="form-control" value="Bệnh viện Đại học Y Dược TP.HCM" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Ngày cấp chứng chỉ:</label>
+            <input type="date" id="cme-date" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Đính kèm file scan Giấy chứng nhận CME (PDF/Ảnh):</label>
+          <input type="file" id="cme-cert-file-input" class="form-control" accept=".pdf,.png,.jpg,.jpeg">
+          <small style="font-size: 0.75rem; color: var(--text-muted);">Hỗ trợ xem trực tiếp và xác thực số hóa</small>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+          <button type="button" class="btn btn-secondary" id="btn-cancel-cme">Hủy bỏ</button>
+          <button type="submit" class="btn btn-success">💾 Lưu Chứng Nhận & Nhận Khen Thưởng</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit Nurse Profile Modal (Sửa thông tin nhân sự khi nhập sai) -->
+  <div class="modal-backdrop" id="edit-nurse-modal">
+    <div class="modal-content" style="max-width: 680px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">✏️ Chỉnh Sửa Thông Tin Nhân Sự</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Sửa lại họ tên, MSNV hoặc thông tin chuyên môn khi nhập sai</p>
+        </div>
+        <button class="modal-close-btn" id="btn-close-edit-nurse-modal">✕</button>
+      </div>
+
+      <form id="edit-nurse-form" onsubmit="handleSaveEditNurse(event)">
+        <input type="hidden" id="edit-nurse-id">
+        <div class="grid-3">
+          <div class="form-group">
+            <label class="form-label">Mã số nhân viên (MSNV) <span style="color: var(--danger);">*</span>:</label>
+            <input type="text" id="edit-nurse-code" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Họ và tên <span style="color: var(--danger);">*</span>:</label>
+            <input type="text" id="edit-nurse-name" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Năm đánh giá <span style="color: var(--danger);">*</span>:</label>
+            <input type="number" id="edit-nurse-eval-year" class="form-control" value="2025" min="2020" max="2035" required style="font-weight: 700; color: var(--primary);">
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-group">
+            <label class="form-label">Giới tính:</label>
+            <select id="edit-nurse-gender" class="form-control">
+              <option value="Nữ">Nữ</option>
+              <option value="Nam">Nam</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Khoa / Đơn vị <span style="color: var(--danger);">*</span>:</label>
+            <select id="edit-nurse-unit" class="form-control">
+              <option value="Đơn vị Chấn thương Chỉnh hình">Đơn vị Chấn thương Chỉnh hình</option>
+              <option value="Ban Điều dưỡng">Ban Điều dưỡng</option>
+              <option value="Khoa Chẩn đoán hình ảnh">Khoa Chẩn đoán hình ảnh</option>
+              <option value="Khoa Gây mê hồi sức">Khoa Gây mê hồi sức</option>
+              <option value="Khoa Khám bệnh">Khoa Khám bệnh</option>
+              <option value="Khoa Kiểm soát nhiễm khuẩn">Khoa Kiểm soát nhiễm khuẩn</option>
+              <option value="Khoa Ngoại">Khoa Ngoại</option>
+              <option value="Đơn vị Nội soi">Đơn vị Nội soi</option>
+              <option value="Khoa Phục hồi chức năng">Khoa Phục hồi chức năng</option>
+              <option value="Khoa Phụ Sản">Khoa Phụ Sản</option>
+              <option value="Đơn vị Săn sóc hồi tỉnh">Đơn vị Săn sóc hồi tỉnh</option>
+              <option value="Khoa Tai Mũi Họng">Khoa Tai Mũi Họng</option>
+              <option value="Khoa Xét nghiệm">Khoa Xét nghiệm</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Chức danh / Vị trí:</label>
+            <select id="edit-nurse-position" class="form-control">
+              <option value="Điều dưỡng Lâm sàng">Điều dưỡng Lâm sàng</option>
+              <option value="Điều dưỡng Chuyên khoa">Điều dưỡng Chuyên khoa</option>
+              <option value="Điều dưỡng Trưởng / Phụ trách">Điều dưỡng Trưởng / Phụ trách</option>
+              <option value="Kỹ thuật viên Y">Kỹ thuật viên Y</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label">Trình độ chuyên môn:</label>
+            <select id="edit-nurse-degree" class="form-control">
+              <option value="Đại Học">Đại học (Cử nhân Điều dưỡng)</option>
+              <option value="Thạc sĩ">Thạc sĩ Điều dưỡng</option>
+              <option value="Chuyên khoa 1">Chuyên khoa 1 (CKI)</option>
+              <option value="Tiến sĩ">Tiến sĩ Điều dưỡng</option>
+              <option value="Cao đẳng">Cao đẳng Điều dưỡng</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Cơ sở đào tạo:</label>
+            <select id="edit-nurse-school" class="form-control">
+              <option value="Đại học Y Dược TP.HCM">Đại học Y Dược TP.HCM</option>
+              <option value="ĐH Y khoa Phạm Ngọc Thạch">ĐH Y khoa Phạm Ngọc Thạch</option>
+              <option value="ĐH Y Hà Nội">ĐH Y Hà Nội</option>
+              <option value="ĐH Quốc tế Miền Đông">ĐH Quốc tế Miền Đông</option>
+              <option value="ĐH Quốc tế Hồng Bàng">ĐH Quốc tế Hồng Bàng</option>
+              <option value="Trường ĐH khác">Trường ĐH / CĐ khác</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-group">
+            <label class="form-label">Thâm niên (Năm):</label>
+            <input type="number" id="edit-nurse-years" class="form-control" min="0" max="40" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Thâm niên (Tháng):</label>
+            <input type="number" id="edit-nurse-months" class="form-control" min="0" max="11" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Điểm thi TB:</label>
+            <input type="text" id="edit-nurse-exam-score" class="form-control" placeholder="8.0 hoặc Miễn thi">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Đào tạo & NCKH:</label>
+          <select id="edit-nurse-research" class="form-control">
+            <option value="no">Chưa tham gia</option>
+            <option value="yes">Có (Giảng dạy ≥2 bài & Chủ nhiệm đề tài)</option>
+          </select>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+          <button type="button" class="btn btn-danger btn-sm" id="btn-delete-nurse-from-modal" onclick="deleteCurrentEditNurse()">
+            🗑️ Xóa Vĩnh Viễn Nhân Sự Này
+          </button>
+          <div style="display: flex; gap: 0.5rem;">
+            <button type="button" class="btn btn-secondary" id="btn-cancel-edit-nurse">Hủy</button>
+            <button type="submit" class="btn btn-primary">💾 Cập Nhật Thông Tin</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Switch User & Role Modal (Test Phân Quyền) -->
+  <div class="modal-backdrop" id="switch-user-modal">
+    <div class="modal-content" style="max-width: 640px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">🔄 Chuyển Đổi Người Dùng & Vai Trò (Kiểm Tra Phân Quyền)</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Trải nghiệm trực quan góc nhìn của từng cấp bậc và phân hệ bảo mật</p>
+        </div>
+        <button class="modal-close-btn" onclick="document.getElementById('switch-user-modal').classList.remove('active')">✕</button>
+      </div>
+
+      <div style="margin-bottom: 1.25rem;">
+        <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">
+          ⚡ Chọn Nhanh Tài Khoản Mẫu Đại Diện:
+        </h4>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <div class="role-switch-card" onclick="switchToPresetUser('admin')" style="cursor: pointer; padding: 0.75rem; border: 1px solid #fed7aa; background: #fff7ed; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">👑</span>
+              <div>
+                <strong style="color: #9a3412;">TS. ĐD. Trần Thị Thu Trang (Trưởng Ban Điều Dưỡng)</strong>
+                <div style="font-size: 0.75rem; color: #c2410c;">Vai trò: <strong>Admin Toàn Viện</strong> | Xem 13 khoa, ký duyệt Ban ĐD/QĐ BV, Phân quyền thành viên</div>
+              </div>
+            </div>
+            <span class="status-pill status-submitted">Chọn</span>
+          </div>
+
+          <div class="role-switch-card" onclick="switchToPresetUser('dept_head')" style="cursor: pointer; padding: 0.75rem; border: 1px solid #bae6fd; background: #f0f9ff; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">🩺</span>
+              <div>
+                <strong style="color: #0369a1;">ThS. Nguyễn Thị Kim Quyên (Đơn vị CTCH)</strong>
+                <div style="font-size: 0.75rem; color: #0284c7;">Vai trò: <strong>Điều Dưỡng Trưởng Khoa</strong> | Xem toàn viện, quản lý và thẩm định cấp khoa</div>
+              </div>
+            </div>
+            <span class="status-pill status-submitted">Chọn</span>
+          </div>
+
+          <div class="role-switch-card" onclick="switchToPresetUser('staff_clinical')" style="cursor: pointer; padding: 0.75rem; border: 1px solid #bbf7d0; background: #f0fdf4; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">👤</span>
+              <div>
+                <strong style="color: #166534;">Điều Dưỡng Lâm Sàng (Khoa Phụ Sản)</strong>
+                <div style="font-size: 0.75rem; color: #15803d;">Vai trò: <strong>Nhân Viên</strong> | <em>Chỉ xem được Khoa Phụ Sản, bị khóa xem khoa khác</em></div>
+              </div>
+            </div>
+            <span class="status-pill status-submitted">Chọn</span>
+          </div>
+
+          <div class="role-switch-card" onclick="switchToPresetUser('staff_paraclinical')" style="cursor: pointer; padding: 0.75rem; border: 1px solid #e9d5ff; background: #faf5ff; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">🔬</span>
+              <div>
+                <strong style="color: #6b21a8;">Kỹ Thuật Viên Y (Khoa Xét Nghiệm)</strong>
+                <div style="font-size: 0.75rem; color: #7e22ce;">Vai trò: <strong>Nhân Viên</strong> | <em>Chỉ xem được Khoa Xét Nghiệm</em></div>
+              </div>
+            </div>
+            <span class="status-pill status-submitted">Chọn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hoặc chọn cụ thể bất kỳ nhân sự nào -->
+      <div class="form-group" style="border-top: 1px dashed var(--border-color); padding-top: 1rem;">
+        <label class="form-label">Hoặc chọn bất kỳ nhân sự nào trong 251 nhân viên:</label>
+        <select id="switch-user-select" class="form-control" onchange="handleSelectSpecificUser(this.value)"></select>
+      </div>
+
+      <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.5rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('switch-user-modal').classList.remove('active')">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Member Role & Permission Management Modal (Phân Quyền Thành Viên) -->
+  <div class="modal-backdrop" id="user-permissions-modal">
+    <div class="modal-content" style="max-width: 900px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">⚙️ Quản Trị & Phân Quyền Thành Viên Toàn Bệnh Viện</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Admin cấu hình quyền hạn cho từng Điều dưỡng / Kỹ thuật viên (251 Thành viên)</p>
+        </div>
+        <button class="modal-close-btn" onclick="document.getElementById('user-permissions-modal').classList.remove('active')">✕</button>
+      </div>
+
+      <!-- Search & Filter Bar -->
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+        <input type="text" id="perm-search-input" class="form-control" style="flex: 1; min-width: 220px;" placeholder="🔍 Tìm tên hoặc MSNV..." oninput="renderPermissionsTable()">
+        <select id="perm-unit-filter" class="form-control" style="width: 240px;" onchange="renderPermissionsTable()">
+          <option value="ALL">Tất cả Khoa / Đơn vị</option>
+        </select>
+        <select id="perm-role-filter" class="form-control" style="width: 180px;" onchange="renderPermissionsTable()">
+          <option value="ALL">Tất cả vai trò</option>
+          <option value="admin">👑 Admin</option>
+          <option value="dept_head">🩺 ĐD Trưởng / Phụ trách</option>
+          <option value="staff">👤 Nhân viên</option>
+        </select>
+      </div>
+
+      <div class="review-table-container" style="max-height: 420px; overflow-y: auto;">
+        <table class="review-table">
+          <thead>
+            <tr>
+              <th style="width: 50px; text-align: center;">STT</th>
+              <th>Mã NV</th>
+              <th>Họ và Tên</th>
+              <th>Khoa / Đơn vị</th>
+              <th>Chức danh</th>
+              <th style="text-align: center;">Vai trò Phân quyền</th>
+              <th style="text-align: center;">Quyền xem dữ liệu</th>
+            </tr>
+          </thead>
+          <tbody id="permissions-table-tbody">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top: 1.25rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Thay đổi vai trò sẽ có hiệu lực ngay lập tức.</span>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('user-permissions-modal').classList.remove('active')">
+          ✅ Hoàn Tất Phân Quyền
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-inner-content">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.4rem; flex-wrap: wrap;">
+        <img src="assets/umc_icon.png" alt="UMC Logo" style="height: 28px; width: auto; object-fit: contain;">
+        <strong style="color: #ffffff; font-size: 0.9rem;">BỆNH VIỆN ĐẠI HỌC Y DƯỢC THÀNH PHỐ HỒ CHÍ MINH – CƠ SỞ 2</strong>
+      </div>
+      <p style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.85);">Địa chỉ: 201 Nguyễn Chí Thanh, Phường 12, Quận 5, TP. Hồ Chí Minh · Điện thoại: (028) 3955 5548 - 3955 5549</p>
+      <p style="margin-top: 0.35rem; font-size: 0.75rem; color: rgba(255, 255, 255, 0.65);">© 2025 Ban Điều dưỡng & Khoa Chấn thương Chỉnh hình | Hệ thống Quản trị & Phân cấp Năng lực Điều dưỡng Lâm sàng</p>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/department_standards_data.js"></script>
+  <script src="js/criteria_data.js"></script>
+  <script src="js/sample_data.js"></script>
+  <script src="js/action_plan_generator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

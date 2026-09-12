@@ -4925,4092 +4925,6677 @@ const DOMAINS_BY_SPECIALTY = {
   ],
 
   "noisoi": [
-    {
-      "id": "noisoi_d1",
-      "code": "I.",
-      "name": "TIÊU CHUẨN BẰNG CẤP",
-      "maxPoints": 180,
-      "standards": [
-        {
-          "id": "noisoi_std_1",
-          "number": 1,
-          "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-          "criteria": [
-            {
-              "id": "noisoi_c1",
-              "num": 1,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "A. Trung học/Cao đẳng",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 70,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Mức 1",
-                  "text": "A. Trung học/Cao đẳng"
-                },
-                {
-                  "score": 70,
-                  "level": "Mức 2",
-                  "text": "B. Đại học"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c2",
-              "num": 2,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "Chuyên khoa 1/Thạc sĩ",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 40,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "Chuyên khoa 1/Thạc sĩ"
-                },
-                {
-                  "score": 40,
-                  "level": "Mức 2",
-                  "text": "Tiến sĩ"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_2",
-          "number": 2,
-          "title": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-          "criteria": [
-            {
-              "id": "noisoi_c3",
-              "num": 3,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Trong nước ≥ 1 năm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Trong nước ≥ 1 năm"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c4",
-              "num": 4,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Nước ngoài ≥ 6 tháng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Nước ngoài ≥ 6 tháng"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_3",
-          "number": 3,
-          "title": "TIÊU CHUẨN 3. Ngoại ngữ",
-          "criteria": [
-            {
-              "id": "noisoi_c5",
-              "num": 5,
-              "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
-              "title": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 3",
-                  "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_4",
-          "number": 4,
-          "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
-          "criteria": [
-            {
-              "id": "noisoi_c6",
-              "num": 6,
-              "standard": "TIÊU CHUẨN 4. Công nghệ thông tin",
-              "title": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "Sử dụng công nghệ thông tin nâng cao \r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "noisoi_d2",
-      "code": "II.",
-      "name": "NĂNG LỰC CHUYÊN MÔN",
-      "maxPoints": 450,
-      "standards": [
-        {
-          "id": "noisoi_std_5",
-          "number": 5,
-          "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-          "criteria": [
-            {
-              "id": "noisoi_c7",
-              "num": 7,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định tại cơ sở làm việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định tại cơ sở làm việc"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c8",
-              "num": 8,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c9",
-              "num": 9,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_6",
-          "number": 6,
-          "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-          "criteria": [
-            {
-              "id": "noisoi_c10",
-              "num": 10,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định chăm sóc và can thiệp chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định chăm sóc và can thiệp chăm sóc"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c11",
-              "num": 11,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c12",
-              "num": 12,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_7",
-          "number": 7,
-          "title": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
-          "criteria": [
-            {
-              "id": "noisoi_c13",
-              "num": 13,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
-              "title": "Đọc hiểu được chỉ định của bác sĩ phòng khám, khoa lâm sàng, tư vấn…Hiểu về tình trạng sức khỏe của người bệnh, các kết quả cận lâm sàng liên quan đến thủ thuật nội soi",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đọc hiểu được chỉ định của bác sĩ phòng khám, khoa lâm sàng, tư vấn…Hiểu về tình trạng sức khỏe của người bệnh, các kết quả cận lâm sàng liên quan đến thủ thuật nội soi"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c14",
-              "num": 14,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
-              "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi dạ dày",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi dạ dày"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c15",
-              "num": 15,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
-              "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi trực tràng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi trực tràng"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c16",
-              "num": 16,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
-              "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi đại tràng không gây mê",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi đại tràng không gây mê"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c17",
-              "num": 17,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
-              "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi đại tràng gây mê",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi đại tràng gây mê"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_8",
-          "number": 8,
-          "title": "TIÊU CHUẨN 8. Năng lực thực hành kĩ thuật chăm sóc",
-          "criteria": [
-            {
-              "id": "noisoi_c18",
-              "num": 18,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hành kĩ thuật chăm sóc",
-              "title": "Tuân thủ quy trình kỹ thuật trong phạm vi chuyên môn hành nghề (Competent)",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 80,
-              "options": [
-                {
-                  "score": 40,
-                  "level": "Mức 1",
-                  "text": "Tuân thủ quy trình kỹ thuật trong phạm vi chuyên môn hành nghề (Competent)"
-                },
-                {
-                  "score": 60,
-                  "level": "Mức 2",
-                  "text": "Thực hiện thành thạo hầu hết tất cả các kỹ thuật điều dưỡng đảm bảo an toàn, chất lượng\r\nCó khả năng hướng dẫn người khác (sinh viên, học viên, nhân viên mới) (Mentor)"
-                },
-                {
-                  "score": 80,
-                  "level": "Mức 3",
-                  "text": "Hiểu biết sâu về chuyên môn, thực hiện được các kỹ thuật khó, có khả năng phát triển thành chứng cứ trong thực hành hoặc vận dụng những chứng cứ mới vào chăm sóc (Expert)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_9",
-          "number": 9,
-          "title": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
-          "criteria": [
-            {
-              "id": "noisoi_c19",
-              "num": 19,
-              "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
-              "title": "Tuân thủ quy định khi dùng thuốc; hướng dẫn dùng thuốc đúng, an toàn",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 30,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Tuân thủ quy định khi dùng thuốc; hướng dẫn dùng thuốc đúng, an toàn"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 2",
-                  "text": "Hiểu biết và nhận biết được sự tương tác giữa thuốc và thuốc, thuốc và thức ăn"
-                },
-                {
-                  "score": 30,
-                  "level": "Mức 3",
-                  "text": "Phát hiện và biết cách xử lý ban đầu các dấu hiệu có hại của thuốc và thông tin kịp thời đến bác sĩ, điều dưỡng phụ trách thuốc, điều phụ trách khoa"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_10",
-          "number": 10,
-          "title": "TIÊU CHUẨN 10. Năng lực sử dụng phần mềm quản lý kết quả nội soi, giải phẫu bệnh, phiếu chỉ định và xử lý hình ảnh",
-          "criteria": [
-            {
-              "id": "noisoi_c20",
-              "num": 20,
-              "standard": "TIÊU CHUẨN 10. Năng lực sử dụng phần mềm quản lý kết quả nội soi, giải phẫu bệnh, phiếu chỉ định và xử lý hình ảnh",
-              "title": "Có khả năng sử dụng phần mềm UMC2 Soft thành thành thạo, xác nhận thông tin người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Có khả năng sử dụng phần mềm UMC2 Soft thành thành thạo, xác nhận thông tin người bệnh"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "Có khả năng truy cập kết quả, phân biệt kết quả, trả kết quả cho người bệnh đúng loại, CLOTEST qua ngày…"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 3",
-                  "text": "Có khả năng truy cập và xử lý hình ảnh nội soi khi lỗi mạng"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_11",
-          "number": 11,
-          "title": "TIÊU CHUẨN 11. Năng lực thực hiện CPR",
-          "criteria": [
-            {
-              "id": "noisoi_c21",
-              "num": 21,
-              "standard": "TIÊU CHUẨN 11. Năng lực thực hiện CPR",
-              "title": "Phát hiện sớm những thay đổi đột ngột về tình trạng sức khỏe của người bệnh",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 30,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Phát hiện sớm những thay đổi đột ngột về tình trạng sức khỏe của người bệnh"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 2",
-                  "text": "Biết cách xử trí phù hợp và thông báo kịp thời đến người có trách nhiệm, yêu cầu hỗ trợ kịp thời"
-                },
-                {
-                  "score": 30,
-                  "level": "Mức 3",
-                  "text": "Thực hiện cấp cứu đạt hiệu quả, phối hợp tốt với các thành viên trong nhóm cấp cứu"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_12",
-          "number": 12,
-          "title": "TIÊU CHUẨN 12. Năng lực hỗ trợ thực hiện các thủ thuật nội soi cơ bản",
-          "criteria": [
-            {
-              "id": "noisoi_c22",
-              "num": 22,
-              "standard": "TIÊU CHUẨN 12. Năng lực hỗ trợ thực hiện các thủ thuật nội soi cơ bản",
-              "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật cắt polyp dưới 1 cm, theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện thủ thuật",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật cắt polyp dưới 1 cm, theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện thủ thuật"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật chích cầm máu, theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện thủ thuật"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 3",
-                  "text": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật kẹp cầm máu, theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện thủ thuật"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 4",
-                  "text": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật cắt polyp ống tiêu hóa trên 1 cm, theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện thủ thuật"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_13",
-          "number": 13,
-          "title": "TIÊU CHUẨN 13. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
-          "criteria": [
-            {
-              "id": "noisoi_c23",
-              "num": 23,
-              "standard": "TIÊU CHUẨN 13. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
-              "title": "Tạo dựng niềm tin với người bệnh, người nhà và đồng nghiệp; Dành thời gian cần thiết để giao tiếp với người bệnh, người nhà và thành viên trong nhóm chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Tạo dựng niềm tin với người bệnh, người nhà và đồng nghiệp; Dành thời gian cần thiết để giao tiếp với người bệnh, người nhà và thành viên trong nhóm chăm sóc"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 2",
-                  "text": "Lắng nghe và giúp người bệnh giải quyết được các lo lắng, băn khoan của người bệnh, người nhà"
-                },
-                {
-                  "score": 30,
-                  "level": "Mức 3",
-                  "text": "Xây dựng kế hoạch giáo dục sức khỏe phù hợp với bệnh tật và văn hóa, tín ngưỡng của cá nhân, gia đình và xã hội; tài liệu giáo dục sức khỏe phù hợp với trình độ của đối tượng"
-                },
-                {
-                  "score": 40,
-                  "level": "Mức 4",
-                  "text": "Truyền thông tương tác với người bệnh; sử dụng thành thạo các phương tiện sẵn có của bệnh viện; đảm bảo chất lượng truyền thông: chính xác, ngắn gọn, rõ ràng, dễ hiểu, không vi phạm phạm trù văn hóa, tín ngưỡng"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 5",
-                  "text": "Biên soạn bài giáo dục sức khỏe cho người bệnh sau khi thực hiện thủ thuật nội soi, áp dụng trên quy mô toàn bệnh viện (được Ban Lãnh đạo phê duyệt);\r\nThực hiện giáo dục sức khỏe cho người bệnh cấp bệnh viện, đem lại hiệu quả tốt"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_14",
-          "number": 14,
-          "title": "TIÊU CHUẨN 14. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
-          "criteria": [
-            {
-              "id": "noisoi_c24",
-              "num": 24,
-              "standard": "TIÊU CHUẨN 14. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
-              "title": "Tham gia đầy đủ 24 tiết sinh hoạt chuyên môn trong 1 năm do Bệnh viện tổ chức",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Mức 1",
-                  "text": "Tham gia đầy đủ 24 tiết sinh hoạt chuyên môn trong 1 năm do Bệnh viện tổ chức"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 2",
-                  "text": "Tham gia ít nhất 1 chương trình đào tạo do Hội Nội soi Tiêu hóa tổ chức (có giấy chứng nhận)"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 3",
-                  "text": "Có khả năng truyền đạt kiến thức, đào tạo chuyên môn cho người khác (sinh viên, học viên, nhân viên mới)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_15",
-          "number": 15,
-          "title": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
-          "criteria": [
-            {
-              "id": "noisoi_c25",
-              "num": 25,
-              "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
-              "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật gắp dị vật trong thủ thuật nội soi dạ dày",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật gắp dị vật trong thủ thuật nội soi dạ dày"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c26",
-              "num": 26,
-              "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
-              "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật gắp dị vật trong thủ thuật nội soi đại tràng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật gắp dị vật trong thủ thuật nội soi đại tràng"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c27",
-              "num": 27,
-              "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
-              "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật cắt polyp trên 2 cm và nhiều polyp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật cắt polyp trên 2 cm và nhiều polyp"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c28",
-              "num": 28,
-              "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
-              "title": "Sử dụng thành thạo kiến thức đễ hỗ trợ bác sĩ ép bụng trong kỹ thuật nội soi đại tràng khó, đảm bảo thành công 100%",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo kiến thức đễ hỗ trợ bác sĩ ép bụng trong kỹ thuật nội soi đại tràng khó, đảm bảo thành công 100%"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "noisoi_d3",
-      "code": "III.",
-      "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
-      "maxPoints": 120,
-      "standards": [
-        {
-          "id": "noisoi_std_16",
-          "number": 16,
-          "title": "TIÊU CHUẨN 16. Đào tạo",
-          "criteria": [
-            {
-              "id": "noisoi_c29",
-              "num": 29,
-              "standard": "TIÊU CHUẨN 16. Đào tạo",
-              "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c30",
-              "num": 30,
-              "standard": "TIÊU CHUẨN 16. Đào tạo",
-              "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c31",
-              "num": 31,
-              "standard": "TIÊU CHUẨN 16. Đào tạo",
-              "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c32",
-              "num": 32,
-              "standard": "TIÊU CHUẨN 16. Đào tạo",
-              "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c33",
-              "num": 33,
-              "standard": "TIÊU CHUẨN 16. Đào tạo",
-              "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c34",
-              "num": 34,
-              "standard": "TIÊU CHUẨN 16. Đào tạo",
-              "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_17",
-          "number": 17,
-          "title": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
-          "criteria": [
-            {
-              "id": "noisoi_c35",
-              "num": 35,
-              "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
-              "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c36",
-              "num": 36,
-              "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
-              "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c37",
-              "num": 37,
-              "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
-              "desc": "Chọn 1 thành tích cao nhất",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c38",
-              "num": 38,
-              "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c39",
-              "num": 39,
-              "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
-              "title": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_18",
-          "number": 18,
-          "title": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
-          "criteria": [
-            {
-              "id": "noisoi_c40",
-              "num": 40,
-              "standard": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
-              "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c41",
-              "num": 41,
-              "standard": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
-              "title": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c42",
-              "num": 42,
-              "standard": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
-              "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "noisoi_d4",
-      "code": "IV.",
-      "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
-      "maxPoints": 100,
-      "standards": [
-        {
-          "id": "noisoi_std_19",
-          "number": 19,
-          "title": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-          "criteria": [
-            {
-              "id": "noisoi_c43",
-              "num": 43,
-              "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho chăm sóc"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c44",
-              "num": 44,
-              "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Đề xuất các thiết bị, vật tư phù hợp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Đề xuất các thiết bị, vật tư phù hợp"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c45",
-              "num": 45,
-              "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c46",
-              "num": 46,
-              "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_20",
-          "number": 20,
-          "title": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
-          "criteria": [
-            {
-              "id": "noisoi_c47",
-              "num": 47,
-              "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
-              "title": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c48",
-              "num": 48,
-              "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
-              "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c49",
-              "num": 49,
-              "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
-              "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c50",
-              "num": 50,
-              "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
-              "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_21",
-          "number": 21,
-          "title": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
-          "criteria": [
-            {
-              "id": "noisoi_c51",
-              "num": 51,
-              "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c52",
-              "num": 52,
-              "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c53",
-              "num": 53,
-              "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c54",
-              "num": 54,
-              "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c55",
-              "num": 55,
-              "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "noisoi_d5",
-      "code": "V.",
-      "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
-      "maxPoints": 150,
-      "standards": [
-        {
-          "id": "noisoi_std_22",
-          "number": 22,
-          "title": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-          "criteria": [
-            {
-              "id": "noisoi_c56",
-              "num": 56,
-              "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c57",
-              "num": 57,
-              "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c58",
-              "num": 58,
-              "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c59",
-              "num": 59,
-              "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_23",
-          "number": 23,
-          "title": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
-          "criteria": [
-            {
-              "id": "noisoi_c60",
-              "num": 60,
-              "standard": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
-              "title": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c61",
-              "num": 61,
-              "standard": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
-              "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c62",
-              "num": 62,
-              "standard": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
-              "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_24",
-          "number": 24,
-          "title": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
-          "criteria": [
-            {
-              "id": "noisoi_c63",
-              "num": 63,
-              "standard": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
-              "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c64",
-              "num": 64,
-              "standard": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
-              "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý"
-                }
-              ]
-            },
-            {
-              "id": "noisoi_c65",
-              "num": 65,
-              "standard": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
-              "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "noisoi_std_25",
-          "number": 25,
-          "title": "TIÊU CHUẨN 25. Sự trải nghiệm nghề nghiệp",
-          "criteria": [
-            {
-              "id": "noisoi_c66",
-              "num": 66,
-              "standard": "TIÊU CHUẨN 25. Sự trải nghiệm nghề nghiệp",
-              "title": "BV hạng đặc biệt, hạng 1",
-              "desc": "≤ 5 \r\nnăm",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "BV hạng 2, 3"
-                },
-                {
-                  "score": 35,
-                  "level": "Mức 3",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 4",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 45,
-                  "level": "Mức 5",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 6",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 7",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 25,
-                  "level": "Mức 8",
-                  "text": "BV hạng 2"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  {
+    "id": "noisoi_d1",
+    "code": "I.",
+    "name": "TIÊU CHUẨN BẰNG CẤP",
+    "maxPoints": 180,
+    "standards": [
+      {
+        "id": "noisoi_std_1",
+        "number": 1,
+        "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+        "criteria": [
+          {
+            "id": "noisoi_c1",
+            "num": 1,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp chuyên môn Điều dưỡng",
+            "desc": "Chọn 1 năng lực phù hợp nhất theo bằng cấp chuyên môn cao nhất",
+            "maxScore": 100,
+            "maxPoints": 100,
+            "options": [
+              {
+                "score": 15,
+                "level": "CĐ/TH Khác (15đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng từ ĐH Nguyễn Tất Thành hoặc trường khác"
+              },
+              {
+                "score": 20,
+                "level": "CĐ/TH Hồng Bàng (20đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng từ ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 25,
+                "level": "CĐ/TH Phạm Ngọc Thạch (25đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng từ ĐH Y khoa Phạm Ngọc Thạch"
+              },
+              {
+                "score": 30,
+                "level": "CĐ/TH ĐHYD TPHCM (30đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng ĐHYD TP HCM"
+              },
+              {
+                "score": 50,
+                "level": "ĐH Nhóm 1 (50đ)",
+                "text": "ĐH Y Dược Huế, ĐH Y Dược Cần Thơ, ĐH Điều dưỡng Nam Định, ĐH Nguyễn Tất Thành, trường ĐH khác"
+              },
+              {
+                "score": 60,
+                "level": "ĐH Hồng Bàng (60đ)",
+                "text": "ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 70,
+                "level": "ĐH YHN/PNT/Yersin (70đ)",
+                "text": "ĐH Y Hà Nội, ĐH Y khoa Phạm Ngọc Thạch, ĐH Yersin"
+              },
+              {
+                "score": 80,
+                "level": "ĐH Miền Đông (80đ)",
+                "text": "ĐH Quốc tế Miền Đông"
+              },
+              {
+                "score": 90,
+                "level": "ĐHYD TPHCM (90đ)",
+                "text": "Đại học Y Dược TPHCM"
+              },
+              {
+                "score": 100,
+                "level": "ĐH Quốc Tế (100đ)",
+                "text": "ĐH Điều dưỡng từ Châu Âu (trừ Đông Âu), Mỹ, Canada, New Zealand, Úc, Nhật Bản, Hàn Quốc, Singapore, Đài Loan, Malaysia"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c2",
+            "num": 2,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp Sau đại học",
+            "desc": "Chọn 1 năng lực phù hợp nhất nếu có bằng sau đại học",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 25,
+                "level": "CK1 / Thạc sĩ (25đ)",
+                "text": "Chuyên khoa 1 / Thạc sĩ chuyên ngành Điều dưỡng"
+              },
+              {
+                "score": 40,
+                "level": "Tiến sĩ (40đ)",
+                "text": "Tiến sĩ chuyên ngành Y Dược / Điều dưỡng"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_2",
+        "number": 2,
+        "title": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+        "criteria": [
+          {
+            "id": "noisoi_c3",
+            "num": 3,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận chuyên khoa trong nước",
+            "desc": "Có chứng chỉ chuyên khoa đào tạo trong nước",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Đạt (5đ)",
+                "text": "Chứng nhận / chứng chỉ chuyên khoa trong nước ≥ 1 năm"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c4",
+            "num": 4,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận đào tạo nước ngoài",
+            "desc": "Có chứng chỉ đào tạo tại nước ngoài",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Đạt (10đ)",
+                "text": "Chứng nhận / chứng chỉ đào tạo nước ngoài ≥ 6 tháng"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_3",
+        "number": 3,
+        "title": "TIÊU CHUẨN 3. Ngoại ngữ",
+        "criteria": [
+          {
+            "id": "noisoi_c5",
+            "num": 5,
+            "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
+            "title": "Trình độ Ngoại ngữ",
+            "desc": "Chọn 1 mức ngoại ngữ phù hợp nhất",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Bậc 1 (5đ)",
+                "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
+              },
+              {
+                "score": 10,
+                "level": "Bậc 2 (10đ)",
+                "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
+              },
+              {
+                "score": 15,
+                "level": "Bậc 3 (15đ)",
+                "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_4",
+        "number": 4,
+        "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
+        "criteria": [
+          {
+            "id": "noisoi_c6",
+            "num": 6,
+            "standard": "TIÊU CHUẨN 4. Tin học",
+            "title": "Kỹ năng Công nghệ thông tin",
+            "desc": "Theo Thông tư số 03/2014/TT-BTTTT",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Cơ bản (5đ)",
+                "text": "Sử dụng công nghệ thông tin cơ bản (Theo Thông tư số 03/2014/TT-BTTTT)"
+              },
+              {
+                "score": 10,
+                "level": "Nâng cao (10đ)",
+                "text": "Sử dụng công nghệ thông tin nâng cao, thành thạo phần mềm chuyên ngành"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "noisoi_d2",
+    "code": "II.",
+    "name": "NĂNG LỰC CHUYÊN MÔN",
+    "maxPoints": 450,
+    "standards": [
+      {
+        "id": "noisoi_std_5",
+        "number": 5,
+        "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+        "criteria": [
+          {
+            "id": "noisoi_c7",
+            "num": 7,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định tại cơ sở làm việc",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c8",
+            "num": 8,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c9",
+            "num": 9,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Phối hợp với đồng nghiệp nhưng chưa chủ động hoặc do được yêu cầu Quan hệ, giao tiếp tốt với đồng nghiệp, NB (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chủ động phối hợp với đồng nghiệp để giải quyết công việc Hòa nhã, vui vẻ, sẵn sàng hỗ trợ với đồng nghiệp, khách hàng/NB (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Phối hợp công việc 1 cách nhanh nhẹn, hiệu quả Ứng xử nhanh nhẹn, giải quyết mọi vấn đề, quan hệ tốt với đồng nghiệp trong và ngoài đơn vị Giao tiếp tốt với NB, chăm sóc được NB khó tính (5 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_6",
+        "number": 6,
+        "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+        "criteria": [
+          {
+            "id": "noisoi_c10",
+            "num": 10,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định chăm sóc và can thiệp chăm sóc",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Tự ra quyết định kế hoạch chăm sóc và can thiệp cho NB (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có trách nhiệm trong công tác Tự giác nhận trách nhiệm khi có những sai sót (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c11",
+            "num": 11,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c12",
+            "num": 12,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_7",
+        "number": 7,
+        "title": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
+        "criteria": [
+          {
+            "id": "noisoi_c13",
+            "num": 13,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
+            "title": "Đọc hiểu được chỉ định của bác sĩ phòng khám, khoa lâm sàng, tư vấn…Hiểu về tình trạng sức khỏe của người bệnh, các kết quả cận lâm sàng liên quan đến thủ thuật nội soi",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Hiểu được ý nghĩa các cận lâm sàng liên quan nội soi tiêu hoá (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đọc được các kết quả cận lâm sàng (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Nhận biết được kết quả cận lâm sàng bất thường và có can thiệp kịp thời (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c14",
+            "num": 14,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
+            "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi dạ dày",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Chuẩn bị dụng cụ 50%, chưa hỗ trợ được bác sĩ nội soi (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soi từ 50%- 70% (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Chuẩn bị dụng cụ hỗ trợ bác sĩ nội soi từ 70% - 80% (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soi từ 90% (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Chuẩn bị 100% các các TTB vả VTYT, hỗ trợ bác sĩ nội soi đáp ứng đúng yếu cầu thủ thuật (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c15",
+            "num": 15,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
+            "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi trực tràng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Chuẩn bị dụng cụ 50%, chưa hỗ trợ được bác sĩ nội soi (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soi từ 50%- 70% (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Chuẩn bị dụng cụ hỗ trợ bác sĩ nội soi từ 70% - 80% (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soiị từ 90% (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Chuẩn bị 100% các các TTB vả VTYT, hỗ trợ bác sĩ nội soi đáp ứng đúng yếu cầu thủ thuật (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c16",
+            "num": 16,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
+            "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi đại tràng không gây mê",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Chuẩn bị dụng cụ 50%, chưa hỗ trợ được bác sĩ nội soi (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soi từ 50%- 70% (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Chuẩn bị dụng cụ hỗ trợ bác sĩ nội soi từ 70% - 80% (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soiị từ 90% (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Chuẩn bị 100% các các TTB vả VTYT, hỗ trợ bác sĩ nội soi đáp ứng đúng yếu cầu thủ thuật (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c17",
+            "num": 17,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe người bệnh và năng lực chuẩn bị dụng cụ thực hiện các thủ thuật nội soi",
+            "title": "Chuẩn bị đầy đủ dụng cụ và hỗ trợ bác sĩ thực hiện nội soi đại tràng gây mê",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 12,
+                "level": "Mức 1 (12đ)",
+                "text": "Chuẩn bị 50% dụng cụ và chưa hỗ trợ được bác sĩ nội soi (12 điểm)"
+              },
+              {
+                "score": 14,
+                "level": "Mức 2 (14đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soi từ 50%- 70% (14 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 3 (16đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soi từ 70% - 80% (16 điểm)"
+              },
+              {
+                "score": 18,
+                "level": "Mức 4 (18đ)",
+                "text": "Chuẩn bị dụng cụ và hỗ trợ bác sĩ nội soiị từ 90% (18 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Chuẩn bị 100% các TTB vả VTYT, hỗ trợ bác sĩ nội soi đáp ứng đúng yếu cầu thủ thuật (20 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_8",
+        "number": 8,
+        "title": "TIÊU CHUẨN 8. Năng lực thực hành kĩ thuật chăm sóc",
+        "criteria": [
+          {
+            "id": "noisoi_c18",
+            "num": 18,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hành kĩ thuật chăm sóc",
+            "title": "Tuân thủ quy trình kỹ thuật trong phạm vi chuyên môn hành nghề (Competent)",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Thực hiện QTKT ĐD dưới sự hỗ trợ, hướng dẫn thường xuyên (10 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 2 (20đ)",
+                "text": "Thực hiện đầy đủ các bước QTKTĐD nhưng thỉnh thoảng còn cần sự hỗ trợ, hướng dẫn (20 điểm)"
+              },
+              {
+                "score": 30,
+                "level": "Mức 3 (30đ)",
+                "text": "Thực hiện QTKTĐD đầy đủ các bước, độc lập, thao tác đúng; Đảm bảo an toàn người bệnh. Thỉnh thoảng còn cần sự giám sát (30 điểm)"
+              },
+              {
+                "score": 40,
+                "level": "Mức 4 (40đ)",
+                "text": "Thực hiện độc lập,hoàn chỉnh QTKTĐD; Đảm bảo an toàn Người bệnh; Xử lý được các tình huống đặc biệt; Có thể lý giải được các nguyên nhân và giải pháp trong QTKT khó (40 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_9",
+        "number": 9,
+        "title": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
+        "criteria": [
+          {
+            "id": "noisoi_c19",
+            "num": 19,
+            "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
+            "title": "Tuân thủ quy định khi dùng thuốc; hướng dẫn dùng thuốc đúng, an toàn",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Thực hiện 5/10 nội dung (Thực hiện 5 đúng tại 2 thời điểm bắt buộc thực hiện) (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Thực hiện 4/10 nội dung (Thực hiện 5 đúng tại 2 thời điểm bắt buộc thực hiện) (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Thực hiện 3/10 nội dung (Thực hiện 5 đúng tại 2 thời điểm bắt buộc thực hiện) (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Thực hiện 2/10 nội dung (Thực hiện 5 đúng tại 2 thời điểm bắt buộc thực hiện) (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Thực hiện 1/10 nội dung (Thực hiện 5 đúng tại 2 thời điểm bắt buộc thực hiện) (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_10",
+        "number": 10,
+        "title": "TIÊU CHUẨN 10. Năng lực sử dụng phần mềm quản lý kết quả nội soi, giải phẫu bệnh, phiếu chỉ định và xử lý hình ảnh",
+        "criteria": [
+          {
+            "id": "noisoi_c20",
+            "num": 20,
+            "standard": "TIÊU CHUẨN 10. Năng lực sử dụng phần mềm quản lý kết quả nội soi, giải phẫu bệnh, phiếu chỉ định và xử lý hình ảnh",
+            "title": "Có khả năng sử dụng phần mềm UMC2 Soft thành thành thạo, xác nhận thông tin người bệnh",
+            "desc": "chọn 1 năng lực phù hợp nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Nhân viên biết sử dụng thành thạo 1 phần mềm (Ris) (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Nhân viên biết sử dụng thành thạo 2 phần mềm (Ris và His) (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Nhân viên biết sử dụng thành thạo 2 phần mềm (Ris và His), nhập được thuốc hoặc vật tư y tế sử dụng cho người bệnh (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Nhân viên biết sử dụng thành thạo 2 phần mềm, có khả năng nhập thuốc, vật tư y tế theo chỉ định. Nắm được quy trình, quy định BHYT, hoàn trả thuốc, vật tư, hoàn tiền nội soi. (8 điểm)."
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "hân viên biết sử dụng thành thạo 2 phần mềm, có khả năng nhập thuốc, vật tư y tế theo chỉ định. Nắm được quy trình, quy định BHYT, hoàn trả thuốc, vật tư, hoàn tiền nội soi. Thống kê được số lượng người bệnh nội soi trên phần mền. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_11",
+        "number": 11,
+        "title": "TIÊU CHUẨN 11. Năng lực thực hiện CPR",
+        "criteria": [
+          {
+            "id": "noisoi_c21",
+            "num": 21,
+            "standard": "TIÊU CHUẨN 11. Năng lực thực hiện CPR",
+            "title": "Phát hiện sớm những thay đổi đột ngột về tình trạng sức khỏe của người bệnh",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 1,
+                "level": "Mức 1 (1đ)",
+                "text": "Nhận biết được các dấu hiệu sau: Sự thay đổi dấu hiệu sinh tồn (1 điểm); Tri giác và nhận thức của người bệnh về không gian, thời gian và con người (1 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Biết cách nhận biết và ghi nhận sự thay đổi của tri giác, dấu hiệu sinh tồn và các dấu hiệu đe dọa tính mạng của NB (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Biết cách nhận biết và ghi nhận sự thay đổi của tri giác, dấu hiệu sinh tồn và các dấu hiệu đe dọa tính mạng của NB Kết quả đánh giá tình trạng NB đạt trên 80% mục tiêu mong muốn, nhưng chưa chuẩn xác. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Thực hiện đầy đủ và độc lập trong đánh giá các dấu hiệu cảnh báo sớm. Kết quả đánh giá tình trạng NB đạt đủ các mục tiêu mong muốn và chuẩn xác. Tiên lượng được các thay đổi tình trạng người bệnh phù hợp với tình huống lâm sàng. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Thực hiện đầy đủ và độc lập trong đánh giá các dấu hiệu cảnh báo sớm. Kết quả đánh giá tình trạng NB đạt đủ các mục tiêu mong muốn và chuẩn xác. Tiên lượng được các thay đổi tình trạng người bệnh phù hợp với tình huống lâm sàng. Biết cách giải thích các thay đổi bất thường dựa trên các đánh giá tình trạng lâm sàng người bệnh. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_12",
+        "number": 12,
+        "title": "TIÊU CHUẨN 12. Năng lực hỗ trợ thực hiện các thủ thuật nội soi cơ bản",
+        "criteria": [
+          {
+            "id": "noisoi_c22",
+            "num": 22,
+            "standard": "TIÊU CHUẨN 12. Năng lực hỗ trợ thực hiện các thủ thuật nội soi cơ bản",
+            "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật cắt polyp dưới 1 cm, theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện thủ thuật",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Nhân viên biết các dụng cụ, VTYT cắt polyp sử dụng tại khoa, trình bài được các bất thường trong và sau khi thực hiện thủ thuật (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Nhân viên chuẩn bị các dụng cụ, VTYT cắt polyp sử dụng tại khoa. Hỗ trợ Bác sĩ thực hiện thủ thuật nội soi cắt polyp. Biết theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện 60% (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Nhân viên chuẩn bị các dụng cụ, VTYT cắt polyp sử dụng tại khoa. Hỗ trợ Bác sĩ thực hiện thủ thuật nội soi cắt polyp. Biết theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện nhưng vần còn cần sự hỗ trợ 80% (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Nhân viên chuẩn bị các dụng cụ, VTYT cắt polyp sử dụng tại khoa. Hỗ trợ Bác sĩ thực hiện thủ thuật nội soi cắt polyp. Biết theo dõi và phát hiện kịp thời những bất thường trong và sau khi thực hiện độc lập 100% (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_13",
+        "number": 13,
+        "title": "TIÊU CHUẨN 13. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
+        "criteria": [
+          {
+            "id": "noisoi_c23",
+            "num": 23,
+            "standard": "TIÊU CHUẨN 13. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
+            "title": "Tạo dựng niềm tin với người bệnh, người nhà và đồng nghiệp; Dành thời gian cần thiết để giao tiếp với người bệnh, người nhà và thành viên trong nhóm chăm sóc",
+            "desc": "chọn 1 năng lực phù hợp nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt <50% (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt 50- 59% (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt 60- 74% (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt 75 - 89% (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt ≥ 90% (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_14",
+        "number": 14,
+        "title": "TIÊU CHUẨN 14. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
+        "criteria": [
+          {
+            "id": "noisoi_c24",
+            "num": 24,
+            "standard": "TIÊU CHUẨN 14. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
+            "title": "Tham gia đầy đủ 24 tiết sinh hoạt chuyên môn trong 1 năm do Bệnh viện tổ chức",
+            "desc": "chọn 1 năng lực phù hợp nhất",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Tham gia 50% các bài sinh hoạt chuyên môn do bệnh viện tổ chức (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Tham gia 50-60% các bài sinh hoạt chuyên môn do bệnh viện tổ chức (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Tham gia trên 70-80% các bài sinh hoạt chuyên môn do bệnh viện tổ chức (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia trên 95% các bài sinh hoạt chuyên môn do bệnh viện tổ chức (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_15",
+        "number": 15,
+        "title": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
+        "criteria": [
+          {
+            "id": "noisoi_c25",
+            "num": 25,
+            "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
+            "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật gắp dị vật trong thủ thuật nội soi dạ dày",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Nhân viên chuẩn bị đầy đủ dụng cụ gấp dị vật dạ dày tại khoa đang sử dụng. Thực hiện đầy đủ các bước 60% (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Nhân viên chuẩn bị đầy đủ dụng cụ gấp dị vật dạ dày tại khoa đang sử dụng. Thực hiện đầy đủ các bước 80% Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật nhưng cần sự hỗ trợ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Nhân viên chuẩn bị đầy đủ dụng cụ gấp dị vật dạ dày tại khoa đang sử dụng,.Thực hiện đầy đủ các bước 100%. Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật một cách độc lập (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c26",
+            "num": 26,
+            "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
+            "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật gắp dị vật trong thủ thuật nội soi đại tràng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Nhân viên chuẩn bị đầy đủ dụng cụ gấp dị vật đại tràng nội soi .Thực hiện các bước 60%. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Nhân viên biết các tên dụng cụ gấp dị vật nội soi đại tràng, biết kết hợp với dụng cụ khác khi thực hiện thủ thuật. Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật nhưng cần sự hỗ trợ .Thực hiện các bước 80%. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Nhân viên biết các tên dụng cụ gấp dị vật đại tràng, biết kết hợp với dụng cụ khác khi thực hiện thủ thuật. Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật một cách độc lập . Thực hiện các bước 100%. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c27",
+            "num": 27,
+            "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
+            "title": "Sử dụng thành thạo dụng cụ và hỗ trợ thực hiện thủ thuật cắt polyp trên 2 cm và nhiều polyp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Nhân viên biết và chuẩn bị đầy đủ các loại dụng cụ phù hợp khi cắt polyp >2 cm tại khoa sử dụng, biết kết hợp các dụng cụ khác (kim chích cầm máu, Loop, clip). Thực hiện các bước 60%.(6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Nhân viên biết và chuẩn bị đầy đủ các loạidụng cụ phù hợp khi cắt polyp >2 cm tại khoa sử dụng, biết kết hợp các dụng cụ khác (kim chích cầm máu, Loop, clip). Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật nhưng cần sự hỗ trợ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Nhân viên biết và chuẩn bị đầy đủ các loại dụng cụ phù hợp khi cắt polyp >2 cm tại khoa sử dụng, ngoài ra còn biết kết hợp các dụng cụ khác (kim chích cầm máu, Loop, clip). Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật và xử trí độc lập, nắm được quy trình chuyển khoa khi cần thiết. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c28",
+            "num": 28,
+            "standard": "TIÊU CHUẨN 15. Năng lực hỗ trợ thực hiện các thủ thuật nội soi nâng cao",
+            "title": "Sử dụng thành thạo kiến thức đễ hỗ trợ bác sĩ ép bụng trong kỹ thuật nội soi đại tràng khó, đảm bảo thành công 100%",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có kiến thức cơ bảnhỗ trợ Bác sĩ trong kỹ thuật nội soi đại tràng khó. Thực hiện các bước 60%. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kiến thức cơ bảnhỗ trợ Bác sĩ trong kỹ thuật nội soi đại tràng khó. Thực hiện các bước 80%. Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật nhưng cần sự hỗ trợ (8 điểm )"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có kiến thức cơ bảnhỗ trợ Bác sĩ trong kỹ thuật nội soi đại tràng khó. Thực hiện các bước 100%. Nhận biết được những dấu hiệu bất thường trong và sau thủ thuật nhưng không cần sự hỗ trợ (10 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "noisoi_d3",
+    "code": "III.",
+    "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
+    "maxPoints": 120,
+    "standards": [
+      {
+        "id": "noisoi_std_16",
+        "number": 16,
+        "title": "TIÊU CHUẨN 16. Đào tạo",
+        "criteria": [
+          {
+            "id": "noisoi_c29",
+            "num": 29,
+            "standard": "TIÊU CHUẨN 16. Đào tạo",
+            "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hướng dẫn trong tìm hiểu, phân tích mối tương quan giữa nhu cầu đào tạo với trình độ, vị trí làm việc; (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc; Đề xuất được các giải pháp dựa trên kết quả báo cáo. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c30",
+            "num": 30,
+            "standard": "TIÊU CHUẨN 16. Đào tạo",
+            "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Cần sự hỗ trợ trong xây dựng phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có phương pháp đào tạo phù hợp với nội dung, yêu cầu của nội dung đào tạo. Vận dụng được phương pháp đào tạo phù hợp với hoàn cảnh đào tạo. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự thay đổi thường xuyên các chương trình, nội dung đào tạo hàng năm Vận dụng đa dạng trên ba phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c31",
+            "num": 31,
+            "standard": "TIÊU CHUẨN 16. Đào tạo",
+            "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hỗ trợ, hoặc giám sát tiến độ thực hiện kế hoạch đào tạo; Có dưới 2 chương trình đào tạo trễ hạn dưới 1 tháng so với kế hoạch năm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập theo dõi kế hoạch đào tạo, tổ chức đào tạo đúng tiến độ; Không có chương trình trễ hạn. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Biết phối hợp nhiều phương pháp, kỹ năng theo dõi kế hoạch đào tạo, tổ chức đào tạo đúng tiến độ; Hoàn thành các nội dung, chương trình đào tạo sớm hơn tiến độ trong kế hoạch đề ra (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c32",
+            "num": 32,
+            "standard": "TIÊU CHUẨN 16. Đào tạo",
+            "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch; Có chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần hướng dẫn trong đánh giá, đo lường hiệu quả trước & sau đào tạo; (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập đánh giá, đo lường và báo cáo hiệu quả trước & sau đào tạo; Cần sự hướng dẫn trong phân tích, diễn giải kết quả đo lường. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Biết cách vận dụng nhiều kỹ năng đánh giá, đo lường và báo cáo hiệu quả trước & sau đào tạo; Đưa ra được phân tích, diễn giải kết quả đo lường, thống kê (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c33",
+            "num": 33,
+            "standard": "TIÊU CHUẨN 16. Đào tạo",
+            "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hướng dẫn liên tục, thường xuyên trong việc tìm, xây dựng công cụ, phương pháp đánh giá kiến thức của học viên. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập đưa ra được công cụ, phương pháp trong đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Ứng dụng một phương pháp, công cụ đánh giá kiến thức học viên. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Tự tin, thành thạo trong áp dụng công cụ, phương pháp đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Vận dụng trên hai công cụ đánh giá, đo lường kiến thức học viên. Giải thích được cơ sở khoa học cho phương pháp đánh giá. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c34",
+            "num": 34,
+            "standard": "TIÊU CHUẨN 16. Đào tạo",
+            "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "có tham gia \" đạt 5 điểm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_17",
+        "number": 17,
+        "title": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
+        "criteria": [
+          {
+            "id": "noisoi_c35",
+            "num": 35,
+            "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
+            "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia NCKH với vai trò đối tượng lấy mẫu (2 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Có được đào tạo cơ bản về NCKH và tham gia NCKH với vai trò người đi lấy mẫu (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Có chứng chỉ/ chứng nhận đào tạo chuyên về NCKH và là thành viên của nhóm thực hiện đề tài NCKH (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia viết đề cương nghiên cứu khoa học (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c36",
+            "num": 36,
+            "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
+            "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị Biết sử dụng phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …) nhưng cần sử hỗ trợ (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Biết sử dụng thành thạo phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …) (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Có khả năng hướng dẫn các phần mềm nhập liệu và phân tích số liệu trong NCKH (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c37",
+            "num": 37,
+            "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
+            "desc": "Chọn 1 thành tích cao nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được phê duyệt đề cương và đang thực hiện. (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được công nhận (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 3 năm. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 1 năm. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c38",
+            "num": 38,
+            "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm); Hoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có tham gia ít nhất 2 đề tài NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài NCKH đã được phê duyệt đề cương và đang thực hiện. (10 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "Mức 3 (9đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài đề tài NCKH đã hoàn thành đang trong quá trình chờ thẩm định (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 4 (12đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 2 năm (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 5 (15đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước và được mời báo cáo hội nghị điều dưỡng ít nhất 2 lần về đề tài đã công bố trong vòng 2 năm (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c39",
+            "num": 39,
+            "standard": "TIÊU CHUẨN 17. Nghiên cứu khoa học",
+            "title": "Đăng bài báo nước ngoài Hoặc chủ nhiệm đề tài cấp Nhà nước",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc đang tham gia đề tài cấp nhà nước, đề tài đã được phê duyệt đề cương và đang trong quá trình hoàn tất (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đnag chờ thẩm định (8 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đang chờ thẩm định (12 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận trong vòng 5 năm (16 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận và mời báo cáo trong các hội nghị quốc tế ít nhất 1 lần về đề tài trong vòng 5 năm (20 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_18",
+        "number": 18,
+        "title": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
+        "criteria": [
+          {
+            "id": "noisoi_c40",
+            "num": 40,
+            "standard": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
+            "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã hoàn thành, đang chờ thẩm định. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được công nhận. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được phân tích và đánh giá khả năng áp dụng (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c41",
+            "num": 41,
+            "standard": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
+            "title": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp có kế hoạch áp dụng tại ít nhất 1 khoa/ 1 nhóm đối tượng liên quan. (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan và đánh giá kết quả áp dụng (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc được đánh giá hiệu quả áp dụng (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc được đánh giá hiệu quả áp dụng và được áp dụng toàn viện (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c42",
+            "num": 42,
+            "standard": "TIÊU CHUẨN 18. Thực hành dựa trên bằng chứng",
+            "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được bệnh viện/ trường công nhận và được giải thưởng của trường/ bệnh viện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được nhận giải thưởng uy tín trong nước (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước. Đang trong quá trình đăng ký bản quyền sở hữu trí tuệ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Kết quả NCKH/SKCT, phát minh mới được đăng ký bản quyền sở hữu trí tuệ trong vòng 2 năm (10 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "noisoi_d4",
+    "code": "IV.",
+    "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
+    "maxPoints": 100,
+    "standards": [
+      {
+        "id": "noisoi_std_19",
+        "number": 19,
+        "title": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+        "criteria": [
+          {
+            "id": "noisoi_c43",
+            "num": 43,
+            "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho chăm sóc",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "Mức 1 (1đ)",
+                "text": "Biết được: các loại máy, VTYT tại khoa (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "Mức 2 (2đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa cần sự hỗ trợ thường xuyên. (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "Mức 3 (3đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa thỉnh thoảng cần sự hỗ trợ. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 4 (4đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa một cách độc lập. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 5 (5đ)",
+                "text": "Có khả năng hướng dẩn quy trình, quy định về sử dụng, vận hành các trang thiết bị, VTYT tại khoa. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c44",
+            "num": 44,
+            "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Đề xuất các thiết bị, vật tư phù hợp",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị và vật tư phù hợp với chăm sóc bệnh nhân dựa trên bằng chứng khoa học. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị và vật tư phù hợp với chăm sóc bệnh nhân dựa trên bằng chứng khoa học và có thực hiện đánh giá tại khoa đơn vị (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các VTYT, trang thiết bị dựa trên bằng chứng khoa học và đánh giá thực tế tại khoa, đon vị (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c45",
+            "num": 45,
+            "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Lập được kế hoạch bảo quản trang thiết bị, vật tư (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đảm bảo thực hiện kế hoạch đúng tiến độ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sáng kiến cải tiến trong bảo quản trang thiết bị, vật tư (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c46",
+            "num": 46,
+            "standard": "TIÊU CHUẨN 19. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Vận dụng thành thạo và xử lý các vấn đề phát sinh trong quá trình sử dụng các trang thiết bị, VTYT tại khoa (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hiểu rõ nguyên lý hoạt động và phòng ngửa các sự cố liên quan đến việc sử dụng trang thiết bị (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá, đo lường việc sử dụng, và đề xuất cải tiến chất lượng an toàn và hiệu quả. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_20",
+        "number": 20,
+        "title": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
+        "criteria": [
+          {
+            "id": "noisoi_c47",
+            "num": 47,
+            "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
+            "title": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của một biện pháp, lĩnh vực chăm sóc tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của một biện pháp, lĩnh vực chăm sóc tại các khoa có nhu cầu. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c48",
+            "num": 48,
+            "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
+            "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có đánh giá, phân tích nhu cầu nguồn nhân lực phục vụ cho công tác chăm sóc hiệu quả (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Xây dựng được kế hoạch phân bổ nguồn nhân lực phù hợp nhu cầu chăm sóc tại khoa, đơn vị. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c49",
+            "num": 49,
+            "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
+            "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có kế hoạch quản lý và dự toán nguồn tài chính phục vụ cho chăm sóc tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Triển khai đánh giá và đo lường hiệu quả của kế hoạch. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c50",
+            "num": 50,
+            "standard": "TIÊU CHUẨN 20. Sử dụng nguồn tài chính thích hợp để chăm sóc người bệnh hiệu quả",
+            "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Triển khai và báo cáo kết quả đề án cải tiến tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đề án được thẩm định và công nhận hiệu quả bởi Hội đồng chuyên môn. Được triển khai ứng dụng tại bệnh viện. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_21",
+        "number": 21,
+        "title": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
+        "criteria": [
+          {
+            "id": "noisoi_c51",
+            "num": 51,
+            "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn lao động, sức khỏe nghề nghiệp (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có phổ biến, triển khai cho đồng nghiệp các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các giải pháp bảo vệ sức khỏe nghề nghiệp và tăng cường lao động. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c52",
+            "num": 52,
+            "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Có trường hợp không tuân thủ → 0 điểm"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c53",
+            "num": 53,
+            "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Tuân thủ theo các quy trình về kiểm soát nhiễm khuẩn trong chăm sóc Người bệnh của khoa KSNK (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ các chính sách, quy trình (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c54",
+            "num": 54,
+            "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Tuân thủ/triển khai các quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ quy định (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c55",
+            "num": 55,
+            "standard": "TIÊU CHUẨN 21. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác (sử dụng các phương tiện chữa cháy, thoát hiểm,…) (3 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có kiến thức về xử lý/quản lý tinh huống (5 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "noisoi_d5",
+    "code": "V.",
+    "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
+    "maxPoints": 150,
+    "standards": [
+      {
+        "id": "noisoi_std_22",
+        "number": 22,
+        "title": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+        "criteria": [
+          {
+            "id": "noisoi_c56",
+            "num": 56,
+            "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Nêu được những điểm mạnh, điểm yếu cá nhân và nguyện vọng phát triển nghề nghiệp. (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch và đang thực hiện kế hoạch phát triển nghề nghiệp. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được các bằng cấp nâng cao trình độ chuyên môn, nghiệp vụ trong vòng 3 năm. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c57",
+            "num": 57,
+            "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Đạt được 12 tiết trong năm (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đạt được 24 tiết trong năm (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được >24 tiết trong năm -Và ít nhất 50% các chương trình đào tạo tập huấn nâng cao kiến thức chuyên môn và kỹ năng khác do bệnh viện tổ chức (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c58",
+            "num": 58,
+            "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c59",
+            "num": 59,
+            "standard": "TIÊU CHUẨN 22. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Tham gia hướng dẫn lâm sàng (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Tham gia biên soạn nội dung chương trình đào tạo (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Tham gia giảng dạy tại khoa/đơn vị (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia giảng dạy toàn bệnh viện (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_23",
+        "number": 23,
+        "title": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
+        "criteria": [
+          {
+            "id": "noisoi_c60",
+            "num": 60,
+            "standard": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
+            "title": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có khảo sát các vấn đề còn tồn động trong hoạt động tại khoa, đơn vị (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Phân tích để xác định các vấn đề tồn động cần khắc phục (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự đánh giá và theo dõi thường xuyên các vấn đề tồn động (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c61",
+            "num": 61,
+            "standard": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
+            "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có đưa ra biện pháp khắc phục nhằm đảm bảo chất lượng chăm sóc (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c62",
+            "num": 62,
+            "standard": "TIÊU CHUẨN 23. Cải tiến chất lượng thực hành nội soi",
+            "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xây dựng được kế hoạch cải tiến trong hoạt động chăm sóc tại khoa, đơn vị (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Thực hiện kế hoạch cải tiến nâng cao (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá hiệu quả cải tiến đã được thực hiện (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_24",
+        "number": 24,
+        "title": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
+        "criteria": [
+          {
+            "id": "noisoi_c63",
+            "num": 63,
+            "standard": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
+            "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Xây dựng được mục tiêu công việc theo vị trí phân công (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hoàn thành 80% mục tiêu công việc đã được xác định (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Hoàn thành 100% mục tiêu công việc đã được xác định (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c64",
+            "num": 64,
+            "standard": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
+            "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
+            "desc": "Ưu tiên ca bệnh cấp cứu, tình huống khẩn cấp và công việc trọng tâm",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xác định được khối lượng công việc được giao trong ngày"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Sắp xếp thứ tự ưu tiên công việc hợp lý, xử lý tốt khi có phát sinh"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Quản lý thời gian xuất sắc, giải quyết công việc khoa học, không bị dồn ứ"
+              }
+            ]
+          },
+          {
+            "id": "noisoi_c65",
+            "num": 65,
+            "standard": "TIÊU CHUẨN 24. Quản lý chất lượng thực hành nội soi",
+            "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Có sự phân công vai trò của các thành viên trong nhóm chăm sóc (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có sự giám sát hỗ trợ cho các thành viên của nhóm chăm sóc (8điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự phân công, hỗ trợ và chia sẻ thông tin trong nhóm (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noisoi_std_25",
+        "number": 25,
+        "title": "TIÊU CHUẨN 25. Sự trải nghiệm nghề nghiệp",
+        "criteria": [
+          {
+            "id": "noisoi_c66",
+            "num": 66,
+            "standard": "TIÊU CHUẨN 25. Sự trải nghiệm nghề nghiệp",
+            "title": "Sự trải nghiệm nghề nghiệp (Thâm niên công tác)",
+            "desc": "Chọn 1 mức thâm niên công tác theo phân hạng bệnh viện",
+            "maxScore": 50,
+            "maxPoints": 50,
+            "options": [
+              {
+                "score": 10,
+                "level": "≤ 5 năm BV H2/3 (10đ)",
+                "text": "Thâm niên ≤ 5 năm tại bệnh viện hạng 2, hạng 3"
+              },
+              {
+                "score": 15,
+                "level": "6 - 9 năm BV H2 (15đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 20,
+                "level": "10 - 15 năm BV H2 (20đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 25,
+                "level": "≤ 5 năm BV ĐB/H1 hoặc >15 năm H2 (25đ)",
+                "text": "Thâm niên ≤ 5 năm tại BV hạng đặc biệt, hạng 1 (hoặc > 15 năm BV hạng 2)"
+              },
+              {
+                "score": 35,
+                "level": "6 - 9 năm BV ĐB/H1 (35đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 45,
+                "level": "10 - 15 năm BV ĐB/H1 (45đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 50,
+                "level": "> 15 năm BV ĐB/H1 (50đ)",
+                "text": "Thâm niên > 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+],
 
   "khambenh": [
-    {
-      "id": "khambenh_d1",
-      "code": "I.",
-      "name": "TIÊU CHUẨN BẰNG CẤP",
-      "maxPoints": 180,
-      "standards": [
-        {
-          "id": "khambenh_std_1",
-          "number": 1,
-          "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-          "criteria": [
-            {
-              "id": "khambenh_c1",
-              "num": 1,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "A. Trung học/Cao đẳng",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 70,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Mức 1",
-                  "text": "A. Trung học/Cao đẳng"
-                },
-                {
-                  "score": 70,
-                  "level": "Mức 2",
-                  "text": "B. Đại học"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c2",
-              "num": 2,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "Chuyên khoa 1/Thạc sĩ",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 40,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "Chuyên khoa 1/Thạc sĩ"
-                },
-                {
-                  "score": 40,
-                  "level": "Mức 2",
-                  "text": "Tiến sĩ"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_2",
-          "number": 2,
-          "title": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-          "criteria": [
-            {
-              "id": "khambenh_c3",
-              "num": 3,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Trong nước ≥ 1 năm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Trong nước ≥ 1 năm"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c4",
-              "num": 4,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Nước ngoài ≥ 6 tháng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Nước ngoài ≥ 6 tháng"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_3",
-          "number": 3,
-          "title": "TIÊU CHUẨN 3. Ngoại ngữ",
-          "criteria": [
-            {
-              "id": "khambenh_c5",
-              "num": 5,
-              "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
-              "title": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 3",
-                  "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_4",
-          "number": 4,
-          "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
-          "criteria": [
-            {
-              "id": "khambenh_c6",
-              "num": 6,
-              "standard": "TIÊU CHUẨN 4. Công nghệ thông tin",
-              "title": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "Sử dụng công nghệ thông tin nâng cao \r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "khambenh_d2",
-      "code": "II.",
-      "name": "NĂNG LỰC CHUYÊN MÔN",
-      "maxPoints": 450,
-      "standards": [
-        {
-          "id": "khambenh_std_5",
-          "number": 5,
-          "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-          "criteria": [
-            {
-              "id": "khambenh_c7",
-              "num": 7,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định tại cơ sở làm việc (thời gian làm việc, tuân thủ đồng phục, bảng tên)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định tại cơ sở làm việc (thời gian làm việc, tuân thủ đồng phục, bảng tên)"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c8",
-              "num": 8,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c9",
-              "num": 9,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định (không có phản ánh, góp ý về giao tiếp)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định (không có phản ánh, góp ý về giao tiếp)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_6",
-          "number": 6,
-          "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-          "criteria": [
-            {
-              "id": "khambenh_c10",
-              "num": 10,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định chăm sóc và can thiệp chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định chăm sóc và can thiệp chăm sóc"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c11",
-              "num": 11,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/người nhà và xã hội",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/người nhà và xã hội"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c12",
-              "num": 12,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_7",
-          "number": 7,
-          "title": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
-          "criteria": [
-            {
-              "id": "khambenh_c13",
-              "num": 13,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
-              "title": "Biết đánh giá tình trạng sức khỏe người bệnh (Quan sát người bệnh, báo bác sĩ ngay các trường hợp bất thường)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Biết đánh giá tình trạng sức khỏe người bệnh (Quan sát người bệnh, báo bác sĩ ngay các trường hợp bất thường)"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c14",
-              "num": 14,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
-              "title": "Biết sắp xếp điều phối ưu tiên",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Biết sắp xếp điều phối ưu tiên"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c15",
-              "num": 15,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
-              "title": "Chuẩn bị và sắp xếp các cận lâm sàng của người bệnh phù hợp với từng thời điểm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Chuẩn bị và sắp xếp các cận lâm sàng của người bệnh phù hợp với từng thời điểm"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c16",
-              "num": 16,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
-              "title": "Biết sắp xếp hướng dẫn người bệnh trước phòng chờ (điều \r\nphối)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Biết sắp xếp hướng dẫn người bệnh trước phòng chờ (điều \r\nphối)"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c17",
-              "num": 17,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
-              "title": "Tạo không gian chờ khám trật tự, gọn gàng, sạch sẽ",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tạo không gian chờ khám trật tự, gọn gàng, sạch sẽ"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_8",
-          "number": 8,
-          "title": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
-          "criteria": [
-            {
-              "id": "khambenh_c18",
-              "num": 18,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
-              "title": "Tuân thủ quy trình nhận dạng người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 30,
-              "options": [
-                {
-                  "score": 30,
-                  "level": "Đạt (30đ)",
-                  "text": "Tuân thủ quy trình nhận dạng người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c19",
-              "num": 19,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
-              "title": "Thực hiện đúng tất cả các quy trình vị trí được phân công và các quy trình chung của khoa, không có sai sót, sự cố chuyên môn",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Thực hiện đúng tất cả các quy trình vị trí được phân công và các quy trình chung của khoa, không có sai sót, sự cố chuyên môn"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c20",
-              "num": 20,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
-              "title": "Thao tác thuần thục và thực hiện tốt tất cả các quy trình tại 5 vị trí việc làm của khoa:\r\n* Bàn hướng dẫn - tư vấn khám bệnh\r\n* Đăng ký khám bệnh \r\n* Đo điện tim\r\n* Rửa mũi xoang\r\n* Bàn khám",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 30,
-              "options": [
-                {
-                  "score": 30,
-                  "level": "Đạt (30đ)",
-                  "text": "Thao tác thuần thục và thực hiện tốt tất cả các quy trình tại 5 vị trí việc làm của khoa:\r\n* Bàn hướng dẫn - tư vấn khám bệnh\r\n* Đăng ký khám bệnh \r\n* Đo điện tim\r\n* Rửa mũi xoang\r\n* Bàn khám"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_9",
-          "number": 9,
-          "title": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
-          "criteria": [
-            {
-              "id": "khambenh_c21",
-              "num": 21,
-              "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
-              "title": "Tuân thủ quy định khi dùng thuốc; hướng dẫn dùng thuốc đúng, an toàn khi nhập liệu bệnh án, toa thuốc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tuân thủ quy định khi dùng thuốc; hướng dẫn dùng thuốc đúng, an toàn khi nhập liệu bệnh án, toa thuốc"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c22",
-              "num": 22,
-              "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
-              "title": "Hiểu biết và nhận biết được sự tương tác giữa thuốc và thuốc, thuốc và thức ăn, thông báo cho bác sĩ những cảnh báo thuốc, quy định mã ICD, bảo hiểm y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu biết và nhận biết được sự tương tác giữa thuốc và thuốc, thuốc và thức ăn, thông báo cho bác sĩ những cảnh báo thuốc, quy định mã ICD, bảo hiểm y tế"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c23",
-              "num": 23,
-              "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
-              "title": "Phát hiện và biết cách xử lý ban đầu các tác hại không mong muốn của thuốc và thông tin kịp thời đến bác sĩ, điều dưỡng phụ trách thuốc, điều dưỡng trưởng khoa",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Phát hiện và biết cách xử lý ban đầu các tác hại không mong muốn của thuốc và thông tin kịp thời đến bác sĩ, điều dưỡng phụ trách thuốc, điều dưỡng trưởng khoa"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_10",
-          "number": 10,
-          "title": "TIÊU CHUẨN 10. Năng lực thực hiện CPR - Xử trí Ngất - Động kinh",
-          "criteria": [
-            {
-              "id": "khambenh_c24",
-              "num": 24,
-              "standard": "TIÊU CHUẨN 10. Năng lực thực hiện CPR - Xử trí Ngất - Động kinh",
-              "title": "Phát hiện sớm những thay đổi đột ngột về tình trạng sức khỏe của người bệnh",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "Phát hiện sớm những thay đổi đột ngột về tình trạng sức khỏe của người bệnh"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "Biết cách xử trí phù hợp và thông báo kịp thời đến người có trách nhiệm, yêu cầu hỗ trợ kịp thời"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 3",
-                  "text": "Thực hiện xử trí hiệu quả các trường hợp cấp cứu tại khoa, tham gia hỗ trợ và phối hợp tốt với các thành viên trong nhóm cấp cứu tại khoa"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_11",
-          "number": 11,
-          "title": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, hướng dẫn tận tình, tăng sự hài lòng",
-          "criteria": [
-            {
-              "id": "khambenh_c25",
-              "num": 25,
-              "standard": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, hướng dẫn tận tình, tăng sự hài lòng",
-              "title": "Người bệnh được tư vấn, hướng dẫn cụ thể: thực hiện cận lâm sàng, thanh toán bảo hiểm y tế, vị trí mua thuốc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 30,
-              "options": [
-                {
-                  "score": 30,
-                  "level": "Đạt (30đ)",
-                  "text": "Người bệnh được tư vấn, hướng dẫn cụ thể: thực hiện cận lâm sàng, thanh toán bảo hiểm y tế, vị trí mua thuốc"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c26",
-              "num": 26,
-              "standard": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, hướng dẫn tận tình, tăng sự hài lòng",
-              "title": "Hướng dẫn thao tác và thực hiện:\r\n- Các hình thức thanh toán không dùng tiền mặt\r\n- Các hình thức đăng ký khám bệnh trước ngày khám và trong ngày khám",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 30,
-              "options": [
-                {
-                  "score": 30,
-                  "level": "Đạt (30đ)",
-                  "text": "Hướng dẫn thao tác và thực hiện:\r\n- Các hình thức thanh toán không dùng tiền mặt\r\n- Các hình thức đăng ký khám bệnh trước ngày khám và trong ngày khám"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_12",
-          "number": 12,
-          "title": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
-          "criteria": [
-            {
-              "id": "khambenh_c27",
-              "num": 27,
-              "standard": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
-              "title": "Giải quyết tình huống đúng theo quy trình khi người bệnh báo \"Dị ứng thuốc\"",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Giải quyết tình huống đúng theo quy trình khi người bệnh báo \"Dị ứng thuốc\""
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c28",
-              "num": 28,
-              "standard": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
-              "title": "Giải quyết tình huống đúng theo quy trình khi người bệnh yêu cầu \"Hoàn thuốc\", \"Hoàn tiền\"",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Giải quyết tình huống đúng theo quy trình khi người bệnh yêu cầu \"Hoàn thuốc\", \"Hoàn tiền\""
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c29",
-              "num": 29,
-              "standard": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
-              "title": "Giải quyết các tình huống liên quan đến bảo hiểm y tế, bảo hiểm xã hội tại các vị trí công việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Giải quyết các tình huống liên quan đến bảo hiểm y tế, bảo hiểm xã hội tại các vị trí công việc"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_13",
-          "number": 13,
-          "title": "TIÊU CHUẨN 13. Thực hành 5S",
-          "criteria": [
-            {
-              "id": "khambenh_c30",
-              "num": 30,
-              "standard": "TIÊU CHUẨN 13. Thực hành 5S",
-              "title": "Thực hiện đúng quy định 5S (không bị nhắc nhở, duy trì thực hiện tốt)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Thực hiện đúng quy định 5S (không bị nhắc nhở, duy trì thực hiện tốt)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_14",
-          "number": 14,
-          "title": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-          "criteria": [
-            {
-              "id": "khambenh_c31",
-              "num": 31,
-              "standard": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-              "title": "Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên; không có phản ánh về thái độ giao tiếp ứng xử",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 40,
-              "options": [
-                {
-                  "score": 40,
-                  "level": "Đạt (40đ)",
-                  "text": "Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên; không có phản ánh về thái độ giao tiếp ứng xử"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c32",
-              "num": 32,
-              "standard": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-              "title": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả;\r\nChủ động chia sẻ những thông tin và phản hồi thường xuyên với đồng nghiệp và khách hàng bên trong (bác sĩ, điều dưỡng, hộ lý)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả;\r\nChủ động chia sẻ những thông tin và phản hồi thường xuyên với đồng nghiệp và khách hàng bên trong (bác sĩ, điều dưỡng, hộ lý)"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c33",
-              "num": 33,
-              "standard": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-              "title": "Cam kết bảo mật thông tin bên trong và bên ngoài",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Cam kết bảo mật thông tin bên trong và bên ngoài"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "khambenh_d3",
-      "code": "III.",
-      "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
-      "maxPoints": 120,
-      "standards": [
-        {
-          "id": "khambenh_std_15",
-          "number": 15,
-          "title": "TIÊU CHUẨN 15. Đào tạo",
-          "criteria": [
-            {
-              "id": "khambenh_c34",
-              "num": 34,
-              "standard": "TIÊU CHUẨN 15. Đào tạo",
-              "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c35",
-              "num": 35,
-              "standard": "TIÊU CHUẨN 15. Đào tạo",
-              "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c36",
-              "num": 36,
-              "standard": "TIÊU CHUẨN 15. Đào tạo",
-              "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c37",
-              "num": 37,
-              "standard": "TIÊU CHUẨN 15. Đào tạo",
-              "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c38",
-              "num": 38,
-              "standard": "TIÊU CHUẨN 15. Đào tạo",
-              "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c39",
-              "num": 39,
-              "standard": "TIÊU CHUẨN 15. Đào tạo",
-              "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_16",
-          "number": 16,
-          "title": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
-          "criteria": [
-            {
-              "id": "khambenh_c40",
-              "num": 40,
-              "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
-              "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c41",
-              "num": 41,
-              "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
-              "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c42",
-              "num": 42,
-              "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
-              "desc": "Chọn 1 thành tích cao nhất",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c43",
-              "num": 43,
-              "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c44",
-              "num": 44,
-              "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
-              "title": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_17",
-          "number": 17,
-          "title": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
-          "criteria": [
-            {
-              "id": "khambenh_c45",
-              "num": 45,
-              "standard": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
-              "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c46",
-              "num": 46,
-              "standard": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
-              "title": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c47",
-              "num": 47,
-              "standard": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
-              "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "khambenh_d4",
-      "code": "IV.",
-      "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
-      "maxPoints": 100,
-      "standards": [
-        {
-          "id": "khambenh_std_18",
-          "number": 18,
-          "title": "TTIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-          "criteria": [
-            {
-              "id": "khambenh_c48",
-              "num": 48,
-              "standard": "TTIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư tại các vị trí việc làm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư tại các vị trí việc làm"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c49",
-              "num": 49,
-              "standard": "TTIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Đề xuất các thiết bị, vật tư phù hợp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Đề xuất các thiết bị, vật tư phù hợp"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c50",
-              "num": 50,
-              "standard": "TTIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Lập kế hoạch bảo quản trang thiết bị, sử dụng vật tư một cách hiệu quả, tiết kiệm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Lập kế hoạch bảo quản trang thiết bị, sử dụng vật tư một cách hiệu quả, tiết kiệm"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c51",
-              "num": 51,
-              "standard": "TTIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_19",
-          "number": 19,
-          "title": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
-          "criteria": [
-            {
-              "id": "khambenh_c52",
-              "num": 52,
-              "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
-              "title": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c53",
-              "num": 53,
-              "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
-              "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c54",
-              "num": 54,
-              "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
-              "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c55",
-              "num": 55,
-              "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
-              "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_20",
-          "number": 20,
-          "title": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
-          "criteria": [
-            {
-              "id": "khambenh_c56",
-              "num": 56,
-              "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Thiết lập các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thiết lập các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c57",
-              "num": 57,
-              "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c58",
-              "num": 58,
-              "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c59",
-              "num": 59,
-              "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c60",
-              "num": 60,
-              "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "khambenh_d5",
-      "code": "V.",
-      "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
-      "maxPoints": 150,
-      "standards": [
-        {
-          "id": "khambenh_std_21",
-          "number": 21,
-          "title": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-          "criteria": [
-            {
-              "id": "khambenh_c61",
-              "num": 61,
-              "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c62",
-              "num": 62,
-              "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c63",
-              "num": 63,
-              "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c64",
-              "num": 64,
-              "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_22",
-          "number": 22,
-          "title": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
-          "criteria": [
-            {
-              "id": "khambenh_c65",
-              "num": 65,
-              "standard": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
-              "title": "Hiểu được sự cần thiết về các hoạt động luôn đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu được sự cần thiết về các hoạt động luôn đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c66",
-              "num": 66,
-              "standard": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
-              "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c67",
-              "num": 67,
-              "standard": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
-              "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_23",
-          "number": 23,
-          "title": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
-          "criteria": [
-            {
-              "id": "khambenh_c68",
-              "num": 68,
-              "standard": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
-              "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c69",
-              "num": 69,
-              "standard": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
-              "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý"
-                }
-              ]
-            },
-            {
-              "id": "khambenh_c70",
-              "num": 70,
-              "standard": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
-              "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm làm việc một cách khoa học, hợp lý, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm làm việc một cách khoa học, hợp lý, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "khambenh_std_24",
-          "number": 24,
-          "title": "TIÊU CHUẨN 24. Sự trải nghiệm nghề nghiệp",
-          "criteria": [
-            {
-              "id": "khambenh_c71",
-              "num": 71,
-              "standard": "TIÊU CHUẨN 24. Sự trải nghiệm nghề nghiệp",
-              "title": "BV hạng đặc biệt, hạng 1",
-              "desc": "≤ 5 \r\nnăm",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "BV hạng 2, 3"
-                },
-                {
-                  "score": 35,
-                  "level": "Mức 3",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 4",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 45,
-                  "level": "Mức 5",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 6",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 7",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 25,
-                  "level": "Mức 8",
-                  "text": "BV hạng 2"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  {
+    "id": "khambenh_d1",
+    "code": "I.",
+    "name": "TIÊU CHUẨN BẰNG CẤP",
+    "maxPoints": 180,
+    "standards": [
+      {
+        "id": "khambenh_std_1",
+        "number": 1,
+        "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+        "criteria": [
+          {
+            "id": "khambenh_c1",
+            "num": 1,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp chuyên môn Điều dưỡng",
+            "desc": "Chọn 1 năng lực phù hợp nhất theo bằng cấp chuyên môn cao nhất",
+            "maxScore": 100,
+            "maxPoints": 100,
+            "options": [
+              {
+                "score": 15,
+                "level": "CĐ/TH Khác (15đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng từ ĐH Nguyễn Tất Thành hoặc trường khác"
+              },
+              {
+                "score": 20,
+                "level": "CĐ/TH Hồng Bàng (20đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng từ ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 25,
+                "level": "CĐ/TH Phạm Ngọc Thạch (25đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng từ ĐH Y khoa Phạm Ngọc Thạch"
+              },
+              {
+                "score": 30,
+                "level": "CĐ/TH ĐHYD TPHCM (30đ)",
+                "text": "Cao đẳng/Trung học Điều dưỡng ĐHYD TP HCM"
+              },
+              {
+                "score": 50,
+                "level": "ĐH Nhóm 1 (50đ)",
+                "text": "ĐH Y Dược Huế, ĐH Y Dược Cần Thơ, ĐH Điều dưỡng Nam Định, ĐH Nguyễn Tất Thành, trường ĐH khác"
+              },
+              {
+                "score": 60,
+                "level": "ĐH Hồng Bàng (60đ)",
+                "text": "ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 70,
+                "level": "ĐH YHN/PNT/Yersin (70đ)",
+                "text": "ĐH Y Hà Nội, ĐH Y khoa Phạm Ngọc Thạch, ĐH Yersin"
+              },
+              {
+                "score": 80,
+                "level": "ĐH Miền Đông (80đ)",
+                "text": "ĐH Quốc tế Miền Đông"
+              },
+              {
+                "score": 90,
+                "level": "ĐHYD TPHCM (90đ)",
+                "text": "Đại học Y Dược TPHCM"
+              },
+              {
+                "score": 100,
+                "level": "ĐH Quốc Tế (100đ)",
+                "text": "ĐH Điều dưỡng từ Châu Âu (trừ Đông Âu), Mỹ, Canada, New Zealand, Úc, Nhật Bản, Hàn Quốc, Singapore, Đài Loan, Malaysia"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c2",
+            "num": 2,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp Sau đại học",
+            "desc": "Chọn 1 năng lực phù hợp nhất nếu có bằng sau đại học",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 25,
+                "level": "CK1 / Thạc sĩ (25đ)",
+                "text": "Chuyên khoa 1 / Thạc sĩ chuyên ngành Điều dưỡng"
+              },
+              {
+                "score": 40,
+                "level": "Tiến sĩ (40đ)",
+                "text": "Tiến sĩ chuyên ngành Y Dược / Điều dưỡng"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_2",
+        "number": 2,
+        "title": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+        "criteria": [
+          {
+            "id": "khambenh_c3",
+            "num": 3,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận chuyên khoa trong nước",
+            "desc": "Có chứng chỉ chuyên khoa đào tạo trong nước",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Đạt (5đ)",
+                "text": "Chứng nhận / chứng chỉ chuyên khoa trong nước ≥ 1 năm"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c4",
+            "num": 4,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận đào tạo nước ngoài",
+            "desc": "Có chứng chỉ đào tạo tại nước ngoài",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Đạt (10đ)",
+                "text": "Chứng nhận / chứng chỉ đào tạo nước ngoài ≥ 6 tháng"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_3",
+        "number": 3,
+        "title": "TIÊU CHUẨN 3. Ngoại ngữ",
+        "criteria": [
+          {
+            "id": "khambenh_c5",
+            "num": 5,
+            "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
+            "title": "Trình độ Ngoại ngữ",
+            "desc": "Chọn 1 mức ngoại ngữ phù hợp nhất",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Bậc 1 (5đ)",
+                "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
+              },
+              {
+                "score": 10,
+                "level": "Bậc 2 (10đ)",
+                "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
+              },
+              {
+                "score": 15,
+                "level": "Bậc 3 (15đ)",
+                "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_4",
+        "number": 4,
+        "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
+        "criteria": [
+          {
+            "id": "khambenh_c6",
+            "num": 6,
+            "standard": "TIÊU CHUẨN 4. Tin học",
+            "title": "Kỹ năng Công nghệ thông tin",
+            "desc": "Theo Thông tư số 03/2014/TT-BTTTT",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Cơ bản (5đ)",
+                "text": "Sử dụng công nghệ thông tin cơ bản (Theo Thông tư số 03/2014/TT-BTTTT)"
+              },
+              {
+                "score": 10,
+                "level": "Nâng cao (10đ)",
+                "text": "Sử dụng công nghệ thông tin nâng cao, thành thạo phần mềm chuyên ngành"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "khambenh_d2",
+    "code": "II.",
+    "name": "NĂNG LỰC CHUYÊN MÔN",
+    "maxPoints": 450,
+    "standards": [
+      {
+        "id": "khambenh_std_5",
+        "number": 5,
+        "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+        "criteria": [
+          {
+            "id": "khambenh_c7",
+            "num": 7,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định tại cơ sở làm việc (thời gian làm việc, tuân thủ đồng phục, bảng tên)",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c8",
+            "num": 8,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c9",
+            "num": 9,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định (không có phản ánh, góp ý về giao tiếp)",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Phối hợp với đồng nghiệp nhưng chưa chủ động hoặc do được yêu cầu Quan hệ, giao tiếp tốt với đồng nghiệp, NB (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chủ động phối hợp với đồng nghiệp để giải quyết công việc Hòa nhã, vui vẻ, sẵn sàng hỗ trợ với đồng nghiệp, khách hàng/NB (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Phối hợp công việc 1 cách nhanh nhẹn, hiệu quả Ứng xử nhanh nhẹn, giải quyết mọi vấn đề, quan hệ tốt với đồng nghiệp trong và ngoài đơn vị Giao tiếp tốt với NB, chăm sóc được NB khó tính (5 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_6",
+        "number": 6,
+        "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+        "criteria": [
+          {
+            "id": "khambenh_c10",
+            "num": 10,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định chăm sóc và can thiệp chăm sóc",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Tự ra quyết định kế hoạch chăm sóc và can thiệp cho NB (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có trách nhiệm trong công tác Tự giác nhận trách nhiệm khi có những sai sót (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c11",
+            "num": 11,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/người nhà và xã hội",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c12",
+            "num": 12,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_7",
+        "number": 7,
+        "title": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
+        "criteria": [
+          {
+            "id": "khambenh_c13",
+            "num": 13,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
+            "title": "Biết đánh giá tình trạng sức khỏe người bệnh (Quan sát người bệnh, báo bác sĩ ngay các trường hợp bất thường)",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 3,
+                "level": "4 lần vi phạm (3đ)",
+                "text": "4 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "3 lần vi phạm (6đ)",
+                "text": "3 lần vi phạm (6 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "2 lần vi phạm (9đ)",
+                "text": "2 lần vi phạm (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "1 lần vi phạm (12đ)",
+                "text": "1 lần vi phạm (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "0 lần vi phạm (15đ)",
+                "text": "0 lần vi phạm (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c14",
+            "num": 14,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
+            "title": "Biết sắp xếp điều phối ưu tiên",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 3,
+                "level": "4 lần vi phạm (3đ)",
+                "text": "4 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "3 lần vi phạm (6đ)",
+                "text": "3 lần vi phạm (6 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "2 lần vi phạm (9đ)",
+                "text": "2 lần vi phạm (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "1 lần vi phạm (12đ)",
+                "text": "1 lần vi phạm (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "0 lần vi phạm (15đ)",
+                "text": "0 lần vi phạm (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c15",
+            "num": 15,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
+            "title": "Chuẩn bị và sắp xếp các cận lâm sàng của người bệnh phù hợp với từng thời điểm",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 3,
+                "level": "4 lần vi phạm (3đ)",
+                "text": "4 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "3 lần vi phạm (6đ)",
+                "text": "3 lần vi phạm (6 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "2 lần vi phạm (9đ)",
+                "text": "2 lần vi phạm (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "1 lần vi phạm (12đ)",
+                "text": "1 lần vi phạm (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "0 lần vi phạm (15đ)",
+                "text": "0 lần vi phạm (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c16",
+            "num": 16,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
+            "title": "Biết sắp xếp hướng dẫn người bệnh trước phòng chờ (điều phối)",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 3,
+                "level": "4 lần vi phạm (3đ)",
+                "text": "4 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "3 lần vi phạm (6đ)",
+                "text": "3 lần vi phạm (6 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "2 lần vi phạm (9đ)",
+                "text": "2 lần vi phạm (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "1 lần vi phạm (12đ)",
+                "text": "1 lần vi phạm (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "0 lần vi phạm (15đ)",
+                "text": "0 lần vi phạm (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c17",
+            "num": 17,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về tình trạng sức khỏe và về người bệnh",
+            "title": "Tạo không gian chờ khám trật tự, gọn gàng, sạch sẽ",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "4 lần vi phạm (2đ)",
+                "text": "4 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "3 lần vi phạm (4đ)",
+                "text": "3 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "2 lần vi phạm (6đ)",
+                "text": "2 lần vi phạm (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "1 lần vi phạm (8đ)",
+                "text": "1 lần vi phạm (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "0 lần vi phạm (10đ)",
+                "text": "0 lần vi phạm (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_8",
+        "number": 8,
+        "title": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
+        "criteria": [
+          {
+            "id": "khambenh_c18",
+            "num": 18,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
+            "title": "Tuân thủ quy trình nhận dạng người bệnh",
+            "desc": "",
+            "maxScore": 30,
+            "maxPoints": 30,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "vi phạm > 2 lần/tháng (0 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "1 lần vi phạm (10đ)",
+                "text": "vi phạm 1 lần/tháng (10 điểm)"
+              },
+              {
+                "score": 30,
+                "level": "0 lần vi phạm (30đ)",
+                "text": "không vi phạm (30 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c19",
+            "num": 19,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
+            "title": "Thực hiện đúng tất cả các quy trình vị trí được phân công và các quy trình chung của khoa, không có sai sót, sự cố chuyên môn",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "vi phạm > 2 lần/tháng (0 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "1 lần vi phạm (10đ)",
+                "text": "vi phạm 1 lần/tháng (10 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "0 lần vi phạm (20đ)",
+                "text": "không vi phạm (20 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c20",
+            "num": 20,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hành tại Khoa Khám bệnh",
+            "title": "Thao tác thuần thục và thực hiện tốt tất cả các quy trình tại 5 vị trí việc làm của khoa: * Bàn hướng dẫn - tư vấn khám bệnh * Đăng ký khám bệnh * Đo điện tim * Rửa mũi xoang * Bàn khám",
+            "desc": "",
+            "maxScore": 30,
+            "maxPoints": 30,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "vi phạm > 2 lần/tháng (0 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "1 lần vi phạm (10đ)",
+                "text": "vi phạm 1 lần/tháng (10 điểm)"
+              },
+              {
+                "score": 30,
+                "level": "0 lần vi phạm (30đ)",
+                "text": "không vi phạm (30 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_9",
+        "number": 9,
+        "title": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
+        "criteria": [
+          {
+            "id": "khambenh_c21",
+            "num": 21,
+            "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
+            "title": "Tuân thủ quy định khi dùng thuốc; hướng dẫn dùng thuốc đúng, an toàn khi nhập liệu bệnh án, toa thuốc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không đạt yêu cầu (0 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Đạt 50% (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt 100% (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c22",
+            "num": 22,
+            "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
+            "title": "Hiểu biết và nhận biết được sự tương tác giữa thuốc và thuốc, thuốc và thức ăn, thông báo cho bác sĩ những cảnh báo thuốc, quy định mã ICD, bảo hiểm y tế",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không đạt yêu cầu (0 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Đạt 50% (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt 100% (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c23",
+            "num": 23,
+            "standard": "TIÊU CHUẨN 9. Năng lực dùng thuốc an toàn, hiệu quả",
+            "title": "Phát hiện và biết cách xử lý ban đầu các tác hại không mong muốn của thuốc và thông tin kịp thời đến bác sĩ, điều dưỡng phụ trách thuốc, điều dưỡng trưởng khoa",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không đạt yêu cầu (0 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Đạt 50% (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt 100% (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_10",
+        "number": 10,
+        "title": "TIÊU CHUẨN 10. Năng lực thực hiện CPR - Xử trí Ngất - Động kinh",
+        "criteria": [
+          {
+            "id": "khambenh_c24",
+            "num": 24,
+            "standard": "TIÊU CHUẨN 10. Năng lực thực hiện CPR - Xử trí Ngất - Động kinh",
+            "title": "Phát hiện sớm những thay đổi đột ngột về tình trạng sức khỏe của người bệnh",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Biết cách nhận biết và ghi nhận sự thay đổi của tri giác, dấu hiệu sinh tồn và các dấu hiệu đe dọa tính mạng của NB"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_11",
+        "number": 11,
+        "title": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, hướng dẫn tận tình, tăng sự hài lòng",
+        "criteria": [
+          {
+            "id": "khambenh_c25",
+            "num": 25,
+            "standard": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, hướng dẫn tận tình, tăng sự hài lòng",
+            "title": "Người bệnh được tư vấn, hướng dẫn cụ thể: thực hiện cận lâm sàng, thanh toán bảo hiểm y tế, vị trí mua thuốc",
+            "desc": "",
+            "maxScore": 30,
+            "maxPoints": 30,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không đạt (0 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đạt 50% (10 điểm)"
+              },
+              {
+                "score": 30,
+                "level": "Mức 3 (30đ)",
+                "text": "Đạt 100% (30 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c26",
+            "num": 26,
+            "standard": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, hướng dẫn tận tình, tăng sự hài lòng",
+            "title": "Hướng dẫn thao tác và thực hiện: - Các hình thức thanh toán không dùng tiền mặt - Các hình thức đăng ký khám bệnh trước ngày khám và trong ngày khám",
+            "desc": "",
+            "maxScore": 30,
+            "maxPoints": 30,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không đạt (0 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đạt 50% (10 điểm)"
+              },
+              {
+                "score": 30,
+                "level": "Mức 3 (30đ)",
+                "text": "Đạt 100% (30 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_12",
+        "number": 12,
+        "title": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
+        "criteria": [
+          {
+            "id": "khambenh_c27",
+            "num": 27,
+            "standard": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
+            "title": "Giải quyết tình huống đúng theo quy trình khi người bệnh báo \"Dị ứng thuốc\"",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không biết cách giải quyết (0đ)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Có sự hướng dẫn (10đ)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 3 (20đ)",
+                "text": "Xử lý độc lập (20đ)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c28",
+            "num": 28,
+            "standard": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
+            "title": "Giải quyết tình huống đúng theo quy trình khi người bệnh yêu cầu \"Hoàn thuốc\", \"Hoàn tiền\"",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không biết cách giải quyết (0đ)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Có sự hướng dẫn (10đ)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 3 (20đ)",
+                "text": "Xử lý độc lập (20đ)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c29",
+            "num": 29,
+            "standard": "TIÊU CHUẨN 12. Năng lực xử lý tình huống tại khoa",
+            "title": "Giải quyết các tình huống liên quan đến bảo hiểm y tế, bảo hiểm xã hội tại các vị trí công việc",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không biết cách giải quyết (0đ)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Có sự hướng dẫn (10đ)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 3 (20đ)",
+                "text": "Xử lý độc lập (20đ)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_13",
+        "number": 13,
+        "title": "TIÊU CHUẨN 13. Thực hành 5S",
+        "criteria": [
+          {
+            "id": "khambenh_c30",
+            "num": 30,
+            "standard": "TIÊU CHUẨN 13. Thực hành 5S",
+            "title": "Thực hiện đúng quy định 5S (không bị nhắc nhở, duy trì thực hiện tốt)",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Nhắc nhở lần 4 (0đ)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Nhắc nhở lần 3 (5đ)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Nhắc nhở lần 2 (10đ)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 4 (15đ)",
+                "text": "Nhắc nhở lần 1 (15đ)"
+              },
+              {
+                "score": 20,
+                "level": "0 lần vi phạm (20đ)",
+                "text": "Không vi phạm (20đ)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_14",
+        "number": 14,
+        "title": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+        "criteria": [
+          {
+            "id": "khambenh_c31",
+            "num": 31,
+            "standard": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+            "title": "Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên; không có phản ánh về thái độ giao tiếp ứng xử",
+            "desc": "",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 20,
+                "level": "Mức 1 (20đ)",
+                "text": "Phản ánh đường dây nóng (- 20đ)"
+              },
+              {
+                "score": 0,
+                "level": "Mức 2 (0đ)",
+                "text": "Thái độ giao tiếp không thân thiện (0đ)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 3 (20đ)",
+                "text": "Giao tiếp không dùng danh xưng (20đ)"
+              },
+              {
+                "score": 40,
+                "level": "Mức 4 (40đ)",
+                "text": "Giao tiếp hiệu quả (40đ)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c32",
+            "num": 32,
+            "standard": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+            "title": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả; Chủ động chia sẻ những thông tin và phản hồi thường xuyên với đồng nghiệp và khách hàng bên trong (bác sĩ, điều dưỡng, hộ lý)",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không đạt (0 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đạt 50% (10 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 3 (20đ)",
+                "text": "Đạt 100% (20 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c33",
+            "num": 33,
+            "standard": "TIÊU CHUẨN 14. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+            "title": "Cam kết bảo mật thông tin bên trong và bên ngoài",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Không đạt (0 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đạt 50% (10 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 3 (20đ)",
+                "text": "Đạt 100% (20 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "khambenh_d3",
+    "code": "III.",
+    "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
+    "maxPoints": 120,
+    "standards": [
+      {
+        "id": "khambenh_std_15",
+        "number": 15,
+        "title": "TIÊU CHUẨN 15. Đào tạo",
+        "criteria": [
+          {
+            "id": "khambenh_c34",
+            "num": 34,
+            "standard": "TIÊU CHUẨN 15. Đào tạo",
+            "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hướng dẫn trong tìm hiểu, phân tích mối tương quan giữa nhu cầu đào tạo với trình độ, vị trí làm việc; (3điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc; Đề xuất được các giải pháp dựa trên kết quả báo cáo. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c35",
+            "num": 35,
+            "standard": "TIÊU CHUẨN 15. Đào tạo",
+            "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Cần sự hỗ trợ trong xây dựng phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có phương pháp đào tạo phù hợp với nội dung, yêu cầu của nội dung đào tạo. Vận dụng được phương pháp đào tạo phù hợp với hoàn cảnh đào tạo. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự thay đổi thường xuyên các chương trình, nội dung đào tạo hàng năm Vận dụng đa dạng trên ba phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c36",
+            "num": 36,
+            "standard": "TIÊU CHUẨN 15. Đào tạo",
+            "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần hướng dẫn trong xây dựng nội dung kế hoạch, chương trình đào tạo để đạt yêu cầu thẩm định nội dung. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Kế hoạch, chương trình đào tạo đạt yêu cầu thẩm định nội dung. Có công cụ, phương pháp đánh giá chất lượng thông qua đo lường kiến thức / thái độ / kỹ năng của học viên sau đào tạo (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Kế hoạch, chương trình đào tạo đạt yêu cầu thẩm định nội dung. Có đánh giá chất lượng và báo cáo kết quả thông qua đo lường kiến thức / thái độ / kỹ năng của học viên sau đào tạo Kế hoạch đào tạo có tác động thay đổi đến kiến thức / thực hành / trình độ của nguồn nhân lực (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c37",
+            "num": 37,
+            "standard": "TIÊU CHUẨN 15. Đào tạo",
+            "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch; Có chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Đưa ra được điểm yếu từ kết quả đánh giá. Cần hướng dẫn trong lập kế hoạch cải tiến chất lượng đào tạo. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Diễn giải, phân tích được điểm mạnh và điểm yếu từ kết quả đánh giá. Lập kế hoạch cải tiến chất lượng đào tạo. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Phân tích được điểm mạnh và điểm yếu từ kết quả đánh giá đào tạo. Thực hiện kế hoạch, đánh giá và báo cáo kết quả cải tiến chất lượng đào tạo. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c38",
+            "num": 38,
+            "standard": "TIÊU CHUẨN 15. Đào tạo",
+            "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hướng dẫn liên tục, thường xuyên trong việc tìm, xây dựng công cụ, phương pháp đánh giá kiến thức của học viên. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập đưa ra được công cụ, phương pháp trong đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Ứng dụng một phương pháp, công cụ đánh giá kiến thức học viên. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Tự tin, thành thạo trong áp dụng công cụ, phương pháp đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Vận dụng trên hai công cụ đánh giá, đo lường kiến thức học viên. Giải thích được cơ sở khoa học cho phương pháp đánh giá. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c39",
+            "num": 39,
+            "standard": "TIÊU CHUẨN 15. Đào tạo",
+            "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "có tham gia ⭢ đạt 5 điểm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_16",
+        "number": 16,
+        "title": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
+        "criteria": [
+          {
+            "id": "khambenh_c40",
+            "num": 40,
+            "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
+            "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia NCKH với vai trò đối tượng lấy mẫu (2 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Có được đào tạo cơ bản về NCKH và tham gia NCKH với vai trò người đi lấy mẫu (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Có chứng chỉ/ chứng nhận đào tạo chuyên về NCKH và là thành viên của nhóm thực hiện đề tài NCKH (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia viết đề cương nghiên cứu khoa học (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c41",
+            "num": 41,
+            "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
+            "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị Biết sử dụng phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …) nhưng cần sử hỗ trợ (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Biết sử dụng thành thạo phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …) (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Có khả năng hướng dẫn các phần mềm nhập liệu và phân tích số liệu trong NCKH (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c42",
+            "num": 42,
+            "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
+            "desc": "Chọn 1 thành tích cao nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được phê duyệt đề cương và đang thực hiện. (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được công nhận (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 3 năm. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 1 năm. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c43",
+            "num": 43,
+            "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm); Hoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có tham gia ít nhất 2 đề tài NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện (5 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "Mức 2 (9đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài NCKH đã hoàn thành đang trong quá trình chờ thẩm định (9 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài NCKH đã được phê duyệt đề cương và đang thực hiện. (10 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 4 (12đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 2 năm (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 5 (15đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước và được mời báo cáo hội nghị điều dưỡng ít nhất 2 lần về đề tài đã công bố trong vòng 2 năm (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c44",
+            "num": 44,
+            "standard": "TIÊU CHUẨN 16. Nghiên cứu khoa học",
+            "title": "Đăng bài báo nước ngoài Hoặc chủ nhiệm đề tài cấp Nhà nước",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc đang tham gia đề tài cấp nhà nước, đề tài đã được phê duyệt đề cương và đang trong quá trình hoàn tất (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đnag chờ thẩm định (8 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đang chờ thẩm định (12 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận trong vòng 5 năm (16 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận và mời báo cáo trong các hội nghị quốc tế ít nhất 1 lần về đề tài trong vòng 5 năm (20 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_17",
+        "number": 17,
+        "title": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
+        "criteria": [
+          {
+            "id": "khambenh_c45",
+            "num": 45,
+            "standard": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
+            "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã hoàn thành, đang chờ thẩm định. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được công nhận. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được phân tích và đánh giá khả năng áp dụng (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c46",
+            "num": 46,
+            "standard": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
+            "title": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp có kế hoạch áp dụng tại ít nhất 1 khoa/ 1 nhóm đối tượng liên quan. (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan và đánh giá kết quả áp dụng (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc được đánh giá hiệu quả áp dụng (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc được đánh giá hiệu quả áp dụng và được áp dụng toàn viện (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c47",
+            "num": 47,
+            "standard": "TIÊU CHUẨN 17. Thực hành dựa trên bằng chứng",
+            "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được bệnh viện/ trường công nhận và được giải thưởng của trường/ bệnh viện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được nhận giải thưởng uy tín trong nước (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước. Đang trong quá trình đăng ký bản quyền sở hữu trí tuệ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Kết quả NCKH/SKCT, phát minh mới được đăng ký bản quyền sở hữu trí tuệ trong vòng 2 năm (10 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "khambenh_d4",
+    "code": "IV.",
+    "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
+    "maxPoints": 100,
+    "standards": [
+      {
+        "id": "khambenh_std_18",
+        "number": 18,
+        "title": "TIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+        "criteria": [
+          {
+            "id": "khambenh_c48",
+            "num": 48,
+            "standard": "TIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư tại các vị trí việc làm",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "Mức 1 (1đ)",
+                "text": "Biết được: các loại máy, VTYT tại khoa (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "Mức 2 (2đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa cần sự hỗ trợ thường xuyên. (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "Mức 3 (3đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa thỉnh thoảng cần sự hỗ trợ. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 4 (4đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa một cách độc lập. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 5 (5đ)",
+                "text": "Có khả năng hướng dẩn quy trình, quy định về sử dụng, vận hành các trang thiết bị, VTYT tại khoa. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c49",
+            "num": 49,
+            "standard": "TIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Đề xuất các thiết bị, vật tư phù hợp",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị và vật tư phù hợp với chăm sóc bệnh nhân dựa trên bằng chứng khoa học. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị và vật tư phù hợp với chăm sóc bệnh nhân dựa trên bằng chứng khoa học và có thực hiện đánh giá tại khoa đơn vị (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các VTYT, trang thiết bị dựa trên bằng chứng khoa học và đánh giá thực tế tại khoa, đon vị (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c50",
+            "num": 50,
+            "standard": "TIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Lập kế hoạch bảo quản trang thiết bị, sử dụng vật tư một cách hiệu quả, tiết kiệm",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Lập được kế hoạch bảo quản trang thiết bị, vật tư (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đảm bảo thực hiện kế hoạch đúng tiến độ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sáng kiến cải tiến trong bảo quản trang thiết bị, vật tư (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c51",
+            "num": 51,
+            "standard": "TIÊU CHUẨN 18. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Vận dụng thành thạo và xử lý các vấn đề phát sinh trong quá trình sử dụng các trang thiết bị, VTYT tại khoa (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hiểu rõ nguyên lý hoạt động và phòng ngửa các sự cố liên quan đến việc sử dụng trang thiết bị (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá, đo lường việc sử dụng, và đề xuất cải tiến chất lượng an toàn và hiệu quả. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_19",
+        "number": 19,
+        "title": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
+        "criteria": [
+          {
+            "id": "khambenh_c52",
+            "num": 52,
+            "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
+            "title": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của một biện pháp, lĩnh vực chăm sóc tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của một biện pháp, lĩnh vực chăm sóc tại các khoa có nhu cầu. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c53",
+            "num": 53,
+            "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
+            "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có đánh giá, phân tích nhu cầu nguồn nhân lực phục vụ cho công tác chăm sóc hiệu quả (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Xây dựng được kế hoạch phân bổ nguồn nhân lực phù hợp nhu cầu chăm sóc tại khoa, đơn vị. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c54",
+            "num": 54,
+            "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
+            "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có kế hoạch quản lý và dự toán nguồn tài chính phục vụ cho chăm sóc tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Triển khai đánh giá và đo lường hiệu quả của kế hoạch. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c55",
+            "num": 55,
+            "standard": "TIÊU CHUẨN 19. Sử dụng nguồn tài chính phù hợp và hiệu quả",
+            "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Triển khai và báo cáo kết quả đề án cải tiến tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đề án được thẩm định và công nhận hiệu quả bởi Hội đồng chuyên môn. Được triển khai ứng dụng tại bệnh viện. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_20",
+        "number": 20,
+        "title": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
+        "criteria": [
+          {
+            "id": "khambenh_c56",
+            "num": 56,
+            "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Thiết lập các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn lao động, sức khỏe nghề nghiệp (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có phổ biến, triển khai cho đồng nghiệp các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các giải pháp bảo vệ sức khỏe nghề nghiệp và tăng cường lao động. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c57",
+            "num": 57,
+            "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Có trường hợp không tuân thủ → 0 điểm"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c58",
+            "num": 58,
+            "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Tuân thủ theo các quy trình về kiểm soát nhiễm khuẩn trong chăm sóc Người bệnh của khoa KSNK (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ các chính sách, quy trình (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c59",
+            "num": 59,
+            "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Tuân thủ/triển khai các quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ quy định (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c60",
+            "num": 60,
+            "standard": "TIÊU CHUẨN 20. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác (sử dụng các phương tiện chữa cháy, thoát hiểm,…) (3 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có kiến thức về xử lý/quản lý tinh huống (5 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "khambenh_d5",
+    "code": "V.",
+    "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
+    "maxPoints": 150,
+    "standards": [
+      {
+        "id": "khambenh_std_21",
+        "number": 21,
+        "title": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+        "criteria": [
+          {
+            "id": "khambenh_c61",
+            "num": 61,
+            "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Nêu được những điểm mạnh, điểm yếu cá nhân và nguyện vọng phát triển nghề nghiệp. (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch và đang thực hiện kế hoạch phát triển nghề nghiệp. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được các bằng cấp nâng cao trình độ chuyên môn, nghiệp vụ trong vòng 3 năm. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c62",
+            "num": 62,
+            "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Đạt được 12 tiết trong năm (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đạt được 24 tiết trong năm (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được >24 tiết trong năm -Và ít nhất 50% các chương trình đào tạo tập huấn nâng cao kiến thức chuyên môn và kỹ năng khác do bệnh viện tổ chức (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c63",
+            "num": 63,
+            "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c64",
+            "num": 64,
+            "standard": "TIÊU CHUẨN 21. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Tham gia hướng dẫn lâm sàng (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Tham gia biên soạn nội dung chương trình đào tạo (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Tham gia giảng dạy tại khoa/đơn vị (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia giảng dạy toàn bệnh viện (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_22",
+        "number": 22,
+        "title": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
+        "criteria": [
+          {
+            "id": "khambenh_c65",
+            "num": 65,
+            "standard": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
+            "title": "Hiểu được sự cần thiết về các hoạt động luôn đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có khảo sát các vấn đề còn tồn động trong hoạt động chăm sóc tại khoa, đơn vị (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Phân tích để xác định các vấn đề tồn động cần khắc phục (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự đánh giá và theo dõi thường xuyên các vấn đề tồn động (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c66",
+            "num": 66,
+            "standard": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
+            "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có đưa ra biện pháp khắc phục nhằm đảm bảo chất lượng chăm sóc (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c67",
+            "num": 67,
+            "standard": "TIÊU CHUẨN 22. Cải tiến chất lượng trong từng vị trí việc làm",
+            "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xây dựng được kế hoạch cải tiến trong hoạt động chăm sóc tại khoa, đơn vị (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Thực hiện kế hoạch cải tiến nâng cao (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá hiệu quả cải tiến đã được thực hiện (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_23",
+        "number": 23,
+        "title": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
+        "criteria": [
+          {
+            "id": "khambenh_c68",
+            "num": 68,
+            "standard": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
+            "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xây dựng được mục tiêu công việc theo vị trí phân công (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hoàn thành 80% mục tiêu công việc đã được xác định (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Hoàn thành 100% mục tiêu công việc đã được xác định (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c69",
+            "num": 69,
+            "standard": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
+            "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
+            "desc": "Ưu tiên ca bệnh cấp cứu, tình huống khẩn cấp và công việc trọng tâm",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xác định được khối lượng công việc được giao trong ngày"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Sắp xếp thứ tự ưu tiên công việc hợp lý, xử lý tốt khi có phát sinh"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Quản lý thời gian xuất sắc, giải quyết công việc khoa học, không bị dồn ứ"
+              }
+            ]
+          },
+          {
+            "id": "khambenh_c70",
+            "num": 70,
+            "standard": "TIÊU CHUẨN 23. Quản lý chăm sóc người bệnh",
+            "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm làm việc một cách khoa học, hợp lý, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có sự phân công vai trò của các thành viên trong nhóm chăm sóc (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có sự giám sát hỗ trợ cho các thành viên của nhóm chăm sóc (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự phân công, hỗ trợ và chia sẻ thông tin trong nhóm (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "khambenh_std_24",
+        "number": 24,
+        "title": "TIÊU CHUẨN 24. Sự trải nghiệm nghề nghiệp",
+        "criteria": [
+          {
+            "id": "khambenh_c71",
+            "num": 71,
+            "standard": "TIÊU CHUẨN 24. Sự trải nghiệm nghề nghiệp",
+            "title": "Sự trải nghiệm nghề nghiệp (Thâm niên công tác)",
+            "desc": "Chọn 1 mức thâm niên công tác theo phân hạng bệnh viện",
+            "maxScore": 50,
+            "maxPoints": 50,
+            "options": [
+              {
+                "score": 10,
+                "level": "≤ 5 năm BV H2/3 (10đ)",
+                "text": "Thâm niên ≤ 5 năm tại bệnh viện hạng 2, hạng 3"
+              },
+              {
+                "score": 15,
+                "level": "6 - 9 năm BV H2 (15đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 20,
+                "level": "10 - 15 năm BV H2 (20đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 25,
+                "level": "≤ 5 năm BV ĐB/H1 hoặc >15 năm H2 (25đ)",
+                "text": "Thâm niên ≤ 5 năm tại BV hạng đặc biệt, hạng 1 (hoặc > 15 năm BV hạng 2)"
+              },
+              {
+                "score": 35,
+                "level": "6 - 9 năm BV ĐB/H1 (35đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 45,
+                "level": "10 - 15 năm BV ĐB/H1 (45đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 50,
+                "level": "> 15 năm BV ĐB/H1 (50đ)",
+                "text": "Thâm niên > 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+],
 
   "cdha": [
-    {
-      "id": "cdha_d1",
-      "code": "I.",
-      "name": "TIÊU CHUẨN BẰNG CẤP",
-      "maxPoints": 180,
-      "standards": [
-        {
-          "id": "cdha_std_1",
-          "number": 1,
-          "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-          "criteria": [
-            {
-              "id": "cdha_c1",
-              "num": 1,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "A. Trung học/Cao đẳng",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 70,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Mức 1",
-                  "text": "A. Trung học/Cao đẳng"
-                },
-                {
-                  "score": 70,
-                  "level": "Mức 2",
-                  "text": "B. Đại học"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c2",
-              "num": 2,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "Chuyên khoa 1/Thạc sĩ",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 40,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "Chuyên khoa 1/Thạc sĩ"
-                },
-                {
-                  "score": 40,
-                  "level": "Mức 2",
-                  "text": "Tiến sĩ"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_2",
-          "number": 2,
-          "title": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-          "criteria": [
-            {
-              "id": "cdha_c3",
-              "num": 3,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Trong nước ≥ 1 năm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Trong nước ≥ 1 năm"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c4",
-              "num": 4,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Nước ngoài ≥ 6 tháng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Nước ngoài ≥ 6 tháng"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_3",
-          "number": 3,
-          "title": "TIÊU CHUẨN 3. Ngoại ngữ",
-          "criteria": [
-            {
-              "id": "cdha_c5",
-              "num": 5,
-              "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
-              "title": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 3",
-                  "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_4",
-          "number": 4,
-          "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
-          "criteria": [
-            {
-              "id": "cdha_c6",
-              "num": 6,
-              "standard": "TIÊU CHUẨN 4. Công nghệ thông tin",
-              "title": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "Sử dụng công nghệ thông tin nâng cao \r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cdha_d2",
-      "code": "II.",
-      "name": "NĂNG LỰC CHUYÊN MÔN",
-      "maxPoints": 450,
-      "standards": [
-        {
-          "id": "cdha_std_5",
-          "number": 5,
-          "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-          "criteria": [
-            {
-              "id": "cdha_c7",
-              "num": 7,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định tại cơ sở làm việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định tại cơ sở làm việc"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c8",
-              "num": 8,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c9",
-              "num": 9,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_6",
-          "number": 6,
-          "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-          "criteria": [
-            {
-              "id": "cdha_c10",
-              "num": 10,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định thực hiện các kỹ thuật CĐHA trên người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định thực hiện các kỹ thuật CĐHA trên người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c11",
-              "num": 11,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c12",
-              "num": 12,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_7",
-          "number": 7,
-          "title": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
-          "criteria": [
-            {
-              "id": "cdha_c13",
-              "num": 13,
-              "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
-              "title": "Nhận chỉ định từ bác sĩ lâm sàng, thực hiện nhận dạng người bệnh và chọn đúng bộ phận cần chụp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Nhận chỉ định từ bác sĩ lâm sàng, thực hiện nhận dạng người bệnh và chọn đúng bộ phận cần chụp"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c14",
-              "num": 14,
-              "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
-              "title": "Đảo bảo an toàn bức xạ cho người bệnh, người nhà và nhân viên y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đảo bảo an toàn bức xạ cho người bệnh, người nhà và nhân viên y tế"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c15",
-              "num": 15,
-              "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
-              "title": "Thành thạo cách sử dụng các máy X Quang: lấy thông tin người bệnh từ hệ thống RIS, chọn bộ phận chụp, phát tia, xử lý hình ảnh sau chụp, in phim đảm bảo độ tương phản, canh chỉnh hợp lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Thành thạo cách sử dụng các máy X Quang: lấy thông tin người bệnh từ hệ thống RIS, chọn bộ phận chụp, phát tia, xử lý hình ảnh sau chụp, in phim đảm bảo độ tương phản, canh chỉnh hợp lý"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c16",
-              "num": 16,
-              "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
-              "title": "Nắm vững các chiều thế X Quang và thực hiện đúng kỹ thuật bộ phận cần chụp của người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Nắm vững các chiều thế X Quang và thực hiện đúng kỹ thuật bộ phận cần chụp của người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c17",
-              "num": 17,
-              "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
-              "title": "Có khả năng phát hiện được những bất thường trên phim (xảo ảnh, run, lỗi kỷ thuật…) để tiến hành chụp lại",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có khả năng phát hiện được những bất thường trên phim (xảo ảnh, run, lỗi kỷ thuật…) để tiến hành chụp lại"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_8",
-          "number": 8,
-          "title": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
-          "criteria": [
-            {
-              "id": "cdha_c18",
-              "num": 18,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
-              "title": "Nhận chỉ định từ bác sĩ lâm sàng, thực hiện nhận dạng người bệnh và phối hợp với bác sĩ CĐHA để chọn đúng protocol",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Nhận chỉ định từ bác sĩ lâm sàng, thực hiện nhận dạng người bệnh và phối hợp với bác sĩ CĐHA để chọn đúng protocol"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c19",
-              "num": 19,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
-              "title": "Đảm bảo an toàn bức xạ cho người bệnh, người nhà và nhân viên y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Đảm bảo an toàn bức xạ cho người bệnh, người nhà và nhân viên y tế"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c20",
-              "num": 20,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
-              "title": "Thành thạo cách sử dụng các máy chụp cắt lớp vi tính: lấy thông tin người bệnh từ hệ thống RIS, chọn đúng protocol, phát tia, xử lý hình ảnh sau chụp, in phim đảm bảo độ tương phản, canh chỉnh hợp lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 40,
-              "options": [
-                {
-                  "score": 40,
-                  "level": "Đạt (40đ)",
-                  "text": "Thành thạo cách sử dụng các máy chụp cắt lớp vi tính: lấy thông tin người bệnh từ hệ thống RIS, chọn đúng protocol, phát tia, xử lý hình ảnh sau chụp, in phim đảm bảo độ tương phản, canh chỉnh hợp lý"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c21",
-              "num": 21,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
-              "title": "Nắm vững các protocol cắt lớp vi tính và thực hiện đầy đủ, chính xác trên người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 60,
-              "options": [
-                {
-                  "score": 60,
-                  "level": "Đạt (60đ)",
-                  "text": "Nắm vững các protocol cắt lớp vi tính và thực hiện đầy đủ, chính xác trên người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c22",
-              "num": 22,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
-              "title": "Có khả năng phát hiện được những bất thường trên hình ảnh cắt lớp vi tính (hình ảnh bệnh lý, xảo ảnh, lỗi kỹ thuật…) để tiến hành chụp lại",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Có khả năng phát hiện được những bất thường trên hình ảnh cắt lớp vi tính (hình ảnh bệnh lý, xảo ảnh, lỗi kỹ thuật…) để tiến hành chụp lại"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c23",
-              "num": 23,
-              "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
-              "title": "Có khả năng phát hiện và theo dõi những tai biến trên người bệnh sau khi chụp cắt lớp vi tính có tiêm thuốc cản quang, phối hợp với bác sĩ CĐHA để xử trí",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Có khả năng phát hiện và theo dõi những tai biến trên người bệnh sau khi chụp cắt lớp vi tính có tiêm thuốc cản quang, phối hợp với bác sĩ CĐHA để xử trí"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_9",
-          "number": 9,
-          "title": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
-          "criteria": [
-            {
-              "id": "cdha_c24",
-              "num": 24,
-              "standard": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
-              "title": "Có khả năng sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ để xác nhận thông tin, chuyển thông tin người bệnh lên hệ thống RIS",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có khả năng sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ để xác nhận thông tin, chuyển thông tin người bệnh lên hệ thống RIS"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c25",
-              "num": 25,
-              "standard": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
-              "title": "Có khả năng truy cập vào mạng PACS để xem hình ảnh, chuyển hình ảnh lên PACS và tải hình ảnh từ PACS về máy chụp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có khả năng truy cập vào mạng PACS để xem hình ảnh, chuyển hình ảnh lên PACS và tải hình ảnh từ PACS về máy chụp"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c26",
-              "num": 26,
-              "standard": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
-              "title": "Thành thạo cách in phim X Quang, cắt lớp vi tính và cộng hưởng từ cho người bệnh trên PACS",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Thành thạo cách in phim X Quang, cắt lớp vi tính và cộng hưởng từ cho người bệnh trên PACS"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_10",
-          "number": 10,
-          "title": "TIÊU CHUẨN 10. Năng lực thực hiện CPR",
-          "criteria": [
-            {
-              "id": "cdha_c27",
-              "num": 27,
-              "standard": "TIÊU CHUẨN 10. Năng lực thực hiện CPR",
-              "title": "Phát hiện sớm những thay đổi đột ngột về tình trạng người bệnh trong mổ và phòng ngừa sự cố phẫu thuật có thể xảy ra",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 30,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Phát hiện sớm những thay đổi đột ngột về tình trạng người bệnh trong mổ và phòng ngừa sự cố phẫu thuật có thể xảy ra"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 2",
-                  "text": "Biết cách xử trí phù hợp và thông báo kịp thời đến người có trách nhiệm, yêu cầu hỗ trợ kịp thời"
-                },
-                {
-                  "score": 30,
-                  "level": "Mức 3",
-                  "text": "Thực hiện cấp cứu đạt hiệu quả, phối hợp tốt với các thành viên trong nhóm cấp cứu"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_11",
-          "number": 11,
-          "title": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
-          "criteria": [
-            {
-              "id": "cdha_c28",
-              "num": 28,
-              "standard": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
-              "title": "Tạo dựng niềm tin với người bệnh, người nhà và đồng nghiệp; dành thời gian cần thiết để giao tiếp với người bệnh, người nhà và thành viên trong nhóm chăm sóc",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Tạo dựng niềm tin với người bệnh, người nhà và đồng nghiệp; dành thời gian cần thiết để giao tiếp với người bệnh, người nhà và thành viên trong nhóm chăm sóc"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 2",
-                  "text": "Lắng nghe và giúp người bệnh giải quyết được các lo lắng, băn khoăn của người bệnh, người nhà"
-                },
-                {
-                  "score": 30,
-                  "level": "Mức 3",
-                  "text": "Xây dựng kế hoạch giáo dục sức khỏe phù hợp với bệnh tật và văn hóa, tin ngưỡng của cá nhân, gia đình và xã hội. Tài liệu giáo dục sức khỏe phù hợp với trình độ của đối tượng"
-                },
-                {
-                  "score": 40,
-                  "level": "Mức 4",
-                  "text": "Truyền thông tương tác với người bệnh; sử dụng thành thạo các phương tiện sẵn có của bệnh viện; đảm bảo chất lượng truyền thông: chính xác, ngắn gọn, rõ ràng, dễ hiểu, không vi phạm phạm trù văn hóa, tín ngưỡng"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 5",
-                  "text": "Biên soạn bài giáo dục sức khỏe cho người bệnh, áp dụng trên quy mô toàn bệnh  viện (được Ban Lãnh Đạo phê duyệt);\r\nThực hiện giáo dục sức khỏe cho người bệnh cấp bệnh viện, đem lại hiệu quả tốt"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_12",
-          "number": 12,
-          "title": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
-          "criteria": [
-            {
-              "id": "cdha_c29",
-              "num": 29,
-              "standard": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
-              "title": "Tham gia đầy đủ 24 tiết sinh hoạt chuyên môn trong 1 năm do Khoa CĐHA tổ chức",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tham gia đầy đủ 24 tiết sinh hoạt chuyên môn trong 1 năm do Khoa CĐHA tổ chức"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c30",
-              "num": 30,
-              "standard": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
-              "title": "Tham gia ít nhất 1 chương trình đào tạo chuyên môn do Phòng Khoa học và Đào tạo / Hội CĐHA TPHCM / Hội Điện Quang và Y học hạt nhân Việt Nam tổ chức (có giấy chứng nhận)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tham gia ít nhất 1 chương trình đào tạo chuyên môn do Phòng Khoa học và Đào tạo / Hội CĐHA TPHCM / Hội Điện Quang và Y học hạt nhân Việt Nam tổ chức (có giấy chứng nhận)"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c31",
-              "num": 31,
-              "standard": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
-              "title": "Có khả năng truyền đạt kiến thức, đào tạo chuyên môn cho người khác (sinh viên, học sinh, nhân viên mới,…)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có khả năng truyền đạt kiến thức, đào tạo chuyên môn cho người khác (sinh viên, học sinh, nhân viên mới,…)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_13",
-          "number": 13,
-          "title": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-          "criteria": [
-            {
-              "id": "cdha_c32",
-              "num": 32,
-              "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-              "title": "Nhận thức được sự quan trọng trong việc giao tiếp với người bệnh, người nhà và nhân viên;\r\nThường xuyên sử dụng AIDET trong giao tiếp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Nhận thức được sự quan trọng trong việc giao tiếp với người bệnh, người nhà và nhân viên;\r\nThường xuyên sử dụng AIDET trong giao tiếp"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c33",
-              "num": 33,
-              "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-              "title": "Chủ động chia sẻ thông tin về quá trình chăm sóc người bệnh với đồng nghiệp;\r\nThường xuyên ứng dụng hiệu quả SBAR trong bàn giao bệnh, trao đổi thông tin giữa đồng nghiệp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ động chia sẻ thông tin về quá trình chăm sóc người bệnh với đồng nghiệp;\r\nThường xuyên ứng dụng hiệu quả SBAR trong bàn giao bệnh, trao đổi thông tin giữa đồng nghiệp"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c34",
-              "num": 34,
-              "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-              "title": "Thể hiện lời nói, cử chỉ động viên, khuyến khích người bệnh an tâm điều trị",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Thể hiện lời nói, cử chỉ động viên, khuyến khích người bệnh an tâm điều trị"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c35",
-              "num": 35,
-              "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
-              "title": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả;\r\nChia sẻ thông tin một cách hiệu quả;\r\nThực hiện vai trò đại diện hoặc biện hộ cho người bệnh để đảm bảo các quyền, lợi ích và vì sự an toàn người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả;\r\nChia sẻ thông tin một cách hiệu quả;\r\nThực hiện vai trò đại diện hoặc biện hộ cho người bệnh để đảm bảo các quyền, lợi ích và vì sự an toàn người bệnh"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cdha_d3",
-      "code": "III.",
-      "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
-      "maxPoints": 120,
-      "standards": [
-        {
-          "id": "cdha_std_14",
-          "number": 14,
-          "title": "TIÊU CHUẨN 14. Đào tạo",
-          "criteria": [
-            {
-              "id": "cdha_c36",
-              "num": 36,
-              "standard": "TIÊU CHUẨN 14. Đào tạo",
-              "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c37",
-              "num": 37,
-              "standard": "TIÊU CHUẨN 14. Đào tạo",
-              "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c38",
-              "num": 38,
-              "standard": "TIÊU CHUẨN 14. Đào tạo",
-              "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c39",
-              "num": 39,
-              "standard": "TIÊU CHUẨN 14. Đào tạo",
-              "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c40",
-              "num": 40,
-              "standard": "TIÊU CHUẨN 14. Đào tạo",
-              "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c41",
-              "num": 41,
-              "standard": "TIÊU CHUẨN 14. Đào tạo",
-              "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_15",
-          "number": 15,
-          "title": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
-          "criteria": [
-            {
-              "id": "cdha_c42",
-              "num": 42,
-              "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
-              "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c43",
-              "num": 43,
-              "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
-              "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c44",
-              "num": 44,
-              "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
-              "desc": "Chọn 1 thành tích cao nhất",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c45",
-              "num": 45,
-              "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c46",
-              "num": 46,
-              "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
-              "title": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_16",
-          "number": 16,
-          "title": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
-          "criteria": [
-            {
-              "id": "cdha_c47",
-              "num": 47,
-              "standard": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
-              "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c48",
-              "num": 48,
-              "standard": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
-              "title": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c49",
-              "num": 49,
-              "standard": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
-              "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cdha_d4",
-      "code": "IV.",
-      "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
-      "maxPoints": 100,
-      "standards": [
-        {
-          "id": "cdha_std_17",
-          "number": 17,
-          "title": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-          "criteria": [
-            {
-              "id": "cdha_c50",
-              "num": 50,
-              "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho chăm sóc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho chăm sóc"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c51",
-              "num": 51,
-              "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Đề xuất các thiết bị, vật tư phù hợp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Đề xuất các thiết bị, vật tư phù hợp"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c52",
-              "num": 52,
-              "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c53",
-              "num": 53,
-              "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_18",
-          "number": 18,
-          "title": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
-          "criteria": [
-            {
-              "id": "cdha_c54",
-              "num": 54,
-              "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
-              "title": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c55",
-              "num": 55,
-              "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
-              "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c56",
-              "num": 56,
-              "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
-              "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c57",
-              "num": 57,
-              "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
-              "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_19",
-          "number": 19,
-          "title": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
-          "criteria": [
-            {
-              "id": "cdha_c58",
-              "num": 58,
-              "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c59",
-              "num": 59,
-              "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c60",
-              "num": 60,
-              "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c61",
-              "num": 61,
-              "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c62",
-              "num": 62,
-              "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cdha_d5",
-      "code": "V.",
-      "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
-      "maxPoints": 150,
-      "standards": [
-        {
-          "id": "cdha_std_20",
-          "number": 20,
-          "title": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-          "criteria": [
-            {
-              "id": "cdha_c63",
-              "num": 63,
-              "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c64",
-              "num": 64,
-              "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c65",
-              "num": 65,
-              "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c66",
-              "num": 66,
-              "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_21",
-          "number": 21,
-          "title": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
-          "criteria": [
-            {
-              "id": "cdha_c67",
-              "num": 67,
-              "standard": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
-              "title": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c68",
-              "num": 68,
-              "standard": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
-              "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c69",
-              "num": 69,
-              "standard": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
-              "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_22",
-          "number": 22,
-          "title": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
-          "criteria": [
-            {
-              "id": "cdha_c70",
-              "num": 70,
-              "standard": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
-              "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c71",
-              "num": 71,
-              "standard": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
-              "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý"
-                }
-              ]
-            },
-            {
-              "id": "cdha_c72",
-              "num": 72,
-              "standard": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
-              "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "cdha_std_23",
-          "number": 23,
-          "title": "TIÊU CHUẨN 23. Sự trải nghiệm nghề nghiệp",
-          "criteria": [
-            {
-              "id": "cdha_c73",
-              "num": 73,
-              "standard": "TIÊU CHUẨN 23. Sự trải nghiệm nghề nghiệp",
-              "title": "BV hạng đặc biệt, hạng 1",
-              "desc": "≤ 5 \r\nnăm",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "BV hạng 2, 3"
-                },
-                {
-                  "score": 35,
-                  "level": "Mức 3",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 4",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 45,
-                  "level": "Mức 5",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 6",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 7",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 25,
-                  "level": "Mức 8",
-                  "text": "BV hạng 2"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  {
+    "id": "cdha_d1",
+    "code": "I.",
+    "name": "TIÊU CHUẨN BẰNG CẤP",
+    "maxPoints": 180,
+    "standards": [
+      {
+        "id": "cdha_std_1",
+        "number": 1,
+        "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+        "criteria": [
+          {
+            "id": "cdha_c1",
+            "num": 1,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp chuyên môn Kỹ thuật viên",
+            "desc": "Chọn 1 năng lực phù hợp nhất theo bằng cấp chuyên môn cao nhất",
+            "maxScore": 100,
+            "maxPoints": 100,
+            "options": [
+              {
+                "score": 15,
+                "level": "CĐ/TH Khác (15đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học từ ĐH Nguyễn Tất Thành hoặc trường khác"
+              },
+              {
+                "score": 20,
+                "level": "CĐ/TH Hồng Bàng (20đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học từ ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 25,
+                "level": "CĐ/TH Phạm Ngọc Thạch (25đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học từ ĐH Y khoa Phạm Ngọc Thạch"
+              },
+              {
+                "score": 30,
+                "level": "CĐ/TH ĐHYD TPHCM (30đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học ĐHYD TP HCM"
+              },
+              {
+                "score": 50,
+                "level": "ĐH Nhóm 1 (50đ)",
+                "text": "ĐH Y Dược Huế, ĐH Y Dược Cần Thơ, ĐH Kỹ thuật y học Nam Định, ĐH Nguyễn Tất Thành, trường ĐH khác"
+              },
+              {
+                "score": 60,
+                "level": "ĐH Hồng Bàng (60đ)",
+                "text": "ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 70,
+                "level": "ĐH YHN/PNT/Yersin (70đ)",
+                "text": "ĐH Y Hà Nội, ĐH Y khoa Phạm Ngọc Thạch, ĐH Yersin"
+              },
+              {
+                "score": 80,
+                "level": "ĐH Miền Đông (80đ)",
+                "text": "ĐH Quốc tế Miền Đông"
+              },
+              {
+                "score": 90,
+                "level": "ĐHYD TPHCM (90đ)",
+                "text": "Đại học Y Dược TPHCM"
+              },
+              {
+                "score": 100,
+                "level": "ĐH Quốc Tế (100đ)",
+                "text": "ĐH Kỹ thuật y học từ Châu Âu (trừ Đông Âu), Mỹ, Canada, New Zealand, Úc, Nhật Bản, Hàn Quốc, Singapore, Đài Loan, Malaysia"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c2",
+            "num": 2,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp Sau đại học",
+            "desc": "Chọn 1 năng lực phù hợp nhất nếu có bằng sau đại học",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 25,
+                "level": "CK1 / Thạc sĩ (25đ)",
+                "text": "Chuyên khoa 1 / Thạc sĩ chuyên ngành Kỹ thuật y học"
+              },
+              {
+                "score": 40,
+                "level": "Tiến sĩ (40đ)",
+                "text": "Tiến sĩ chuyên ngành Y Dược / Kỹ thuật y học"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_2",
+        "number": 2,
+        "title": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+        "criteria": [
+          {
+            "id": "cdha_c3",
+            "num": 3,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận chuyên khoa trong nước",
+            "desc": "Có chứng chỉ chuyên khoa đào tạo trong nước",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Đạt (5đ)",
+                "text": "Chứng nhận / chứng chỉ chuyên khoa trong nước ≥ 1 năm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c4",
+            "num": 4,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận đào tạo nước ngoài",
+            "desc": "Có chứng chỉ đào tạo tại nước ngoài",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Đạt (10đ)",
+                "text": "Chứng nhận / chứng chỉ đào tạo nước ngoài ≥ 6 tháng"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_3",
+        "number": 3,
+        "title": "TIÊU CHUẨN 3. Ngoại ngữ",
+        "criteria": [
+          {
+            "id": "cdha_c5",
+            "num": 5,
+            "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
+            "title": "Trình độ Ngoại ngữ",
+            "desc": "Chọn 1 mức ngoại ngữ phù hợp nhất",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Bậc 1 (5đ)",
+                "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
+              },
+              {
+                "score": 10,
+                "level": "Bậc 2 (10đ)",
+                "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
+              },
+              {
+                "score": 15,
+                "level": "Bậc 3 (15đ)",
+                "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_4",
+        "number": 4,
+        "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
+        "criteria": [
+          {
+            "id": "cdha_c6",
+            "num": 6,
+            "standard": "TIÊU CHUẨN 4. Tin học",
+            "title": "Kỹ năng Công nghệ thông tin",
+            "desc": "Theo Thông tư số 03/2014/TT-BTTTT",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Cơ bản (5đ)",
+                "text": "Sử dụng công nghệ thông tin cơ bản (Theo Thông tư số 03/2014/TT-BTTTT)"
+              },
+              {
+                "score": 10,
+                "level": "Nâng cao (10đ)",
+                "text": "Sử dụng công nghệ thông tin nâng cao, thành thạo phần mềm chuyên ngành"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cdha_d2",
+    "code": "II.",
+    "name": "NĂNG LỰC CHUYÊN MÔN",
+    "maxPoints": 450,
+    "standards": [
+      {
+        "id": "cdha_std_5",
+        "number": 5,
+        "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+        "criteria": [
+          {
+            "id": "cdha_c7",
+            "num": 7,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định tại cơ sở làm việc",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "vi phạm 4 lần"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "vi phạm 3 lần"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "vi phạm 2 lần"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "vi phạm 1 lần"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "không vi phạm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c8",
+            "num": 8,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "vi phạm 4 lần"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "vi phạm 3 lần"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "vi phạm 2 lần"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "vi phạm 1 lần"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "không vi phạm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c9",
+            "num": 9,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Phối hợp với đồng nghiệp nhưng chưa chủ động hoặc do được yêu cầu Quan hệ, giao tiếp tốt với đồng nghiệp, NB"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chủ động phối hợp với đồng nghiệp để giải quyết công việc Hòa nhã, vui vẻ, sẵn sàng hỗ trợ với đồng nghiệp, khách hàng/NB"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Phối hợp công việc 1 cách nhanh nhẹn, hiệu quả Ứng xử nhanh nhẹn, giải quyết mọi vấn đề, quan hệ tốt với đồng nghiệp trong và ngoài đơn vị Giao tiếp tốt với NB, chăm sóc được NB khó tính"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_6",
+        "number": 6,
+        "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+        "criteria": [
+          {
+            "id": "cdha_c10",
+            "num": 10,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Chịu trách nhiệm cá nhân khi đưa ra các quyết định thực hiện các kỹ thuật CĐHA trên người bệnh",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Tự ra quyết định kế hoạch chiếu chụp cho NB"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có trách nhiệm trong chiếu chụp Tự giác nhận trách nhiệm khi có những sai sót"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c11",
+            "num": 11,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "vi phạm 4 lần"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "vi phạm 3 lần"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "vi phạm 2 lần"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "vi phạm 1 lần"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "không vi phạm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c12",
+            "num": 12,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "vi phạm 4 lần"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "vi phạm 3 lần"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "vi phạm 2 lần"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "vi phạm 1 lần"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "không vi phạm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_7",
+        "number": 7,
+        "title": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
+        "criteria": [
+          {
+            "id": "cdha_c13",
+            "num": 13,
+            "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
+            "title": "Nhận chỉ định từ bác sĩ lâm sàng, thực hiện nhận dạng người bệnh và chọn đúng bộ phận cần chụp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Thực hiện nhận dạng NB"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Đối chiếu chỉ định với NB"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Chọn đúng bộ phận chụp"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Phát hiện sai sót/ nhầm lẫn trong chỉ định"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Khắc phục được sai sót/ nhầm lẫn"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c14",
+            "num": 14,
+            "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
+            "title": "Đảo bảo an toàn bức xạ cho người bệnh, người nhà và nhân viên y tế",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp; Gom collimator vừa đủ bộ phận chụp"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp; Gom collimator vừa đủ bộ phận chụp; Che áo chì bộ phận nhạy cảm với tia x"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp; Gom collimator vừa đủ bộ phận chụp; Che áo chì bộ phận nhạy cảm với tia x; Cho người nhà NB mặc áo chì khi cần hỗ trợ"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c15",
+            "num": 15,
+            "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
+            "title": "Thành thạo cách sử dụng các máy X Quang: lấy thông tin người bệnh từ hệ thống RIS, chọn bộ phận chụp, phát tia, xử lý hình ảnh sau chụp, in phim đảm bảo độ tương phản, canh chỉnh hợp lý",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Biết cách lấy thông tin NB từ hệ thống RIS"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chọn đúng bộ phận chụp, hiệu chỉnh kV, mAs phù hợp"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Hình x quang sau chụp đúng chiều thế, đảm bảo tương phản"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Xử lý hình ảnh sau chụp, in phim đảm bảo độ tương phản, canh chỉnh hợp lý"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Biết cách khắc phục những lỗi cơ bản của máy x quang"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c16",
+            "num": 16,
+            "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
+            "title": "Nắm vững các chiều thế X Quang và thực hiện đúng kỹ thuật bộ phận cần chụp của người bệnh",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Nắm vững các chiều thế trong chụp x quang ngực thẳng - nghiêng - đỉnh ưỡn"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Nắm vững các chiều thế trong chụp x quang xương chi"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Nắm vững các chiều thế trong chụp x quang cột sống thẳng - nghiêng - cúi - ngữa"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Nắm vững các chiều thế trong chụp x quang tư thế đặc biệt: khớp thái dương hàm, xương thuyền, C1-C2 …"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Nắm vững các chiều thế trong chụp x quang đặc biệt: đường rò, UCR, PUD,"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c17",
+            "num": 17,
+            "standard": "TIÊU CHUẨN 7. Năng lực thực hiện các kỹ thuật X Quang",
+            "title": "Có khả năng phát hiện được những bất thường trên phim (xảo ảnh, run, lỗi kỷ thuật…) để tiến hành chụp lại",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Kể tên những xảo ảnh thường gặp"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Biết được nguyên nhân gây xảo ảnh"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Đưa ra được biện pháp khắc phục"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Tiến hành chụp lại đạt yêu cầu kỹ thuật"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Phát hiện được những bất thường bệnh lý trên hình x quang"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_8",
+        "number": 8,
+        "title": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
+        "criteria": [
+          {
+            "id": "cdha_c18",
+            "num": 18,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
+            "title": "Nhận chỉ định từ bác sĩ lâm sàng, thực hiện nhận dạng người bệnh và phối hợp với bác sĩ CĐHA để chọn đúng protocol",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Thực hiện nhận dạng NB"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đối chiếu chỉ định với NB"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Phối hợp với bác sĩ CĐHA để chọn đúng protocol"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Phát hiện sai sót/ nhầm lẫn trong chỉ định"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Khắc phục được sai sót/ nhầm lẫn"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c19",
+            "num": 19,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
+            "title": "Đảm bảo an toàn bức xạ cho người bệnh, người nhà và nhân viên y tế",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp; Chọn trường chụp vừa đủ bộ phận chụp"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp; Chọn trường chụp vừa đủ bộ phận chụp; Che áo chì bộ phận nhạy cảm với tia x"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Hướng dẫn người nhà NB không được đứng trong phòng khi đang chụp; Đóng kín các cửa phòng khi chụp; Chọn trường chụp vừa đủ bộ phận chụp; Che áo chì bộ phận nhạy cảm với tia x; Cho người nhà NB mặc áo chì khi cần hỗ trợ"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c20",
+            "num": 20,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
+            "title": "Thành thạo cách sử dụng các máy chụp cắt lớp vi tính: lấy thông tin người bệnh từ hệ thống RIS, chọn đúng protocol, phát tia, xử lý hình ảnh sau chụp, in phim đảm bảo độ tương phản, canh chỉnh hợp lý",
+            "desc": "",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 8,
+                "level": "Mức 1 (8đ)",
+                "text": "Biết cách lấy thông tin NB từ hệ thống RIS"
+              },
+              {
+                "score": 16,
+                "level": "Mức 2 (16đ)",
+                "text": "Phối hợp với bác sĩ CĐHA để chọn đúng protocol"
+              },
+              {
+                "score": 24,
+                "level": "Mức 3 (24đ)",
+                "text": "Sử dụng thành thạo các công cụ trong thẻ Viewing"
+              },
+              {
+                "score": 32,
+                "level": "Mức 4 (32đ)",
+                "text": "Sử dụng thành thạo các công cụ trong thẻ 3D"
+              },
+              {
+                "score": 40,
+                "level": "Mức 5 (40đ)",
+                "text": "Xử lý hình ảnh sau chụp, dựng hình, in phim đảm bảo độ tương phản, canh chỉnh hợp lý"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c21",
+            "num": 21,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
+            "title": "Nắm vững các protocol cắt lớp vi tính và thực hiện đầy đủ, chính xác trên người bệnh",
+            "desc": "",
+            "maxScore": 60,
+            "maxPoints": 60,
+            "options": [
+              {
+                "score": 12,
+                "level": "Mức 1 (12đ)",
+                "text": "Thực hiện được các protocol chụp CLVT thường quy không tiêm thuốc cản quang"
+              },
+              {
+                "score": 24,
+                "level": "Mức 2 (24đ)",
+                "text": "Thực hiện được các protocol chụp CLVT thường quy có tiêm thuốc cản quang"
+              },
+              {
+                "score": 36,
+                "level": "Mức 3 (36đ)",
+                "text": "Thực hiện được các protocol chụp CLVT động mạch cảnh - não; động mạch chủ ngực; động mạch chủ bụng; động mạch chi"
+              },
+              {
+                "score": 48,
+                "level": "Mức 4 (48đ)",
+                "text": "Thực hiện được các protocol chụp CLVT động mạch vành; tim bẩm sinh"
+              },
+              {
+                "score": 60,
+                "level": "Mức 5 (60đ)",
+                "text": "Thực hiện được các protocol chụp CLVT tưới máu não, mạch máu toàn thân; xử lý hình ảnh sau chụp"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c22",
+            "num": 22,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
+            "title": "Có khả năng phát hiện được những bất thường trên hình ảnh cắt lớp vi tính (hình ảnh bệnh lý, xảo ảnh, lỗi kỹ thuật…) để tiến hành chụp lại",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Kể tên những xảo ảnh thường gặp"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Biết được nguyên nhân gây xảo ảnh"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Đưa ra được biện pháp khắc phục"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Phát hiện được những bất thường bệnh lý trên hình chụp CLVT"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Chủ động đưa ra protocol phù hợp nhằm giúp bác sỹ CĐHA chẩn đoán chính xác"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c23",
+            "num": 23,
+            "standard": "TIÊU CHUẨN 8. Năng lực thực hiện các kỹ thuật cắt lớp vi tính",
+            "title": "Có khả năng phát hiện và theo dõi những tai biến trên người bệnh sau khi chụp cắt lớp vi tính có tiêm thuốc cản quang, phối hợp với bác sĩ CĐHA để xử trí",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Kể tên được những tai biến thường gặp trong chụp CLVT có tiêm thuốc cản quang"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Biết phân loại người bệnh thuộc các nhóm có nguy cơ với thuốc cản quang"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Có khả năng phát hiện và theo dõi những tai biến trên người bệnh sau khi chụp cắt lớp vi tính có tiêm thuốc cản quang"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Nắm rõ quy trình xử trí thoát mạch, phối hợp với bác sĩ CĐHA để xử trí"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Nắm rõ quy trình xử trí cấp cứu phản vệ, phối hợp với bác sĩ CĐHA để xử trí"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_9",
+        "number": 9,
+        "title": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
+        "criteria": [
+          {
+            "id": "cdha_c24",
+            "num": 24,
+            "standard": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
+            "title": "Có khả năng sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ để xác nhận thông tin, chuyển thông tin người bệnh lên hệ thống RIS",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Biết xác nhận và hủy xác nhận chứng từ trên các phần mềm quản lý x quang, cắt lớp vi tính, cộng hưởng từ"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Xem được kết quả người bệnh trên các phần mềm quản lý x quang, cắt lớp vi tính, cộng hưởng từ"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Xem được thống kê người bệnh trên các phần mềm quản lý x quang, cắt lớp vi tính, cộng hưởng từ"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Biết chuyển đổi dịch vụ từ không thuốc sang có thuốc và ngược lại trên các phần mềm quản lý x quang, cắt lớp vi tính, cộng hưởng từ"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Thành thạo cách sử dụng cáccác phần mềm quản lý x quang, cắt lớp vi tính, cộng hưởng từ, có khả năng khắc phục những lỗi cơ bản của các phần mềm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c25",
+            "num": 25,
+            "standard": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
+            "title": "Có khả năng truy cập vào mạng PACS để xem hình ảnh, chuyển hình ảnh lên PACS và tải hình ảnh từ PACS về máy chụp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Thực hiện được thao tác này thì đạt 100%, không thực hiện được thì không có điểm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c26",
+            "num": 26,
+            "standard": "TIÊU CHUẨN 9. Năng lực sử dụng các phần mềm quản lý X Quang, cắt lớp vi tính, cộng hưởng từ và hệ thống lưu trữ hình ảnh (PACS)",
+            "title": "Thành thạo cách in phim X Quang, cắt lớp vi tính và cộng hưởng từ cho người bệnh trên PACS",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có khả năng in phim x quang trên PACS"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có khả năng in phim cắt lớp vi tính trên PACS"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Có khả năng in phim cộng hưởng từ trên PACS"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Có khả năng phát hiện lỗi chuyển hình lên PACS và tải hinh từ PACS"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Biết cách liên hệ, phối hợp xử lý khi có sự cố về PACS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_10",
+        "number": 10,
+        "title": "TIÊU CHUẨN 10. Năng lực thực hiện CPR",
+        "criteria": [
+          {
+            "id": "cdha_c27",
+            "num": 27,
+            "standard": "TIÊU CHUẨN 10. Năng lực thực hiện CPR",
+            "title": "Phát hiện sớm những thay đổi đột ngột về tình trạng người bệnh trong mổ và phòng ngừa sự cố phẫu thuật có thể xảy ra",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Nhận biết được các dấu hiệu sau: Sự thay đổi dấu hiệu sinh tồn; Tri giác và nhận thức của người bệnh về không gian, thời gian và con người"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Biết cách nhận biết và ghi nhận sự thay đổi của tri giác, dấu hiệu sinh tồn và các dấu hiệu đe dọa tính mạng của NB"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Biết cách nhận biết và ghi nhận sự thay đổi của tri giác, dấu hiệu sinh tồn và các dấu hiệu đe dọa tính mạng của NB Kết quả đánh giá tình trạng NB đạt trên 80% mục tiêu mong muốn, nhưng chưa chuẩn xác"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Thực hiện đầy đủ và độc lập trong đánh giá các dấu hiệu cảnh báo sớm. Kết quả đánh giá tình trạng NB đạt đủ các mục tiêu mong muốn và chuẩn xác. Tiên lượng được các thay đổi tình trạng người bệnh phù hợp với tình huống lâm sàng."
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Thực hiện đầy đủ và độc lập trong đánh giá các dấu hiệu cảnh báo sớm. Kết quả đánh giá tình trạng NB đạt đủ các mục tiêu mong muốn và chuẩn xác. Tiên lượng được các thay đổi tình trạng người bệnh phù hợp với tình huống lâm sàng. Biết cách giải thích các thay đổi bất thường dựa trên các đánh giá tình trạng lâm sàng người bệnh"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_11",
+        "number": 11,
+        "title": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
+        "criteria": [
+          {
+            "id": "cdha_c28",
+            "num": 28,
+            "standard": "TIÊU CHUẨN 11. Thiết lập mối quan hệ với người bệnh, giáo dục sức khỏe hiệu quả",
+            "title": "Tạo dựng niềm tin với người bệnh, người nhà và đồng nghiệp; dành thời gian cần thiết để giao tiếp với người bệnh, người nhà và thành viên trong nhóm chăm sóc",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt <50% (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt 50- 59% (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt 60- 74% (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt 75 - 89% (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Đồng phục: đầy đủ, nguyên vẹn, sạch, thẳng. Thái độ: Hòa nhã, nhiệt tình. Sử dụng kính ngữ: xưng hô phù hợp. Chủ động cung cấp thông tin cần thiết, phù hợp cho NB/NN Tỉ lệ thực hiện đạt ≥ 90% (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_12",
+        "number": 12,
+        "title": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
+        "criteria": [
+          {
+            "id": "cdha_c29",
+            "num": 29,
+            "standard": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
+            "title": "Tham gia đầy đủ 24 tiết sinh hoạt chuyên môn trong 1 năm do Khoa CĐHA tổ chức",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Tham gia 20% số tiết"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Tham gia 40% số tiết"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Tham gia 60% số tiết"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Tham gia 80% số tiết"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Tham gia 100% số tiết"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c30",
+            "num": 30,
+            "standard": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
+            "title": "Tham gia ít nhất 1 chương trình đào tạo chuyên môn do Phòng Khoa học và Đào tạo / Hội CĐHA TPHCM / Hội Điện Quang và Y học hạt nhân Việt Nam tổ chức (có giấy chứng nhận)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có tham gia sẽ đạt điểm tối đa, không tham gia sẽ không có điểm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c31",
+            "num": 31,
+            "standard": "TIÊU CHUẨN 12. Tham gia đào tạo và nâng cao kỹ thuật chuyên môn",
+            "title": "Có khả năng truyền đạt kiến thức, đào tạo chuyên môn cho người khác (sinh viên, học sinh, nhân viên mới,…)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Đào tạo chuyên môn XQ"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Đào tạo chuyên môn CT"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Đào tạo chuyên môn MRI"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Quản lý sinh viên thực hành tại khoa, xếp lịch, điểm danh"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Dẫn đoàn và hướng dẫn SV/ đoàn khách nước ngoài tham quan tại khoa"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_13",
+        "number": 13,
+        "title": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+        "criteria": [
+          {
+            "id": "cdha_c32",
+            "num": 32,
+            "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+            "title": "Nhận thức được sự quan trọng trong việc giao tiếp với người bệnh, người nhà và nhân viên; Thường xuyên sử dụng AIDET trong giao tiếp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Trình bày được 5 yếu tố trong mô hình AIDET"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Ứng dụng được ≤ 3/5 yếu tố AIET trong giao tiếp với NB"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Ứng dụng được ≤ 4/5 yếu tố AIET trong giao tiếp với NB"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Ứng dụng được 5 yếu tố AIET trong giao tiếp với NB NB biết được những thông tin được cung cấp (I,D,E)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Ứng dụng được 5 yếu tố AIET trong giao tiếp với NB NB hiểu rõ được những thông tin được cung cấp"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c33",
+            "num": 33,
+            "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+            "title": "Chủ động chia sẻ thông tin về quá trình chăm sóc người bệnh với đồng nghiệp; Thường xuyên ứng dụng hiệu quả SBAR trong bàn giao bệnh, trao đổi thông tin giữa đồng nghiệp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Trình bày được định nghĩa SBAR Chưa ứng dụng SBAR trong bàn giao NB và trao đổi thông tin với đồng nghiệp"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Ứng dụng SBAR trong báo cáo bệnh với Bác sĩ hoặc trong bàn giao phiên trực, chuyển khoa"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Ứng dụng SBAR trong báo cáo bệnh với BS và trong bàn giao phiên trực, chuyển khoa, nhưng chưa đầy đủ S, B, A, R"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Ứng dụng SBAR trong báo cáo bệnh với BS và trong bàn giao phiên trực, chuyển khoa, và đầy đủ S, B, A, R, nhưng chưa đủ các thông tin của NB"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Ứng dụng SBAR trong báo cáo bệnh với BS và trong bàn giao phiên trực, chuyển khoa, và đầy đủ S, B, A, R, và đầy đủ các thông tin của NB"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c34",
+            "num": 34,
+            "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+            "title": "Thể hiện lời nói, cử chỉ động viên, khuyến khích người bệnh an tâm điều trị",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Thái độ giao tiếp kém, có NB phàn nàn"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Sử dụng từ ngữ chưa rõ ràng, dễ gây hiểu lầm"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Sử dụng từ ngữ rõ ràng, dễ hiểu, nhưng chưa tích cực lắng nghe phản hồi của NB"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Sử dụng từ ngữ rõ ràng, phù hợp với tình huống, lắng nghe NB, thái độ vui vẻ, ân cần, lịch sự"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Luôn chia sẽ, động viên NB, thuyết phục được những NB khó tính hợp tác điều trị và chăm sóc"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c35",
+            "num": 35,
+            "standard": "TIÊU CHUẨN 13. Giao tiếp hiệu quả với người bệnh, người nhà, đồng nghiệp và cấp trên",
+            "title": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả; Chia sẻ thông tin một cách hiệu quả; Thực hiện vai trò đại diện hoặc biện hộ cho người bệnh để đảm bảo các quyền, lợi ích và vì sự an toàn người bệnh",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Hoàn thành công việc được phân công trong nhóm, thụ động, không có ý kiến đóng góp, không hỗ trợ các thành viên trong nhóm"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Hoàn thành công việc được phân công và hỗ trợ các thành viên trong nhóm, chưa có ý kiến tích cực trong phát triển nhóm"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Hoàn thành công việc được phân công và hỗ trợ nhóm, có ý kiến đóng góp tích cực"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Nhiều ý kiến đóng góp tích cực, chia sẽ thông tin hiệu quả, thống nhất được ý kiến tập thể"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Thực hiện vai trò đại diện hoặc biện hộ cho người bệnh để đảm bảo các quyền, lợi ích và vì sự an toàn người bệnh"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cdha_d3",
+    "code": "III.",
+    "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
+    "maxPoints": 120,
+    "standards": [
+      {
+        "id": "cdha_std_14",
+        "number": 14,
+        "title": "TIÊU CHUẨN 14. Đào tạo",
+        "criteria": [
+          {
+            "id": "cdha_c36",
+            "num": 36,
+            "standard": "TIÊU CHUẨN 14. Đào tạo",
+            "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Cần sự hướng dẫn trong tìm hiểu, phân tích mối tương quan giữa nhu cầu đào tạo với trình độ, vị trí làm việc"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc; Đề xuất được các giải pháp dựa trên kết quả báo cáo"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c37",
+            "num": 37,
+            "standard": "TIÊU CHUẨN 14. Đào tạo",
+            "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Cần sự hỗ trợ trong xây dựng phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có phương pháp đào tạo phù hợp với nội dung, yêu cầu của nội dung đào tạo. Vận dụng được phương pháp đào tạo phù hợp với hoàn cảnh đào tạo"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự thay đổi thường xuyên các chương trình, nội dung đào tạo hàng năm Vận dụng đa dạng trên ba phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c38",
+            "num": 38,
+            "standard": "TIÊU CHUẨN 14. Đào tạo",
+            "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Cần sự hỗ trợ, hoặc giám sát tiến độ thực hiện kế hoạch đào tạo; Có dưới 2 chương trình đào tạo trễ hạn dưới 1 tháng so với kế hoạch năm"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Độc lập theo dõi kế hoạch đào tạo, tổ chức đào tạo đúng tiến độ; Không có chương trình trễ hạn"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Biết phối hợp nhiều phương pháp, kỹ năng theo dõi kế hoạch đào tạo, tổ chức đào tạo đúng tiến độ; Hoàn thành các nội dung, chương trình đào tạo sớm hơn tiến độ trong kế hoạch đề ra"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c39",
+            "num": 39,
+            "standard": "TIÊU CHUẨN 14. Đào tạo",
+            "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch; Có chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Cần hướng dẫn trong đánh giá, đo lường hiệu quả trước & sau đào tạo"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Độc lập đánh giá, đo lường và báo cáo hiệu quả trước & sau đào tạo; Cần sự hướng dẫn trong phân tích, diễn giải kết quả đo lường"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Biết cách vận dụng nhiều kỹ năng đánh giá, đo lường và báo cáo hiệu quả trước & sau đào tạo; Đưa ra được phân tích, diễn giải kết quả đo lường, thống kê"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c40",
+            "num": 40,
+            "standard": "TIÊU CHUẨN 14. Đào tạo",
+            "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hướng dẫn liên tục, thường xuyên trong việc tìm, xây dựng công cụ, phương pháp đánh giá kiến thức của học viên."
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập đưa ra được công cụ, phương pháp trong đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Ứng dụng một phương pháp, công cụ đánh giá kiến thức học viên"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Tự tin, thành thạo trong áp dụng công cụ, phương pháp đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Vận dụng trên hai công cụ đánh giá, đo lường kiến thức học viên. Giải thích được cơ sở khoa học cho phương pháp đánh giá"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c41",
+            "num": 41,
+            "standard": "TIÊU CHUẨN 14. Đào tạo",
+            "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "có tham gia \" đạt 5 điểm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_15",
+        "number": 15,
+        "title": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
+        "criteria": [
+          {
+            "id": "cdha_c42",
+            "num": 42,
+            "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
+            "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2.5,
+                "level": "Mức 1 (2.5đ)",
+                "text": "Có tham gia NCKH với vai trò đối tượng lấy mẫu"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có được đào tạo cơ bản về NCKH và tham gia NCKH với vai trò người đi lấy mẫu"
+              },
+              {
+                "score": 7.5,
+                "level": "Mức 3 (7.5đ)",
+                "text": "Có chứng chỉ/ chứng nhận đào tạo chuyên về NCKH và là thành viên của nhóm thực hiện đề tài NCKH"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia viết đề cương nghiên cứu khoa học"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c43",
+            "num": 43,
+            "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
+            "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2.5,
+                "level": "Mức 1 (2.5đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị Biết sử dụng phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …) nhưng cần sử hỗ trợ"
+              },
+              {
+                "score": 7.5,
+                "level": "Mức 3 (7.5đ)",
+                "text": "Biết sử dụng thành thạo phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Có khả năng hướng dẫn các phần mềm nhập liệu và phân tích số liệu trong NCKH"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c44",
+            "num": 44,
+            "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
+            "desc": "Chọn 1 thành tích cao nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được phê duyệt đề cương và đang thực hiện"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được công nhận"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 3 năm"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 1 năm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c45",
+            "num": 45,
+            "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm); Hoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia ít nhất 2 đề tài NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện"
+              },
+              {
+                "score": 2,
+                "level": "Mức 2 (2đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài NCKH đã được phê duyệt đề cương và đang thực hiện"
+              },
+              {
+                "score": 2,
+                "level": "Mức 3 (2đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài đề tài NCKH đã hoàn thành đang trong quá trình chờ thẩm định"
+              },
+              {
+                "score": 12,
+                "level": "Mức 4 (12đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 2 năm"
+              },
+              {
+                "score": 15,
+                "level": "Mức 5 (15đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước và được mời báo cáo hội nghị điều dưỡng ít nhất 2 lần về đề tài đã công bố trong vòng 2 năm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c46",
+            "num": 46,
+            "standard": "TIÊU CHUẨN 15. Nghiên cứu khoa học",
+            "title": "Đăng bài báo nước ngoài Hoặc chủ nhiệm đề tài cấp Nhà nước",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc đang tham gia đề tài cấp nhà nước, đề tài đã được phê duyệt đề cương và đang trong quá trình hoàn tất"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đnag chờ thẩm định"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đang chờ thẩm định"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận trong vòng 5 năm"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận và mời báo cáo trong các hội nghị quốc tế ít nhất 1 lần về đề tài trong vòng 5 năm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_16",
+        "number": 16,
+        "title": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
+        "criteria": [
+          {
+            "id": "cdha_c47",
+            "num": 47,
+            "standard": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
+            "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 1,
+                "level": "Mức 1 (1đ)",
+                "text": "Có tham gia ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện"
+              },
+              {
+                "score": 1,
+                "level": "Mức 2 (1đ)",
+                "text": "là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện"
+              },
+              {
+                "score": 1,
+                "level": "Mức 3 (1đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã hoàn thành, đang chờ thẩm định"
+              },
+              {
+                "score": 1,
+                "level": "Mức 4 (1đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được công nhận"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được phân tích và đánh giá khả năng áp dụng"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c48",
+            "num": 48,
+            "standard": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
+            "title": "Ứng dụng kết quả nghiên cứu khoa học vào thực hành chăm sóc, quản lý công việc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp có kế hoạch áp dụng tại ít nhất 1 khoa/ 1 nhóm đối tượng liên quan."
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan và đánh giá kết quả áp dụng"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc được đánh giá hiệu quả áp dụng"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc được đánh giá hiệu quả áp dụng và được áp dụng toàn viện"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c49",
+            "num": 49,
+            "standard": "TIÊU CHUẨN 16. Thực hành dựa trên bằng chứng",
+            "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng thực hành chăm sóc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được bệnh viện/ trường công nhận và được giải thưởng của trường/ bệnh viện"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được nhận giải thưởng uy tín trong nước"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước. Đang trong quá trình đăng ký bản quyền sở hữu trí tuệ"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Kết quả NCKH/SKCT, phát minh mới được đăng ký bản quyền sở hữu trí tuệ trong vòng 2 năm"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cdha_d4",
+    "code": "IV.",
+    "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
+    "maxPoints": 100,
+    "standards": [
+      {
+        "id": "cdha_std_17",
+        "number": 17,
+        "title": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+        "criteria": [
+          {
+            "id": "cdha_c50",
+            "num": 50,
+            "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho chăm sóc",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "Mức 1 (1đ)",
+                "text": "Biết được: các loại máy, VTYT tại khoa"
+              },
+              {
+                "score": 2,
+                "level": "Mức 2 (2đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa cần sự hỗ trợ thường xuyên"
+              },
+              {
+                "score": 3,
+                "level": "Mức 3 (3đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa thỉnh thoảng cần sự hỗ trợ"
+              },
+              {
+                "score": 4,
+                "level": "Mức 4 (4đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, VTYT tại khoa một cách độc lập"
+              },
+              {
+                "score": 5,
+                "level": "Mức 5 (5đ)",
+                "text": "Có khả năng hướng dẩn quy trình, quy định về sử dụng, vận hành các trang thiết bị, VTYT tại khoa"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c51",
+            "num": 51,
+            "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Đề xuất các thiết bị, vật tư phù hợp",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị và vật tư phù hợp với chăm sóc bệnh nhân dựa trên bằng chứng khoa học"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị và vật tư phù hợp với chăm sóc bệnh nhân dựa trên bằng chứng khoa học và có thực"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các VTYT, trang thiết bị dựa trên bằng chứng khoa học và đánh giá thực tế tại khoa, đon vị"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c52",
+            "num": 52,
+            "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Lập được kế hoạch bảo quản trang thiết bị, vật tư"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đảm bảo thực hiện kế hoạch đúng tiến độ"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sáng kiến cải tiến trong bảo quản trang thiết bị, vật tư"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c53",
+            "num": 53,
+            "standard": "TIÊU CHUẨN 17. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong chăm sóc an toàn, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Vận dụng thành thạo và xử lý các vấn đề phát sinh trong quá trình sử dụng các trang thiết bị, VTYT tại khoa"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hiểu rõ nguyên lý hoạt động và phòng ngửa các sự cố liên quan đến việc sử dụng trang thiết bị"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá, đo lường việc sử dụng, và đề xuất cải tiến chất lượng an toàn và hiệu quả"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_18",
+        "number": 18,
+        "title": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
+        "criteria": [
+          {
+            "id": "cdha_c54",
+            "num": 54,
+            "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
+            "title": "Đánh giá được hiệu quả kinh tế của các biện pháp chăm sóc tại bệnh viện",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của một biện pháp, lĩnh vực chăm sóc tại khoa, đơn vị"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của một biện pháp, lĩnh vực chăm sóc tại các khoa có nhu cầu"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c55",
+            "num": 55,
+            "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
+            "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong chăm sóc người bệnh trong phạm vi phân công hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có đánh giá, phân tích nhu cầu nguồn nhân lực phục vụ cho công tác chăm sóc hiệu quả"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Xây dựng được kế hoạch phân bổ nguồn nhân lực phù hợp nhu cầu chăm sóc tại khoa, đơn vị"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c56",
+            "num": 56,
+            "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
+            "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có kế hoạch quản lý và dự toán nguồn tài chính phục vụ cho chăm sóc tại khoa, đơn vị"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Triển khai đánh giá và đo lường hiệu quả của kế hoạch"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c57",
+            "num": 57,
+            "standard": "TIÊU CHUẨN 18. Sử dụng nguồn tài chính thích hợp",
+            "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Triển khai và báo cáo kết quả đề án cải tiến tại khoa, đơn vị"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đề án được thẩm định và công nhận hiệu quả bởi Hội đồng chuyên môn. Được triển khai ứng dụng tại bệnh viện"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_19",
+        "number": 19,
+        "title": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
+        "criteria": [
+          {
+            "id": "cdha_c58",
+            "num": 58,
+            "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn lao động, sức khỏe nghề nghiệp"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có phổ biến, triển khai cho đồng nghiệp các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các giải pháp bảo vệ sức khỏe nghề nghiệp và tăng cường lao động"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c59",
+            "num": 59,
+            "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 0,
+                "level": "Mức 1 (0đ)",
+                "text": "Có trường hợp không tuân thủ → 0 điểm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c60",
+            "num": 60,
+            "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường chăm sóc, quản lý và xử lý chất thải)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Tuân thủ theo các quy trình về kiểm soát nhiễm khuẩn trong chăm sóc Người bệnh của khoa KSNK"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ các chính sách, quy trình"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c61",
+            "num": 61,
+            "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Tuân thủ/triển khai các quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ quy định"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c62",
+            "num": 62,
+            "standard": "TIÊU CHUẨN 19. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác (sử dụng các phương tiện chữa cháy, thoát hiểm,…)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có kiến thức về xử lý/quản lý tinh huống"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cdha_d5",
+    "code": "V.",
+    "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
+    "maxPoints": 150,
+    "standards": [
+      {
+        "id": "cdha_std_20",
+        "number": 20,
+        "title": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+        "criteria": [
+          {
+            "id": "cdha_c63",
+            "num": 63,
+            "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Nêu được những điểm mạnh, điểm yếu cá nhân và nguyện vọng phát triển nghề nghiệp"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch và đang thực hiện kế hoạch phát triển nghề nghiệp"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được các bằng cấp nâng cao trình độ chuyên môn, nghiệp vụ trong vòng 3 năm"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c64",
+            "num": 64,
+            "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Đạt được 12 tiết trong năm"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đạt được 24 tiết trong năm"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được >24 tiết trong năm -Và ít nhất 50% các chương trình đào tạo tập huấn nâng cao kiến thức chuyên môn và kỹ năng khác do bệnh viện tổ chức"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c65",
+            "num": 65,
+            "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c66",
+            "num": 66,
+            "standard": "TIÊU CHUẨN 20. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2.5,
+                "level": "Mức 1 (2.5đ)",
+                "text": "Tham gia hướng dẫn lâm sàng"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Tham gia biên soạn nội dung chương trình đào tạo"
+              },
+              {
+                "score": 7.5,
+                "level": "Mức 3 (7.5đ)",
+                "text": "Tham gia giảng dạy tại khoa/đơn vị"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia giảng dạy toàn bệnh viện"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_21",
+        "number": 21,
+        "title": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
+        "criteria": [
+          {
+            "id": "cdha_c67",
+            "num": 67,
+            "standard": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
+            "title": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có khảo sát các vấn đề còn tồn động trong hoạt động chăm sóc tại khoa, đơn vị"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Phân tích để xác định các vấn đề tồn động cần khắc phục"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự đánh giá và theo dõi thường xuyên các vấn đề tồn động"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c68",
+            "num": 68,
+            "standard": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
+            "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có đưa ra biện pháp khắc phục nhằm đảm bảo chất lượng chăm sóc"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c69",
+            "num": 69,
+            "standard": "TIÊU CHUẨN 21. Cải tiến chất lượng thực hành CĐHA",
+            "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xây dựng được kế hoạch cải tiến trong hoạt động chăm sóc tại khoa, đơn vị"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Thực hiện kế hoạch cải tiến nâng cao"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá hiệu quả cải tiến đã được thực hiện"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_22",
+        "number": 22,
+        "title": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
+        "criteria": [
+          {
+            "id": "cdha_c70",
+            "num": 70,
+            "standard": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
+            "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xây dựng được mục tiêu công việc theo vị trí phân công"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hoàn thành 80% mục tiêu công việc đã được xác định"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Hoàn thành 100% mục tiêu công việc đã được xác định"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c71",
+            "num": 71,
+            "standard": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
+            "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
+            "desc": "Ưu tiên ca bệnh cấp cứu, tình huống khẩn cấp và công việc trọng tâm",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xác định được khối lượng công việc được giao trong ngày"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Sắp xếp thứ tự ưu tiên công việc hợp lý, xử lý tốt khi có phát sinh"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Quản lý thời gian xuất sắc, giải quyết công việc khoa học, không bị dồn ứ"
+              }
+            ]
+          },
+          {
+            "id": "cdha_c72",
+            "num": 72,
+            "standard": "TIÊU CHUẨN 22. Quản lý chất lượng thực hành CĐHA",
+            "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có sự phân công vai trò của các thành viên trong nhóm chăm sóc"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có sự giám sát hỗ trợ cho các thành viên của nhóm chăm sóc"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự phân công, hỗ trợ và chia sẻ thông tin trong nhóm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cdha_std_23",
+        "number": 23,
+        "title": "TIÊU CHUẨN 23. Sự trải nghiệm nghề nghiệp",
+        "criteria": [
+          {
+            "id": "cdha_c73",
+            "num": 73,
+            "standard": "TIÊU CHUẨN 23. Sự trải nghiệm nghề nghiệp",
+            "title": "Sự trải nghiệm nghề nghiệp (Thâm niên công tác)",
+            "desc": "Chọn 1 mức thâm niên công tác theo phân hạng bệnh viện",
+            "maxScore": 50,
+            "maxPoints": 50,
+            "options": [
+              {
+                "score": 10,
+                "level": "≤ 5 năm BV H2/3 (10đ)",
+                "text": "Thâm niên ≤ 5 năm tại bệnh viện hạng 2, hạng 3"
+              },
+              {
+                "score": 15,
+                "level": "6 - 9 năm BV H2 (15đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 20,
+                "level": "10 - 15 năm BV H2 (20đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 25,
+                "level": "≤ 5 năm BV ĐB/H1 hoặc >15 năm H2 (25đ)",
+                "text": "Thâm niên ≤ 5 năm tại BV hạng đặc biệt, hạng 1 (hoặc > 15 năm BV hạng 2)"
+              },
+              {
+                "score": 35,
+                "level": "6 - 9 năm BV ĐB/H1 (35đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 45,
+                "level": "10 - 15 năm BV ĐB/H1 (45đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 50,
+                "level": "> 15 năm BV ĐB/H1 (50đ)",
+                "text": "Thâm niên > 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+],
 
   "vltl_phcn": [
     {
@@ -10374,1266 +12959,2049 @@ const DOMAINS_BY_SPECIALTY = {
   ],
 
   "xetnghiem": [
-    {
-      "id": "xetnghiem_d1",
-      "code": "I.",
-      "name": "TIÊU CHUẨN BẰNG CẤP",
-      "maxPoints": 180,
-      "standards": [
-        {
-          "id": "xetnghiem_std_1",
-          "number": 1,
-          "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-          "criteria": [
-            {
-              "id": "xetnghiem_c1",
-              "num": 1,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "A. Trung học/Cao đẳng",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 70,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Mức 1",
-                  "text": "A. Trung học/Cao đẳng"
-                },
-                {
-                  "score": 70,
-                  "level": "Mức 2",
-                  "text": "B. Đại học"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c2",
-              "num": 2,
-              "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
-              "title": "Chuyên khoa 1/Thạc sĩ",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 40,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "Chuyên khoa 1/Thạc sĩ"
-                },
-                {
-                  "score": 40,
-                  "level": "Mức 2",
-                  "text": "Tiến sĩ"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_2",
-          "number": 2,
-          "title": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-          "criteria": [
-            {
-              "id": "xetnghiem_c3",
-              "num": 3,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Trong nước ≥ 1 năm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Trong nước ≥ 1 năm"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c4",
-              "num": 4,
-              "standard": "TIÊU CHUẨN 2.  Chứng nhận - chứng chỉ",
-              "title": "Nước ngoài ≥ 6 tháng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Nước ngoài ≥ 6 tháng"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_3",
-          "number": 3,
-          "title": "TIÊU CHUẨN 3. Ngoại ngữ",
-          "criteria": [
-            {
-              "id": "xetnghiem_c5",
-              "num": 5,
-              "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
-              "title": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 3",
-                  "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_4",
-          "number": 4,
-          "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
-          "criteria": [
-            {
-              "id": "xetnghiem_c6",
-              "num": 6,
-              "standard": "TIÊU CHUẨN 4. Công nghệ thông tin",
-              "title": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)",
-              "desc": "Chọn 1 đáp án phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Mức 1",
-                  "text": "Sử dụng công nghệ thông tin cơ bản\r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "Sử dụng công nghệ thông tin nâng cao \r\n(Theo Thông tư số 03/2014/TT-BTTTT)"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "xetnghiem_d2",
-      "code": "II.",
-      "name": "NĂNG LỰC CHUYÊN MÔN",
-      "maxPoints": 450,
-      "standards": [
-        {
-          "id": "xetnghiem_std_5",
-          "number": 5,
-          "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-          "criteria": [
-            {
-              "id": "xetnghiem_c7",
-              "num": 7,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định tại cơ sở làm việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định tại cơ sở làm việc"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c8",
-              "num": 8,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c9",
-              "num": 9,
-              "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
-              "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_6",
-          "number": 6,
-          "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-          "criteria": [
-            {
-              "id": "xetnghiem_c10",
-              "num": 10,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Tuân thủ quy định về Y đức của nhân viên y tế",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ quy định về Y đức của nhân viên y tế"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c11",
-              "num": 11,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c12",
-              "num": 12,
-              "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
-              "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_7",
-          "number": 7,
-          "title": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
-          "criteria": [
-            {
-              "id": "xetnghiem_c13",
-              "num": 13,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
-              "title": "Phân loại cấp độ an toàn sinh học dựa trên các nhóm nguy cơ tại phòng xét nghiệm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Phân loại cấp độ an toàn sinh học dựa trên các nhóm nguy cơ tại phòng xét nghiệm"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c14",
-              "num": 14,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
-              "title": "Quản lý an toàn phòng xét nghiệm: Đảm bảo nhiệm vụ và trách nhiệm của nhân viên an toàn",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Quản lý an toàn phòng xét nghiệm: Đảm bảo nhiệm vụ và trách nhiệm của nhân viên an toàn"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c15",
-              "num": 15,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
-              "title": "Phân loại chất thải và đảm bảo an toàn trong xử lý chất thải phòng xét nghiệm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Phân loại chất thải và đảm bảo an toàn trong xử lý chất thải phòng xét nghiệm"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c16",
-              "num": 16,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
-              "title": "Tuân thủ, đảm bảo an toàn trong việc lưu trữ mẫu bệnh phẩm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 25,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Đạt (25đ)",
-                  "text": "Tuân thủ, đảm bảo an toàn trong việc lưu trữ mẫu bệnh phẩm"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c17",
-              "num": 17,
-              "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
-              "title": "Thực hành an toàn sinh học trong phòng xét nghiệm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 40,
-              "options": [
-                {
-                  "score": 40,
-                  "level": "Đạt (40đ)",
-                  "text": "Thực hành an toàn sinh học trong phòng xét nghiệm"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_8",
-          "number": 8,
-          "title": "TIÊU CHUẨN 8. Năng lực lập kế hoạch thực hiện hệ thống quản lý chất lượng xét nghiệm",
-          "criteria": [
-            {
-              "id": "xetnghiem_c18",
-              "num": 18,
-              "standard": "TIÊU CHUẨN 8. Năng lực lập kế hoạch thực hiện hệ thống quản lý chất lượng xét nghiệm",
-              "title": "Tuân thủ các bước thực hiện hệ thống quản lý chất lượng 12 thành tố và ISO 15189",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Mức 1",
-                  "text": "Tuân thủ các bước thực hiện hệ thống quản lý chất lượng 12 thành tố và ISO 15189"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 2",
-                  "text": "Xây dựng các chỉ số chất lượng của 03 giai đoạn quá trình xét nghiệm dựa trên mục tiêu chất lượng của phòng xét nghiệm"
-                },
-                {
-                  "score": 30,
-                  "level": "Mức 3",
-                  "text": "Hiểu được cấu trúc hệ thống quản lý chất lượng và mối quan hệ với hệ thống tài liệu"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 4",
-                  "text": "Thiết lập mục tiêu và kế hoạch chất lượng phòng xét nghiệm"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_9",
-          "number": 9,
-          "title": "TIÊU CHUẨN 9. Năng lực ứng dụng kỹ thuật xét nghiệm",
-          "criteria": [
-            {
-              "id": "xetnghiem_c19",
-              "num": 19,
-              "standard": "TIÊU CHUẨN 9. Năng lực ứng dụng kỹ thuật xét nghiệm",
-              "title": "Vận hành và thực hiện chạy mẫu bệnh phẩm trên hệ thống tự động",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 80,
-              "options": [
-                {
-                  "score": 40,
-                  "level": "Mức 1",
-                  "text": "Vận hành và thực hiện chạy mẫu bệnh phẩm trên hệ thống tự động"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 2",
-                  "text": "Hiệu chuẩn máy, thuốc thử đạt yêu cầu phân tích"
-                },
-                {
-                  "score": 60,
-                  "level": "Mức 3",
-                  "text": "Hướng dẫn và đào tạo nhân viên mới"
-                },
-                {
-                  "score": 70,
-                  "level": "Mức 4",
-                  "text": "Xây dựng và thực hiện quy trình kiểm soát chất lượng (nội kiểm, ngoại kiểm)"
-                },
-                {
-                  "score": 80,
-                  "level": "Mức 5",
-                  "text": "Xác nhận giá trị sử dụng đã có: xét nghiệm định lượng, xét nghiệm định tính và bán định lượng"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_10",
-          "number": 10,
-          "title": "TIÊU CHUẨN 10. Năng lực đảm bảo chất lượng xét nghiệm",
-          "criteria": [
-            {
-              "id": "xetnghiem_c20",
-              "num": 20,
-              "standard": "TIÊU CHUẨN 10. Năng lực đảm bảo chất lượng xét nghiệm",
-              "title": "Thực hiện đảm bảo chất lượng trước xét nghiệm",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Mức 1",
-                  "text": "Thực hiện đảm bảo chất lượng trước xét nghiệm"
-                },
-                {
-                  "score": 30,
-                  "level": "Mức 2",
-                  "text": "Đánh giá nội kiểm chất lượng và ngoại kiểm chất lượng trong xét nghiệm"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 3",
-                  "text": "Nhận định và phát hành kết quả xét nghiệm sau phân tích"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_11",
-          "number": 11,
-          "title": "TIÊU CHUẨN 11. Năng lực quản lý chất lượng xét nghiệm",
-          "criteria": [
-            {
-              "id": "xetnghiem_c21",
-              "num": 21,
-              "standard": "TIÊU CHUẨN 11. Năng lực quản lý chất lượng xét nghiệm",
-              "title": "Ghi chép và lưu trữ hồ sơ quản lý chất lượng xét nghiệm bảo đảm chính xác, đầy đủ và kịp thời",
-              "desc": "Chọn 1 năng lực phù hợp nhất",
-              "maxScore": 80,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Mức 1",
-                  "text": "Ghi chép và lưu trữ hồ sơ quản lý chất lượng xét nghiệm bảo đảm chính xác, đầy đủ và kịp thời"
-                },
-                {
-                  "score": 40,
-                  "level": "Mức 2",
-                  "text": "Xây dựng chỉ số chất lượng (KPI) cho từng chỉ tiêu xét nghiệm cần theo dõi"
-                },
-                {
-                  "score": 60,
-                  "level": "Mức 3",
-                  "text": "Theo dõi và đánh giá hiệu quả chỉ số chất lượng và áp dụng thực tiễn"
-                },
-                {
-                  "score": 80,
-                  "level": "Mức 4",
-                  "text": "Cải tiến và phát triển sơ đồ quá trình xét nghiệm (trước, trong và sau xét nghiệm)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_12",
-          "number": 12,
-          "title": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
-          "criteria": [
-            {
-              "id": "xetnghiem_c22",
-              "num": 22,
-              "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
-              "title": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả\r\nChia sẻ thông tin một cách hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả\r\nChia sẻ thông tin một cách hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c23",
-              "num": 23,
-              "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
-              "title": "Chủ động chia sẻ những thông tin và phản hồi thường xuyên với đồng nghiệp và khách hàng bên trong (bác sĩ, điều dưỡng, hộ lý)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ động chia sẻ những thông tin và phản hồi thường xuyên với đồng nghiệp và khách hàng bên trong (bác sĩ, điều dưỡng, hộ lý)"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c24",
-              "num": 24,
-              "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
-              "title": "Giao tiếp hiệu quả với đồng nghiệp và khách hàng bên trong",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Giao tiếp hiệu quả với đồng nghiệp và khách hàng bên trong"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c25",
-              "num": 25,
-              "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
-              "title": "Cam kết bảo mật thông tin bên trong và bên ngoài",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Cam kết bảo mật thông tin bên trong và bên ngoài"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "xetnghiem_d3",
-      "code": "III.",
-      "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
-      "maxPoints": 120,
-      "standards": [
-        {
-          "id": "xetnghiem_std_13",
-          "number": 13,
-          "title": "TIÊU CHUẨN 13. Đào tạo",
-          "criteria": [
-            {
-              "id": "xetnghiem_c26",
-              "num": 26,
-              "standard": "TIÊU CHUẨN 13. Đào tạo",
-              "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c27",
-              "num": 27,
-              "standard": "TIÊU CHUẨN 13. Đào tạo",
-              "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c28",
-              "num": 28,
-              "standard": "TIÊU CHUẨN 13. Đào tạo",
-              "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c29",
-              "num": 29,
-              "standard": "TIÊU CHUẨN 13. Đào tạo",
-              "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch;\r\nCó chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c30",
-              "num": 30,
-              "standard": "TIÊU CHUẨN 13. Đào tạo",
-              "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c31",
-              "num": 31,
-              "standard": "TIÊU CHUẨN 13. Đào tạo",
-              "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_14",
-          "number": 14,
-          "title": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
-          "criteria": [
-            {
-              "id": "xetnghiem_c32",
-              "num": 32,
-              "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
-              "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c33",
-              "num": 33,
-              "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
-              "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c34",
-              "num": 34,
-              "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
-              "desc": "Chọn 1 thành tích cao nhất",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c35",
-              "num": 35,
-              "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
-              "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 15,
-              "options": [
-                {
-                  "score": 15,
-                  "level": "Đạt (15đ)",
-                  "text": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm);\r\nHoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c36",
-              "num": 36,
-              "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
-              "title": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 20,
-              "options": [
-                {
-                  "score": 20,
-                  "level": "Đạt (20đ)",
-                  "text": "Đăng bài báo nước ngoài \r\nHoặc chủ nhiệm đề tài cấp Nhà nước"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_15",
-          "number": 15,
-          "title": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
-          "criteria": [
-            {
-              "id": "xetnghiem_c37",
-              "num": 37,
-              "standard": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
-              "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c38",
-              "num": 38,
-              "standard": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
-              "title": "Ứng dụng kết quả NCKH vào thực hiện chuyên môn xét nghiệm, quản lý công việc",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Ứng dụng kết quả NCKH vào thực hiện chuyên môn xét nghiệm, quản lý công việc"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c39",
-              "num": 39,
-              "standard": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
-              "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng xét nghiệm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng xét nghiệm"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "xetnghiem_d4",
-      "code": "IV.",
-      "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
-      "maxPoints": 100,
-      "standards": [
-        {
-          "id": "xetnghiem_std_16",
-          "number": 16,
-          "title": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-          "criteria": [
-            {
-              "id": "xetnghiem_c40",
-              "num": 40,
-              "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho xét nghiệm",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho xét nghiệm"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c41",
-              "num": 41,
-              "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Đề xuất các thiết bị, vật tư phù hợp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Đề xuất các thiết bị, vật tư phù hợp"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c42",
-              "num": 42,
-              "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c43",
-              "num": 43,
-              "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
-              "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong xét nghiệm an toàn, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong xét nghiệm an toàn, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_17",
-          "number": 17,
-          "title": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
-          "criteria": [
-            {
-              "id": "xetnghiem_c44",
-              "num": 44,
-              "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
-              "title": "Đánh giá được hiệu quả kinh tế của các kỹ thuật xét nghiệm triển khai tại bệnh viện",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Đánh giá được hiệu quả kinh tế của các kỹ thuật xét nghiệm triển khai tại bệnh viện"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c45",
-              "num": 45,
-              "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
-              "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong xét nghiệm trong phạm vi phân công hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch sử dụng các nguồn lực trong xét nghiệm trong phạm vi phân công hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c46",
-              "num": 46,
-              "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
-              "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c47",
-              "num": 47,
-              "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
-              "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_18",
-          "number": 18,
-          "title": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
-          "criteria": [
-            {
-              "id": "xetnghiem_c48",
-              "num": 48,
-              "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c49",
-              "num": 49,
-              "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c50",
-              "num": 50,
-              "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường phân tích xét nghiệm, quản lý và xử lý chất thải)",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường phân tích xét nghiệm, quản lý và xử lý chất thải)"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c51",
-              "num": 51,
-              "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c52",
-              "num": 52,
-              "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
-              "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 5,
-              "options": [
-                {
-                  "score": 5,
-                  "level": "Đạt (5đ)",
-                  "text": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "xetnghiem_d5",
-      "code": "V.",
-      "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
-      "maxPoints": 150,
-      "standards": [
-        {
-          "id": "xetnghiem_std_19",
-          "number": 19,
-          "title": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-          "criteria": [
-            {
-              "id": "xetnghiem_c53",
-              "num": 53,
-              "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c54",
-              "num": 54,
-              "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c55",
-              "num": 55,
-              "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c56",
-              "num": 56,
-              "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
-              "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_20",
-          "number": 20,
-          "title": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
-          "criteria": [
-            {
-              "id": "xetnghiem_c57",
-              "num": 57,
-              "standard": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
-              "title": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c58",
-              "num": 58,
-              "standard": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
-              "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c59",
-              "num": 59,
-              "standard": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
-              "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_21",
-          "number": 21,
-          "title": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
-          "criteria": [
-            {
-              "id": "xetnghiem_c60",
-              "num": 60,
-              "standard": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
-              "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c61",
-              "num": 61,
-              "standard": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
-              "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý"
-                }
-              ]
-            },
-            {
-              "id": "xetnghiem_c62",
-              "num": 62,
-              "standard": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
-              "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả",
-              "desc": "Chọn mức điểm phù hợp",
-              "maxScore": 10,
-              "options": [
-                {
-                  "score": 10,
-                  "level": "Đạt (10đ)",
-                  "text": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "xetnghiem_std_22",
-          "number": 22,
-          "title": "TIÊU CHUẨN 22. Sự trải nghiệm nghề nghiệp",
-          "criteria": [
-            {
-              "id": "xetnghiem_c63",
-              "num": 63,
-              "standard": "TIÊU CHUẨN 22. Sự trải nghiệm nghề nghiệp",
-              "title": "BV hạng đặc biệt, hạng 1",
-              "desc": "≤ 5 \r\nnăm",
-              "maxScore": 50,
-              "options": [
-                {
-                  "score": 25,
-                  "level": "Mức 1",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 10,
-                  "level": "Mức 2",
-                  "text": "BV hạng 2, 3"
-                },
-                {
-                  "score": 35,
-                  "level": "Mức 3",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 15,
-                  "level": "Mức 4",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 45,
-                  "level": "Mức 5",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 20,
-                  "level": "Mức 6",
-                  "text": "BV hạng 2"
-                },
-                {
-                  "score": 50,
-                  "level": "Mức 7",
-                  "text": "BV hạng đặc biệt, hạng 1"
-                },
-                {
-                  "score": 25,
-                  "level": "Mức 8",
-                  "text": "BV hạng 2"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  {
+    "id": "xetnghiem_d1",
+    "code": "I.",
+    "name": "TIÊU CHUẨN BẰNG CẤP",
+    "maxPoints": 180,
+    "standards": [
+      {
+        "id": "xetnghiem_std_1",
+        "number": 1,
+        "title": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+        "criteria": [
+          {
+            "id": "xetnghiem_c1",
+            "num": 1,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp chuyên môn Kỹ thuật viên",
+            "desc": "Chọn 1 năng lực phù hợp nhất theo bằng cấp chuyên môn cao nhất",
+            "maxScore": 100,
+            "maxPoints": 100,
+            "options": [
+              {
+                "score": 15,
+                "level": "CĐ/TH Khác (15đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học từ ĐH Nguyễn Tất Thành hoặc trường khác"
+              },
+              {
+                "score": 20,
+                "level": "CĐ/TH Hồng Bàng (20đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học từ ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 25,
+                "level": "CĐ/TH Phạm Ngọc Thạch (25đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học từ ĐH Y khoa Phạm Ngọc Thạch"
+              },
+              {
+                "score": 30,
+                "level": "CĐ/TH ĐHYD TPHCM (30đ)",
+                "text": "Cao đẳng/Trung học Kỹ thuật y học ĐHYD TP HCM"
+              },
+              {
+                "score": 50,
+                "level": "ĐH Nhóm 1 (50đ)",
+                "text": "ĐH Y Dược Huế, ĐH Y Dược Cần Thơ, ĐH Kỹ thuật y học Nam Định, ĐH Nguyễn Tất Thành, trường ĐH khác"
+              },
+              {
+                "score": 60,
+                "level": "ĐH Hồng Bàng (60đ)",
+                "text": "ĐH Quốc tế Hồng Bàng"
+              },
+              {
+                "score": 70,
+                "level": "ĐH YHN/PNT/Yersin (70đ)",
+                "text": "ĐH Y Hà Nội, ĐH Y khoa Phạm Ngọc Thạch, ĐH Yersin"
+              },
+              {
+                "score": 80,
+                "level": "ĐH Miền Đông (80đ)",
+                "text": "ĐH Quốc tế Miền Đông"
+              },
+              {
+                "score": 90,
+                "level": "ĐHYD TPHCM (90đ)",
+                "text": "Đại học Y Dược TPHCM"
+              },
+              {
+                "score": 100,
+                "level": "ĐH Quốc Tế (100đ)",
+                "text": "ĐH Kỹ thuật y học từ Châu Âu (trừ Đông Âu), Mỹ, Canada, New Zealand, Úc, Nhật Bản, Hàn Quốc, Singapore, Đài Loan, Malaysia"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c2",
+            "num": 2,
+            "standard": "TIÊU CHUẨN 1. Bằng cấp chuyên môn",
+            "title": "Bằng cấp Sau đại học",
+            "desc": "Chọn 1 năng lực phù hợp nhất nếu có bằng sau đại học",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 25,
+                "level": "CK1 / Thạc sĩ (25đ)",
+                "text": "Chuyên khoa 1 / Thạc sĩ chuyên ngành Kỹ thuật y học"
+              },
+              {
+                "score": 40,
+                "level": "Tiến sĩ (40đ)",
+                "text": "Tiến sĩ chuyên ngành Y Dược / Kỹ thuật y học"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_2",
+        "number": 2,
+        "title": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+        "criteria": [
+          {
+            "id": "xetnghiem_c3",
+            "num": 3,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận chuyên khoa trong nước",
+            "desc": "Có chứng chỉ chuyên khoa đào tạo trong nước",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Đạt (5đ)",
+                "text": "Chứng nhận / chứng chỉ chuyên khoa trong nước ≥ 1 năm"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c4",
+            "num": 4,
+            "standard": "TIÊU CHUẨN 2. Chứng nhận - chứng chỉ",
+            "title": "Chứng chỉ, chứng nhận đào tạo nước ngoài",
+            "desc": "Có chứng chỉ đào tạo tại nước ngoài",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Đạt (10đ)",
+                "text": "Chứng nhận / chứng chỉ đào tạo nước ngoài ≥ 6 tháng"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_3",
+        "number": 3,
+        "title": "TIÊU CHUẨN 3. Ngoại ngữ",
+        "criteria": [
+          {
+            "id": "xetnghiem_c5",
+            "num": 5,
+            "standard": "TIÊU CHUẨN 3. Ngoại ngữ",
+            "title": "Trình độ Ngoại ngữ",
+            "desc": "Chọn 1 mức ngoại ngữ phù hợp nhất",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Bậc 1 (5đ)",
+                "text": "TOEIC 450; IELTS 4.5; TOEFL iBT 53 hoặc tương đương"
+              },
+              {
+                "score": 10,
+                "level": "Bậc 2 (10đ)",
+                "text": "TOEIC 600; IELTS 5.5; TOEFL iBT 65 hoặc tương đương"
+              },
+              {
+                "score": 15,
+                "level": "Bậc 3 (15đ)",
+                "text": "TOEIC 800; IELTS 6.5; TOEFL iBT 79 hoặc tương đương"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_4",
+        "number": 4,
+        "title": "TIÊU CHUẨN 4. Công nghệ thông tin",
+        "criteria": [
+          {
+            "id": "xetnghiem_c6",
+            "num": 6,
+            "standard": "TIÊU CHUẨN 4. Tin học",
+            "title": "Kỹ năng Công nghệ thông tin",
+            "desc": "Theo Thông tư số 03/2014/TT-BTTTT",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Cơ bản (5đ)",
+                "text": "Sử dụng công nghệ thông tin cơ bản (Theo Thông tư số 03/2014/TT-BTTTT)"
+              },
+              {
+                "score": 10,
+                "level": "Nâng cao (10đ)",
+                "text": "Sử dụng công nghệ thông tin nâng cao, thành thạo phần mềm chuyên ngành"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xetnghiem_d2",
+    "code": "II.",
+    "name": "NĂNG LỰC CHUYÊN MÔN",
+    "maxPoints": 450,
+    "standards": [
+      {
+        "id": "xetnghiem_std_5",
+        "number": 5,
+        "title": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+        "criteria": [
+          {
+            "id": "xetnghiem_c7",
+            "num": 7,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định tại cơ sở làm việc",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c8",
+            "num": 8,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Tuân thủ các quy định hành nghề theo luật định liên quan đến y tế, thực hành điều dưỡng, Bộ Y tế",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c9",
+            "num": 9,
+            "standard": "TIÊU CHUẨN 5. Hành nghề theo pháp luật",
+            "title": "Thực hiện tốt quy tắc ứng xử của tổ chức và luật định",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Phối hợp với đồng nghiệp nhưng chưa chủ động hoặc do được yêu cầu Quan hệ, giao tiếp tốt với đồng nghiệp, NB (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Chủ động phối hợp với đồng nghiệp để giải quyết công việc Hòa nhã, vui vẻ, sẵn sàng hỗ trợ với đồng nghiệp, khách hàng/NB (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Phối hợp công việc 1 cách nhanh nhẹn, hiệu quả Ứng xử nhanh nhẹn, giải quyết mọi vấn đề, quan hệ tốt với đồng nghiệp trong và ngoài đơn vị Giao tiếp tốt với NB, chăm sóc được NB khó tính (5 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_6",
+        "number": 6,
+        "title": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+        "criteria": [
+          {
+            "id": "xetnghiem_c10",
+            "num": 10,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Tuân thủ quy định về Y đức của nhân viên y tế",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Nhân viên chủ yếu tuân thủ quy định về y đức nhưng đôi lần vi phạm do lơ là hoặc vô ý (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "Mức 2 (3đ)",
+                "text": "Nhân viên tuân thủ đầy đủ quy định về y đức, nhưng cần phải cải thiện kỹ năng và hiểu biết để đạt được mức độ cao hơn (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 3 (4đ)",
+                "text": "Nhân viên tuân thủ đầy đủ quy định về y đức, có kỹ năng và hiểu biết tốt về y đức trong công việc (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 4 (5đ)",
+                "text": "Nhân viên tuân thủ đầy đủ quy định về y đức, có kỹ năng và hiểu biết sâu sắc về y đức trong công việc, còn giúp đỡ và hướng dẫn những người khác tuân thủ quy định về y đức (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c11",
+            "num": 11,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Tuân thủ tiêu chuẩn đạo đức, không đổ lỗi cho đồng nghiệp, người bệnh đối với các sai sót của cá nhân. Bảo vệ hình ảnh đồng nghiệp trước người bệnh/ người nhà và xã hội",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c12",
+            "num": 12,
+            "standard": "TIÊU CHUẨN 6. Hành nghề theo tiêu chuẩn đạo đức nghề nghiệp",
+            "title": "Quảng bá hình ảnh người điều dưỡng, thể hiện tác phong và tư cách tốt, trang phục phù hợp, lời nói thuyết phục và cách cư xử đúng mực",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "4 lần vi phạm (1đ)",
+                "text": "4 lần vi phạm (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "3 lần vi phạm (2đ)",
+                "text": "3 lần vi phạm (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "2 lần vi phạm (3đ)",
+                "text": "2 lần vi phạm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "1 lần vi phạm (4đ)",
+                "text": "1 lần vi phạm (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "0 lần vi phạm (5đ)",
+                "text": "0 lần vi phạm (5 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_7",
+        "number": 7,
+        "title": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
+        "criteria": [
+          {
+            "id": "xetnghiem_c13",
+            "num": 13,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
+            "title": "Phân loại cấp độ an toàn sinh học dựa trên các nhóm nguy cơ tại phòng xét nghiệm",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 1,
+                "level": "Mức 1 (1đ)",
+                "text": "Nhân viên hiểu biết cơ bản về các nhóm nguy cơ sinh học (ví dụ: Nhóm nguy cơ 1 đến 4) nhưng chưa có khả năng phân loại chính xác cho từng loại xét nghiệm cụ thể. (2 diểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Nhân viên có thể nhận diện được các nhóm nguy cơ sinh học dựa trên các hướng dẫn cơ bản nhưng cần sự hỗ trợ khi phân loại cho các loại xét nghiệm phức tạp. (4 diểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Nhân viên có thể phân loại các cấp độ an toàn sinh học một cách độc lập dựa trên hướng dẫn và phân tích nguy cơ tại phòng xét nghiệm. (6 diểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Nhân viên thành thạo trong việc phân loại và có thể hướng dẫn hoặc kiểm tra việc phân loại an toàn sinh học của đồng nghiệp. (8 diểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Nhân viên có khả năng đánh giá và cải thiện hệ thống phân loại an toàn sinh học, đồng thời tham gia vào việc xây dựng các quy trình phân loại tại bệnh viện. (10 diểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c14",
+            "num": 14,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
+            "title": "Quản lý an toàn phòng xét nghiệm: Đảm bảo nhiệm vụ và trách nhiệm của nhân viên an toàn",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Nhân viên hiểu nhiệm vụ cơ bản của nhân viên an toàn nhưng chưa thể thực hiện đầy đủ các trách nhiệm an toàn. (3 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Nhân viên thực hiện các nhiệm vụ an toàn phòng xét nghiệm đơn giản dưới sự giám sát. (6 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "Mức 3 (9đ)",
+                "text": "Nhân viên có khả năng tự quản lý an toàn trong khu vực của mình và đảm bảo rằng các tiêu chuẩn an toàn được tuân thủ. (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 4 (12đ)",
+                "text": "Nhân viên có thể quản lý toàn bộ an toàn phòng xét nghiệm, đào tạo và hướng dẫn nhân viên khác về các quy trình an toàn. (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 5 (15đ)",
+                "text": "Nhân viên có khả năng phát triển và cải thiện các chính sách an toàn, đóng góp vào việc quản lý rủi ro tại phòng xét nghiệm, đảm bảo tuân thủ các quy định quốc gia và quốc tế. (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c15",
+            "num": 15,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
+            "title": "Phân loại chất thải và đảm bảo an toàn trong xử lý chất thải phòng xét nghiệm",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Nhân viên nhận diện được một số loại chất thải sinh học nhưng chưa hiểu rõ quy trình phân loại và xử lý an toàn. (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Nhân viên có khả năng phân loại cơ bản các loại chất thải (sinh học, hóa học) và xử lý chúng dưới sự giám sát (8 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Nhân viên phân loại và xử lý chất thải phòng xét nghiệm một cách độc lập, tuân thủ các hướng dẫn về an toàn. (12 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Nhân viên thành thạo trong việc hướng dẫn và giám sát việc phân loại, xử lý chất thải, đồng thời đảm bảo an toàn cho đồng nghiệp. (16 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Nhân viên có khả năng xây dựng và cải tiến các quy trình phân loại và xử lý chất thải, đảm bảo rằng toàn bộ quy trình đáp ứng các tiêu chuẩn về an toàn sinh học và môi trường. (20 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c16",
+            "num": 16,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
+            "title": "Tuân thủ, đảm bảo an toàn trong việc lưu trữ mẫu bệnh phẩm",
+            "desc": "",
+            "maxScore": 25,
+            "maxPoints": 25,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Nhân viên hiểu quy trình cơ bản về lưu trữ mẫu nhưng có thể chưa nhận thức được các nguy cơ liên quan đến từng loại mẫu bệnh phẩm. (5 diểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Nhân viên thực hiện việc lưu trữ mẫu bệnh phẩm dưới sự giám sát, tuân theo các quy trình được hướng dẫn. (10 diểm)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 3 (15đ)",
+                "text": "Nhân viên có khả năng tự lưu trữ mẫu bệnh phẩm một cách an toàn, đảm bảo các điều kiện bảo quản phù hợp cho từng loại mẫu. (15 diểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 4 (20đ)",
+                "text": "Nhân viên thành thạo trong việc quản lý và giám sát việc lưu trữ mẫu, đảm bảo rằng mọi mẫu bệnh phẩm đều được bảo quản theo đúng quy định và tiêu chuẩn an toàn (20 diểm)"
+              },
+              {
+                "score": 25,
+                "level": "Mức 5 (25đ)",
+                "text": "Nhân viên có thể xây dựng và cải tiến quy trình lưu trữ mẫu bệnh phẩm, đồng thời đảm bảo tuân thủ các tiêu chuẩn quốc gia và quốc tế về lưu trữ và vận chuyển mẫu bệnh phẩm. (25 diểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c17",
+            "num": 17,
+            "standard": "TIÊU CHUẨN 7. Hiểu biết về an toàn sinh học",
+            "title": "Thực hành an toàn sinh học trong phòng xét nghiệm",
+            "desc": "",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 8,
+                "level": "Mức 1 (8đ)",
+                "text": "Nhân viên nắm được những thực hành an toàn sinh học cơ bản nhưng vẫn cần sự giám sát thường xuyên. (8 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 2 (16đ)",
+                "text": "Nhân viên có thể tuân thủ các quy định an toàn sinh học cơ bản trong quá trình làm việc, với sự giám sát tối thiểu. (16 điểm)"
+              },
+              {
+                "score": 24,
+                "level": "0 lần vi phạm (24đ)",
+                "text": "Nhân viên thực hiện các thực hành an toàn sinh học một cách độc lập, đảm bảo không vi phạm các quy định về an toàn. (24 điểm)"
+              },
+              {
+                "score": 32,
+                "level": "Mức 4 (32đ)",
+                "text": "Nhân viên có khả năng giám sát và hướng dẫn các đồng nghiệp về thực hành an toàn sinh học trong phòng xét nghiệm. (32 điểm)"
+              },
+              {
+                "score": 40,
+                "level": "Mức 5 (40đ)",
+                "text": "Nhân viên có thể phát triển và điều chỉnh các chính sách về thực hành an toàn sinh học tại phòng xét nghiệm, nhằm đảm bảo tuân thủ các tiêu chuẩn cao nhất về an toàn. (40 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_8",
+        "number": 8,
+        "title": "TIÊU CHUẨN 8. Năng lực lập kế hoạch thực hiện hệ thống quản lý chất lượng xét nghiệm",
+        "criteria": [
+          {
+            "id": "xetnghiem_c18",
+            "num": 18,
+            "standard": "TIÊU CHUẨN 8. Năng lực lập kế hoạch thực hiện hệ thống quản lý chất lượng xét nghiệm",
+            "title": "Tuân thủ các bước thực hiện hệ thống quản lý chất lượng 12 thành tố và ISO 15189",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Nhân viên có hiểu biết cơ bản về hệ thống quản lý chất lượng 12 thành tố và ISO 15189, nhưng cần hướng dẫn chi tiết khi thực hiện. (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Nhân viên có thể tuân thủ một số bước trong hệ thống quản lý chất lượng 12 thành tố và ISO 15189 khi có sự giám sát. (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Nhân viên có khả năng thực hiện độc lập toàn bộ các bước của hệ thống quản lý chất lượng 12 thành tố và đảm bảo tuân thủ theo tiêu chuẩn ISO 15189. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Nhân viên thành thạo trong việc giám sát và hướng dẫn đồng nghiệp tuân thủ hệ thống quản lý chất lượng 12 thành tố và ISO 15189. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Nhân viên có thể xây dựng, điều chỉnh và cải tiến quy trình thực hiện hệ thống quản lý chất lượng 12 thành tố, đảm bảo phù hợp với tiêu chuẩn ISO 15189. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_9",
+        "number": 9,
+        "title": "TIÊU CHUẨN 9. Năng lực ứng dụng kỹ thuật xét nghiệm",
+        "criteria": [
+          {
+            "id": "xetnghiem_c19",
+            "num": 19,
+            "standard": "TIÊU CHUẨN 9. Năng lực ứng dụng kỹ thuật xét nghiệm",
+            "title": "Vận hành và thực hiện chạy mẫu bệnh phẩm trên hệ thống tự động",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 40,
+            "maxPoints": 40,
+            "options": [
+              {
+                "score": 8,
+                "level": "Mức 1 (8đ)",
+                "text": "Nhân viên hiểu biết cơ bản về quy trình chạy mẫu trên hệ thống tự động nhưng chưa có khả năng vận hành độc lập. (8 diểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 2 (16đ)",
+                "text": "Nhân viên có thể vận hành hệ thống tự động dưới sự giám sát chặt chẽ. (16 diểm)"
+              },
+              {
+                "score": 24,
+                "level": "Mức 3 (24đ)",
+                "text": "Nhân viên vận hành và thực hiện chạy mẫu trên hệ thống tự động một cách độc lập, tuân thủ các quy trình kỹ thuật. (24 diểm)"
+              },
+              {
+                "score": 32,
+                "level": "Mức 4 (32đ)",
+                "text": "Nhân viên thành thạo trong việc vận hành, khắc phục sự cố cơ bản của hệ thống tự động và hướng dẫn đồng nghiệp sử dụng. (32 diểm)"
+              },
+              {
+                "score": 40,
+                "level": "Mức 5 (40đ)",
+                "text": "Nhân viên có khả năng đánh giá, cải tiến quy trình vận hành hệ thống tự động và đảm bảo hiệu quả hoạt động. (40 diểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_10",
+        "number": 10,
+        "title": "TIÊU CHUẨN 10. Năng lực đảm bảo chất lượng xét nghiệm",
+        "criteria": [
+          {
+            "id": "xetnghiem_c20",
+            "num": 20,
+            "standard": "TIÊU CHUẨN 10. Năng lực đảm bảo chất lượng xét nghiệm",
+            "title": "Thực hiện đảm bảo chất lượng trước xét nghiệm",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Nhân viên hiểu biết cơ bản về các quy trình trước xét nghiệm (như tiếp nhận, dán nhãn mẫu, nhận dạng người bệnh, lấy mẫu), nhưng cần sự giám sát để đảm bảo tuân thủ các quy trình. (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Nhân viên có thể thực hiện độc lập các bước cơ bản của quy trình trước xét nghiệm như lấy mẫu, vận chuyển, và bảo quản mẫu bệnh phẩm, nhưng vẫn cần sự hướng dẫn cho các quy trình phức tạp hơn. (8 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Nhân viên thành thạo trong việc thực hiện toàn bộ quy trình đảm bảo chất lượng trước xét nghiệm, từ chuẩn bị bệnh nhân, lấy mẫu, ghi nhãn chính xác đến vận chuyển và bảo quản mẫu bệnh phẩm một cách độc lập, đồng thời nhận diện và xử lý các yếu tố ảnh hưởng đến chất lượng mẫu. (12 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Nhân viên có khả năng giám sát, đào tạo và đánh giá hiệu quả của các quy trình trước xét nghiệm, đảm bảo rằng các tiêu chuẩn chất lượng luôn được tuân thủ. (16 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Nhân viên có thể phát triển và cải tiến quy trình đảm bảo chất lượng trước xét nghiệm, tối ưu hóa các bước để giảm thiểu sai sót, nâng cao độ chính xác và hiệu quả của quá trình này. (20 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_11",
+        "number": 11,
+        "title": "TIÊU CHUẨN 11. Năng lực quản lý chất lượng xét nghiệm",
+        "criteria": [
+          {
+            "id": "xetnghiem_c21",
+            "num": 21,
+            "standard": "TIÊU CHUẨN 11. Năng lực quản lý chất lượng xét nghiệm",
+            "title": "Ghi chép và lưu trữ hồ sơ quản lý chất lượng xét nghiệm bảo đảm chính xác, đầy đủ và kịp thời",
+            "desc": "Chọn 1 năng lực phù hợp nhất",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Chỉ thực hiện ghi chép cơ bản và có thể thiếu chính xác hoặc đầy đủ. (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Ghi chép và lưu trữ được cải thiện, nhưng đôi khi vẫn thiếu kịp thời hoặc thiếu thông tin. (8 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "Ghi chép và lưu trữ chính xác, đầy đủ, nhưng cần hỗ trợ về hệ thống hóa thông tin. (12 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Có khả năng tự ghi chép, lưu trữ hồ sơ một cách đầy đủ, chính xác và kịp thời, cũng như sắp xếp có hệ thống. (16 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Thành thạo trong việc quản lý hồ sơ và có khả năng cải tiến hệ thống lưu trữ và ghi chép để tối ưu hóa quy trình quản lý chất lượng. (20 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_12",
+        "number": 12,
+        "title": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
+        "criteria": [
+          {
+            "id": "xetnghiem_c22",
+            "num": 22,
+            "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
+            "title": "Hợp tác làm việc nhóm và làm việc độc lập hiệu quả Chia sẻ thông tin một cách hiệu quả",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Không thể làm việc trong nhóm, thường xuyên gây xung đột và không hoàn thành công việc cá nhân. Không chia sẻ thông tin, gây khó khăn cho đồng nghiệp và khách hàng. (3 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Thỉnh thoảng hợp tác với nhóm nhưng thường cần sự hỗ trợ để hoàn thành công việc cá nhân Chia sẻ thông tin không đầy đủ hoặc không đúng lúc, gây hiểu lầm. (6 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "Mức 3 (9đ)",
+                "text": "Có khả năng làm việc trong nhóm và độc lập, nhưng đôi khi thiếu sự chủ động. Chia sẻ thông tin khi cần thiết, nhưng chưa chủ động. (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 4 (12đ)",
+                "text": "Hợp tác tốt trong nhóm, chủ động hoàn thành công việc cá nhân và hỗ trợ đồng nghiệp khi cần Chia sẻ thông tin một cách chủ động và kịp thời, giúp đồng nghiệp và khách hàng hiểu rõ hơn. (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 5 (15đ)",
+                "text": "Là người dẫn dắt trong nhóm, luôn hoàn thành công việc cá nhân một cách xuất sắc và khuyến khích đồng nghiệp hợp tác. Luôn chủ động chia sẻ thông tin, tạo ra môi trường làm việc minh bạch và hiệu quả. (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c23",
+            "num": 23,
+            "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
+            "title": "Chủ động chia sẻ những thông tin và phản hồi thường xuyên với đồng nghiệp và khách hàng bên trong (bác sĩ, điều dưỡng, hộ lý)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "-Thông báo kịp thời kết quả xét nghiệm có quyết định lâm sàng liên quan đến người bệnh cho bác sĩ điều trị; - Hỗ trợ, phối hợp với kỹ thuật y khác trong việc thực hiện kỹ thuật chuyên môn được giao. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "- Thông báo kịp thời kết quả xét nghiệm có quyết định lâm sàng liên quan đến người bệnh cho bác sĩ điều trị; - Tham gia hội chẩn mẫu xét nghiệm khi được phân công. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "- Thông báo kịp thời kết quả xét nghiệm có quyết định lâm sàng đến người bệnh cho bác sĩ điều trị; đề xuất chỉ định thêm xét nghiệm khác giúp chẩn đoán và điều trị trường hợp cần thiết; - Tham gia hội chẩn mẫu xét nghiệm khi được phân công. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c24",
+            "num": 24,
+            "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
+            "title": "Giao tiếp hiệu quả với đồng nghiệp và khách hàng bên trong",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Giao tiếp kém, thường xuyên gây hiểu lầm và không thể truyền đạt thông điệp. (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Giao tiếp không rõ ràng, cần cải thiện khả năng lắng nghe và phản hồi. (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Giao tiếp hiệu quả ở mức độ cơ bản, nhưng chưa thực sự thu hút và thuyết phục. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Giao tiếp rõ ràng, lắng nghe tốt và có khả năng thuyết phục đồng nghiệp (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Giao tiếp xuất sắc, có khả năng truyền đạt thông điệp một cách rõ ràng và thuyết phục, đồng thời lắng nghe và phản hồi một cách nhạy bén, tạo ra mối quan hệ tốt với đồng nghiệp và khách hàng (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c25",
+            "num": 25,
+            "standard": "TIÊU CHUẨN 12. Giao tiếp hiệu quả với đồng nghiệp và cấp trên",
+            "title": "Cam kết bảo mật thông tin bên trong và bên ngoài",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có ý thức về bảo mật thông tin, nhưng đôi khi chưa thực hiện đầy đủ các biện pháp cần thiết. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Cam kết bảo mật thông tin, thực hiện tốt các quy định và hướng dẫn liên quan (10 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 3 (15đ)",
+                "text": "Là tấm gương về bảo mật thông tin, chủ động đề xuất các biện pháp cải thiện quy trình bảo mật và đào tạo đồng nghiệp về tầm quan trọng của bảo mật thông tin. (15 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xetnghiem_d3",
+    "code": "III.",
+    "name": "NĂNG LỰC ĐÀO TẠO NGHIÊN CỨU KHOA HỌC THỰC HÀNH DỰA TRÊN CHỨNG CỨ (EBP)",
+    "maxPoints": 120,
+    "standards": [
+      {
+        "id": "xetnghiem_std_13",
+        "number": 13,
+        "title": "TIÊU CHUẨN 13. Đào tạo",
+        "criteria": [
+          {
+            "id": "xetnghiem_c26",
+            "num": 26,
+            "standard": "TIÊU CHUẨN 13. Đào tạo",
+            "title": "Phân tích được mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí việc làm của đối tượng thuộc phạm vi phụ trách, xây dựng được kế hoạch đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hướng dẫn trong tìm hiểu, phân tích mối tương quan giữa nhu cầu đào tạo với trình độ, vị trí làm việc; (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Thực hiện và báo cáo kết quả khảo sát, nghiên cứu mối quan hệ giữa nhu cầu đào tạo với trình độ, vị trí làm việc; Đề xuất được các giải pháp dựa trên kết quả báo cáo. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c27",
+            "num": 27,
+            "standard": "TIÊU CHUẨN 13. Đào tạo",
+            "title": "Đề xuất, xây dựng các phương pháp đào tạo linh động, phù hợp với hoàn cảnh đảm bảo nâng cao chất lượng đào tạo",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Cần sự hỗ trợ trong xây dựng phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có phương pháp đào tạo phù hợp với nội dung, yêu cầu của nội dung đào tạo. Vận dụng được phương pháp đào tạo phù hợp với hoàn cảnh đào tạo. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự thay đổi thường xuyên các chương trình, nội dung đào tạo hàng năm Vận dụng đa dạng trên ba phương pháp đào tạo phù hợp với yêu cầu của nội dung đào tạo (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c28",
+            "num": 28,
+            "standard": "TIÊU CHUẨN 13. Đào tạo",
+            "title": "Tổ chức thực hiện được kế hoạch đào tạo và tham gia đào tạo theo đúng tiến độ và đạt chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hỗ trợ, hoặc giám sát tiến độ thực hiện kế hoạch đào tạo; Có dưới 2 chương trình đào tạo trễ hạn dưới 1 tháng so với kế hoạch năm (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập theo dõi kế hoạch đào tạo, tổ chức đào tạo đúng tiến độ; Không có chương trình trễ hạn. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Biết phối hợp nhiều phương pháp, kỹ năng theo dõi kế hoạch đào tạo, tổ chức đào tạo đúng tiến độ; Hoàn thành các nội dung, chương trình đào tạo sớm hơn tiến độ trong kế hoạch đề ra (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c29",
+            "num": 29,
+            "standard": "TIÊU CHUẨN 13. Đào tạo",
+            "title": "Đánh giá được hiệu quả đào tạo: thống kê, phân tích, diễn giải và báo cáo theo kế hoạch; Có chỉ ra những nhược điểm cần khắc phục và đề xuất giải pháp cải tiến chất lượng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần hướng dẫn trong đánh giá, đo lường hiệu quả trước & sau đào tạo; (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập đánh giá, đo lường và báo cáo hiệu quả trước & sau đào tạo; Cần sự hướng dẫn trong phân tích, diễn giải kết quả đo lường. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Biết cách vận dụng nhiều kỹ năng đánh giá, đo lường và báo cáo hiệu quả trước & sau đào tạo; Đưa ra được phân tích, diễn giải kết quả đo lường, thống kê (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c30",
+            "num": 30,
+            "standard": "TIÊU CHUẨN 13. Đào tạo",
+            "title": "Xây dựng được công cụ, phương pháp đánh giá thay đổi kiến thức của người được đào tạo và sau khi đào tạo",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Cần sự hướng dẫn liên tục, thường xuyên trong việc tìm, xây dựng công cụ, phương pháp đánh giá kiến thức của học viên. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Độc lập đưa ra được công cụ, phương pháp trong đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Ứng dụng một phương pháp, công cụ đánh giá kiến thức học viên. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Tự tin, thành thạo trong áp dụng công cụ, phương pháp đánh giá kiến thức của học viên, viên chức trước & sau đào tạo. Vận dụng trên hai công cụ đánh giá, đo lường kiến thức học viên. Giải thích được cơ sở khoa học cho phương pháp đánh giá. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c31",
+            "num": 31,
+            "standard": "TIÊU CHUẨN 13. Đào tạo",
+            "title": "Tham gia giảng dạy ít nhất 2 bài/năm/khoa hoặc 1 bài toàn bệnh viện",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "có tham gia \" đạt 5 điểm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_14",
+        "number": 14,
+        "title": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
+        "criteria": [
+          {
+            "id": "xetnghiem_c32",
+            "num": 32,
+            "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
+            "title": "Hiểu biết về các kỹ thuật nghiên cứu, khảo sát, đánh giá, áp dụng phù hợp trong chăm sóc người bệnh",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia NCKH với vai trò đối tượng lấy mẫu (2 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Có được đào tạo cơ bản về NCKH và tham gia NCKH với vai trò người đi lấy mẫu (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Có chứng chỉ/ chứng nhận đào tạo chuyên về NCKH và là thành viên của nhóm thực hiện đề tài NCKH (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia viết đề cương nghiên cứu khoa học (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c33",
+            "num": 33,
+            "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
+            "title": "Sử dụng thành thạo công nghệ thông tin trong thu thập, phân tích số liệu (SPSS, STATA, R)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Biết cách tìm và trích dẫn tài liệu liên quan đến nghiên cứu có giá trị Biết sử dụng phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …) nhưng cần sử hỗ trợ (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Biết sử dụng thành thạo phần mềm nhập liệu và phân tích số liệu (SPSS, STATA, R, …) (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Có khả năng hướng dẫn các phần mềm nhập liệu và phân tích số liệu trong NCKH (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c34",
+            "num": 34,
+            "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước",
+            "desc": "Chọn 1 thành tích cao nhất",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được phê duyệt đề cương và đang thực hiện. (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài NCKH đã được công nhận (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 3 năm. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài NCKH cấp cơ sở được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 1 năm. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c35",
+            "num": 35,
+            "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
+            "title": "Chủ nhiệm đề tài cấp cơ sở, có công bố trên tạp chí trong nước (≥ 2 bài/năm); Hoặc chủ nhiệm đề tài cấp Thành phố (tính 1 lần)",
+            "desc": "",
+            "maxScore": 15,
+            "maxPoints": 15,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có tham gia ít nhất 2 đề tài NCKH với vai trò là người hỗ trợ chính/ Thư ký đề tài đã được phê duyệt đề cương và đang thực hiện (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài NCKH đã được phê duyệt đề cương và đang thực hiện. (10 điểm)"
+              },
+              {
+                "score": 9,
+                "level": "Mức 3 (9đ)",
+                "text": "Là chủ nhiệm ít nhất 2 đề tài đề tài NCKH đã hoàn thành đang trong quá trình chờ thẩm định (9 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 4 (12đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước trong vòng 2 năm (12 điểm)"
+              },
+              {
+                "score": 15,
+                "level": "Mức 5 (15đ)",
+                "text": "Là chủ nhiệm đề tài cấp cơ sở ≥ 2 bài/ năm hoặc đề tài cấp tỉnh/ thành phố đã được công nhận và công bố trên tạp chí có số ISSN trong nước và được mời báo cáo hội nghị điều dưỡng ít nhất 2 lần về đề tài đã công bố trong vòng 2 năm (15 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c36",
+            "num": 36,
+            "standard": "TIÊU CHUẨN 14. Nghiên cứu khoa học",
+            "title": "Đăng bài báo nước ngoài Hoặc chủ nhiệm đề tài cấp Nhà nước",
+            "desc": "",
+            "maxScore": 20,
+            "maxPoints": 20,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc đang tham gia đề tài cấp nhà nước, đề tài đã được phê duyệt đề cương và đang trong quá trình hoàn tất (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có tên trong bài báo được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đnag chờ thẩm định (8 điểm)"
+              },
+              {
+                "score": 12,
+                "level": "Mức 3 (12đ)",
+                "text": "là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc tham gia đề tài cấp nhà nước, đề tài đã hoàn thành và đang chờ thẩm định (12 điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 4 (16đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận trong vòng 5 năm (16 điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 5 (20đ)",
+                "text": "Là chủ nhiệm đề tài được đăng tạp chí uy tín ở nước ngoài hoặc đề tài cấp nhà nước được công nhận và mời báo cáo trong các hội nghị quốc tế ít nhất 1 lần về đề tài trong vòng 5 năm (20 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_15",
+        "number": 15,
+        "title": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
+        "criteria": [
+          {
+            "id": "xetnghiem_c37",
+            "num": 37,
+            "standard": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
+            "title": "Thực hiện nghiên cứu và có giải pháp thích hợp dựa trên kết quả nghiên cứu",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Có tham gia ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được phê duyệt đề cương và đang trong quá trình thực hiện (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã hoàn thành, đang chờ thẩm định. (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm ít nhất 1 đề tài NCKH/ SKCT liên quan đến thực hành chăm sóc đã được công nhận. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi thực hành chăm sóc dựa trên kết quả nghiên cứu được phân tích và đánh giá khả năng áp dụng (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c38",
+            "num": 38,
+            "standard": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
+            "title": "Ứng dụng kết quả NCKH vào thực hiện chuyên môn xét nghiệm, quản lý công việc",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp có kế hoạch áp dụng tại ít nhất 1 khoa/ 1 nhóm đối tượng liên quan. (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm dựa trên kết quả nghiên cứu được áp dụng ít nhất tại một khoa/ một nhóm đối tượng liên quan và đánh giá kết quả áp dụng (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm được đánh giá hiệu quả áp dụng (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm được đánh giá hiệu quả áp dụng và được áp dụng toàn viện (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c39",
+            "num": 39,
+            "standard": "TIÊU CHUẨN 15. Thực hành dựa trên bằng chứng",
+            "title": "Sử dụng các bằng chứng từ nghiên cứu khoa học để nâng cao chất lượng xét nghiệm",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 2,
+                "level": "Mức 1 (2đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm dựa trên kết quả nghiên cứu được bệnh viện/ trường công nhận và được giải thưởng của trường/ bệnh viện (2 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 3 (6đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm dựa trên kết quả nghiên cứu được nhận giải thưởng uy tín trong nước (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 4 (8đ)",
+                "text": "Là chủ nhiệm đề tài mà giải pháp cải tiến/ thay đổi kỹ thuật xét nghiệm, quản lý chất lượng xét nghiệm, an toàn phòng xét nghiệm dựa trên kết quả nghiên cứu được công nhận và công bố trên các tạp chí có uy tín trong nước. Đang trong quá trình đăng ký bản quyền sở hữu trí tuệ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 5 (10đ)",
+                "text": "Kết quả NCKH/SKCT, phát minh mới được đăng ký bản quyền sở hữu trí tuệ trong vòng 2 năm (10 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xetnghiem_d4",
+    "code": "IV.",
+    "name": "NĂNG LỰC LÃNH ĐẠO & QUẢN LÝ",
+    "maxPoints": 100,
+    "standards": [
+      {
+        "id": "xetnghiem_std_16",
+        "number": 16,
+        "title": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+        "criteria": [
+          {
+            "id": "xetnghiem_c40",
+            "num": 40,
+            "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Hiểu biết về quy trình, quy định quản lý, sử dụng trang thiết bị, dụng cụ y tế, vật tư phục vụ cho xét nghiệm",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 1,
+                "level": "Mức 1 (1đ)",
+                "text": "Biết được: các loại thiết bị, hóa chất, sinh phẩm, vật tư tại khoa (1 điểm)"
+              },
+              {
+                "score": 2,
+                "level": "Mức 2 (2đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, hóa chất, sinh phẩm, vật tư tại khoa cần sự hỗ trợ thường xuyên. (2 điểm)"
+              },
+              {
+                "score": 3,
+                "level": "Mức 3 (3đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, hóa chất, sinh phẩm, vật tư tại khoa thỉnh thoảng cần sự hỗ trợ. (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 4 (4đ)",
+                "text": "Biết sử dụng, vận hành các trang thiết bị, hóa chất, sinh phẩm, vật tư tại khoa một cách độc lập. (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 5 (5đ)",
+                "text": "Có khả năng hướng dẩn quy trình, quy định về sử dụng, vận hành các trang thiết bị, hóa chất, sinh phẩm, vật tư tại khoa. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c41",
+            "num": 41,
+            "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Đề xuất các thiết bị, vật tư phù hợp",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị ,hóa chất, sinh phẩm, vật tư phù hợp với kỹ thuật xét nghiệm dựa trên bằng chứng khoa học. ( 3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Xác định được các yêu cầu về trang thiết bị, hóa chất, sinh phẩm, vật tư phù hợp với kỹ thuật xét nghiệm dựa trên bằng chứng khoa học và có thực hiện đánh giá tại khoa/ đơn vị (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các trang thiết bị, hóa chất, sinh phẩm, vật tư phù hợp với kỹ thuật xét nghiệm dựa trên bằng chứng khoa học và có thực hiện đánh giá tại khoa/ đơn vị (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c42",
+            "num": 42,
+            "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Lập kế hoạch bảo quản trang thiết bị, vật tư một cách hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Lập được kế hoạch bảo quản trang thiết bị, hóa chất, sinh phẩm, vật tư (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đảm bảo thực hiện kế hoạch đúng tiến độ (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sáng kiến cải tiến trong bảo quản trang thiết bị, hóa chất, sinh phẩm, vật tư (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c43",
+            "num": 43,
+            "standard": "TIÊU CHUẨN 16. Quản lý và sử dụng các trang thiết bị, dụng cụ y tế có hiệu quả",
+            "title": "Sử dụng thành thạo các trang thiết bị, phương tiện sử dụng trong xét nghiệm an toàn, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Vận dụng thành thạo và xử lý các vấn đề phát sinh trong quá trình sử dụng các trang thiết bị, hóa chất, sinh phẩm, vật tư tại khoa (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Hiểu rõ nguyên lý hoạt động và phòng ngừa các sự cố liên quan đến việc sử dụng trang thiết bị, hóa chất, sinh phẩm, vật tư (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá, đo lường việc sử dụng và đề xuất cải tiến việc sử dụng trang thiết bị, hóa chất, sinh phẩm, vật tư an toàn và hiệu quả. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_17",
+        "number": 17,
+        "title": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
+        "criteria": [
+          {
+            "id": "xetnghiem_c44",
+            "num": 44,
+            "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
+            "title": "Đánh giá được hiệu quả kinh tế của các kỹ thuật xét nghiệm triển khai tại bệnh viện",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của một kỹ thuật xét nghiệm thực hiện tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Có nghiên cứu/đề án khảo sát hiệu quả kinh tế của kỹ thuật xét nghiệm thực hiện đáp ứng nhu cầu điều trị các khoa lâm sàng. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c45",
+            "num": 45,
+            "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
+            "title": "Xây dựng kế hoạch sử dụng các nguồn lực trong xét nghiệm trong phạm vi phân công hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có đánh giá, phân tích nhu cầu nguồn nhân lực phục vụ cho công tác thực hiện chuyên môn xét nghiệm tại khoa hiệu quả (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Xây dựng được kế hoạch phân bổ nguồn nhân lực phù hợp nhu cầu thực hiện chuyên môn tại khoa, đơn vị. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c46",
+            "num": 46,
+            "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
+            "title": "Tổ chức, triển khai thực hiện kế hoạch hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Có kế hoạch quản lý và dự toán nguồn tài chính phục vụ cho công tác chuyên môn tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Triển khai đánh giá và đo lường hiệu quả của kế hoạch. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c47",
+            "num": 47,
+            "standard": "TIÊU CHUẨN 17. Sử dụng nguồn tài chính thích hợp trong phân tích xét nghiệm",
+            "title": "Có đề án cải tiến giúp bệnh viện ứng dụng hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 5,
+                "level": "Mức 1 (5đ)",
+                "text": "Triển khai và báo cáo kết quả đề án cải tiến tại khoa, đơn vị. (5 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 2 (10đ)",
+                "text": "Đề án được thẩm định và công nhận hiệu quả bởi Hội đồng chuyên môn. Được triển khai ứng dụng tại bệnh viện. (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_18",
+        "number": 18,
+        "title": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
+        "criteria": [
+          {
+            "id": "xetnghiem_c48",
+            "num": 48,
+            "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Thiết bị các nội dung liên quan đến sức khỏe nghề nghiệp và luật pháp về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn sinh học phòng xét nghiệm, an toàn lao động, sức khỏe nghề nghiệp (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có phổ biến, triển khai cho đồng nghiệp các nội dung liên quan đến an toàn sinh học phòng xét nghiệm, sức khỏe nghề nghiệp và luật pháp về an toàn lao động (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Đề xuất được các giải pháp bảo vệ sức khỏe nghề nghiệp, tăng cường an toàn lao động, an toàn sinh học phòng xét nghiệm. (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c49",
+            "num": 49,
+            "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động, nhưng đôi khi chưa thực hiện đầy đủ các biện pháp cần thiết (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Tuân thủ tốt các tiêu chuẩn và quy tắc về an toàn lao động, thực hiện tốt các biện pháp phòng ngừa và đảm bảo an toàn (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Là tấm gương về tuân thủ các tiêu chuẩn và quy tắc về an toàn lao động, chủ động đề xuất các biện pháp cải thiện quy trình an toàn và đào tạo đồng nghiệp về tầm quan trọng của an toàn lao động (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c50",
+            "num": 50,
+            "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các chính sách, quy trình về phòng ngừa cách ly và kiểm soát nhiễm khuẩn (kiểm soát môi trường phân tích xét nghiệm, quản lý và xử lý chất thải)",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Tuân thủ theo các quy trình về kiểm soát nhiễm khuẩn trong chăm sóc Người bệnh của Ban KSNK (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ các chính sách, quy trình (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c51",
+            "num": 51,
+            "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Tuân thủ/triển khai các quy định dự phòng phơi nhiễm với các tác nhân gây bệnh và biết được phương pháp xử lý (3 điểm)"
+              },
+              {
+                "score": 4,
+                "level": "Mức 2 (4đ)",
+                "text": "Có kế hoạch giám sát/tham gia giám sát tuân thủ quy định (4 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 3 (5đ)",
+                "text": "Có giải pháp cải thiện và tăng cường sự tuân thủ của nhân viên (5 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c52",
+            "num": 52,
+            "standard": "TIÊU CHUẨN 18. Thiết lập môi trường làm việc hiệu quả, an toàn",
+            "title": "Tuân thủ các quy trình an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác",
+            "desc": "",
+            "maxScore": 5,
+            "maxPoints": 5,
+            "options": [
+              {
+                "score": 3,
+                "level": "Mức 1 (3đ)",
+                "text": "Có kiến thức về an toàn phòng cháy chữa cháy và các trường hợp khẩn cấp khác (sử dụng các phương tiện chữa cháy, thoát hiểm,…) (3 điểm)"
+              },
+              {
+                "score": 5,
+                "level": "Mức 2 (5đ)",
+                "text": "Có kiến thức về xử lý/quản lý tinh huống (5 điểm)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xetnghiem_d5",
+    "code": "V.",
+    "name": "PHÁT TRIỂN CHUYÊN MÔN CÁ NHÂN & CHẤT LƯỢNG",
+    "maxPoints": 150,
+    "standards": [
+      {
+        "id": "xetnghiem_std_19",
+        "number": 19,
+        "title": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+        "criteria": [
+          {
+            "id": "xetnghiem_c53",
+            "num": 53,
+            "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Xác định rõ mục tiêu, nguyện vọng phát triển nghề nghiệp và biết được điểm mạnh và yếu của bản thân",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Nêu được những điểm mạnh, điểm yếu cá nhân và nguyện vọng phát triển nghề nghiệp. (4 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có kế hoạch và đang thực hiện kế hoạch phát triển nghề nghiệp. (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được các bằng cấp nâng cao trình độ chuyên môn, nghiệp vụ trong vòng 3 năm. (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c54",
+            "num": 54,
+            "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Chủ động tham gia tích cực đầy đủ hoạt động đào tạo liên tục của bệnh viện cấp khoa, cấp bệnh viện để liên tục nâng cao kiến thức và kỹ năng",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Đạt được 12 tiết trong năm (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Đạt được 24 tiết trong năm (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đạt được >24 tiết trong năm -Và ít nhất 50% các chương trình đào tạo tập huấn nâng cao kiến thức chuyên môn và kỹ năng khác do bệnh viện tổ chức (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c55",
+            "num": 55,
+            "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có thái độ tích cực với những đổi mới, quan điểm trái chiều, thể hiện sự lắng nghe các kiến nghị và các đề xuất, thử nghiệm các phương pháp mới (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c56",
+            "num": 56,
+            "standard": "TIÊU CHUẨN 19. Duy trì và phát triển năng lực cho cá nhân và đồng nghiệp",
+            "title": "Hỗ trợ tích cực, đóng góp vào việc đào tạo, nâng cao trình độ, phát triển nghề nghiệp cho đồng nghiệp",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 4,
+                "level": "Mức 1 (4đ)",
+                "text": "Tham gia hướng dẫn lâm sàng (4 điểm)"
+              },
+              {
+                "score": 6,
+                "level": "Mức 2 (6đ)",
+                "text": "Tham gia biên soạn nội dung chương trình đào tạo (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 3 (8đ)",
+                "text": "Tham gia giảng dạy tại khoa/đơn vị (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 4 (10đ)",
+                "text": "Tham gia giảng dạy toàn bệnh viện (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_20",
+        "number": 20,
+        "title": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
+        "criteria": [
+          {
+            "id": "xetnghiem_c57",
+            "num": 57,
+            "standard": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
+            "title": "Hiểu được sự cần thiết về các hoạt động đảm bảo chất lượng thông qua nghiên cứu, phản hồi, đánh giá thực hành",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có theo dõi và ghi nhận sự không phù hợp tại khoa, đơn vị (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Phân tích sự không phù hợp để xác định các vấn đề cần khắc phục (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có đánh giá và theo dõi sự không phù hợp (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c58",
+            "num": 58,
+            "standard": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
+            "title": "Tiếp nhận, báo cáo, đưa ra biện pháp khắc phục hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 10,
+                "level": "Mức 1 (10đ)",
+                "text": "Có đưa ra hành động khắc phục và biện pháp phòng ngừa sự không phù hợp nhằm đảm bảo chất lượng xét nghiệm (10 điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c59",
+            "num": 59,
+            "standard": "TIÊU CHUẨN 20. Cải tiến chất lượng thực hành xét nghiệm",
+            "title": "Dựa trên các tìm kiếm về vấn đề tồn tại của chuyên môn và hành chánh, đưa giải pháp cải tiến phù hợp, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xây dựng được kế hoạch cải tiến chất lượng xét nghiệm tại Khoa, đơn vị (6 điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Thực hiện kế hoạch cải tiến chất lượng xét nghiệm (8 điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Đánh giá hiệu quả cải tiến chất lượng xét nghiệm đã được thực hiện (10 điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_21",
+        "number": 21,
+        "title": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
+        "criteria": [
+          {
+            "id": "xetnghiem_c60",
+            "num": 60,
+            "standard": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
+            "title": "Xây dựng kế hoạch làm việc cho cá nhân hiệu quả và khoa học",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 12,
+                "level": "Mức 1 (12đ)",
+                "text": "Xây dựng được mục tiêu công việc theo vị trí phân công (12điểm)"
+              },
+              {
+                "score": 16,
+                "level": "Mức 2 (16đ)",
+                "text": "Hoàn thành 80% mục tiêu công việc đã được xác định (16điểm)"
+              },
+              {
+                "score": 20,
+                "level": "Mức 3 (20đ)",
+                "text": "Hoàn thành 100% mục tiêu công việc đã được xác định (20điểm)"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c61",
+            "num": 61,
+            "standard": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
+            "title": "Xác định khối lượng công việc và có cách sắp xếp theo thứ tự ưu tiên một cách hiệu quả, hợp lý",
+            "desc": "Ưu tiên ca bệnh cấp cứu, tình huống khẩn cấp và công việc trọng tâm",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Xác định được khối lượng công việc được giao trong ngày"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Sắp xếp thứ tự ưu tiên công việc hợp lý, xử lý tốt khi có phát sinh"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Quản lý thời gian xuất sắc, giải quyết công việc khoa học, không bị dồn ứ"
+              }
+            ]
+          },
+          {
+            "id": "xetnghiem_c62",
+            "num": 62,
+            "standard": "TIÊU CHUẨN 21. Quản lý chất lượng thực hành xét nghiệm",
+            "title": "Tổ chức, điều phối, phân công và ủy quyền nhiệm vụ cho các thành viên của nhóm chăm sóc một cách khoa học, hợp lý, hiệu quả",
+            "desc": "",
+            "maxScore": 10,
+            "maxPoints": 10,
+            "options": [
+              {
+                "score": 6,
+                "level": "Mức 1 (6đ)",
+                "text": "Có sự phân công vai trò của các thành viên trong mỗi bộ phận xét nghiệm (6điểm)"
+              },
+              {
+                "score": 8,
+                "level": "Mức 2 (8đ)",
+                "text": "Có sự giám sát hỗ trợ cho các thành viên của mỗi bộ phận xét nghiệm (8điểm)"
+              },
+              {
+                "score": 10,
+                "level": "Mức 3 (10đ)",
+                "text": "Có sự phân công, hỗ trợ và chia sẻ thông tin trong mỗi bộ phận xét nghiệm (10điểm)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "xetnghiem_std_22",
+        "number": 22,
+        "title": "TIÊU CHUẨN 22. Sự trải nghiệm nghề nghiệp",
+        "criteria": [
+          {
+            "id": "xetnghiem_c63",
+            "num": 63,
+            "standard": "TIÊU CHUẨN 22. Sự trải nghiệm nghề nghiệp",
+            "title": "Sự trải nghiệm nghề nghiệp (Thâm niên công tác)",
+            "desc": "Chọn 1 mức thâm niên công tác theo phân hạng bệnh viện",
+            "maxScore": 50,
+            "maxPoints": 50,
+            "options": [
+              {
+                "score": 10,
+                "level": "≤ 5 năm BV H2/3 (10đ)",
+                "text": "Thâm niên ≤ 5 năm tại bệnh viện hạng 2, hạng 3"
+              },
+              {
+                "score": 15,
+                "level": "6 - 9 năm BV H2 (15đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 20,
+                "level": "10 - 15 năm BV H2 (20đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng 2"
+              },
+              {
+                "score": 25,
+                "level": "≤ 5 năm BV ĐB/H1 hoặc >15 năm H2 (25đ)",
+                "text": "Thâm niên ≤ 5 năm tại BV hạng đặc biệt, hạng 1 (hoặc > 15 năm BV hạng 2)"
+              },
+              {
+                "score": 35,
+                "level": "6 - 9 năm BV ĐB/H1 (35đ)",
+                "text": "Thâm niên 6 - 9 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 45,
+                "level": "10 - 15 năm BV ĐB/H1 (45đ)",
+                "text": "Thâm niên 10 - 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              },
+              {
+                "score": 50,
+                "level": "> 15 năm BV ĐB/H1 (50đ)",
+                "text": "Thâm niên > 15 năm tại bệnh viện hạng đặc biệt, hạng 1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
 };
 
 // =========================================================================

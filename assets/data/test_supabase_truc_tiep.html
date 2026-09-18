@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kết Nối Trực Tiếp Supabase (Serverless)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8fafc; padding: 24px; font-family: system-ui, -apple-system, sans-serif; }
+    .container { max-width: 950px; }
+    .card { border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    .badge-status { font-size: 0.85rem; padding: 6px 12px; border-radius: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container py-3">
+    <!-- Header -->
+    <div class="text-center mb-4">
+      <div class="badge bg-success bg-opacity-10 text-success fw-bold px-3 py-2 mb-2">⚡ KẾT NỐI TRỰC TIẾP SUPABASE CLOUD</div>
+      <h2 class="fw-bold text-dark">Thử Nghiệm Kết Nối Bảng <code>yeu_cau</code></h2>
+      <p class="text-muted">Chạy thẳng từ trình duyệt tới Supabase bằng Publishable Key (Không cần chạy Backend Node.js)</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Form nhập -->
+      <div class="col-md-5">
+        <div class="card p-4 h-100">
+          <h5 class="fw-bold text-primary mb-3">➕ Thêm Yêu Cầu Mới</h5>
+          <form id="formSupabase">
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Họ tên</label>
+              <input type="text" id="hoTen" class="form-control" placeholder="Họ và tên điều dưỡng" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="dieuduong@umc.edu.vn">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Số điện thoại</label>
+              <input type="tel" id="soDienThoai" class="form-control" placeholder="09xxxxxxxx">
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Nội dung</label>
+              <textarea id="noiDung" class="form-control" rows="3" placeholder="Nhập nội dung đăng ký/đánh giá..." required></textarea>
+            </div>
+            <button type="submit" id="btnGui" class="btn btn-success w-100 py-2 fw-semibold">
+              Gửi lên Supabase Cloud
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Danh sách -->
+      <div class="col-md-7">
+        <div class="card p-4 h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold text-dark mb-0">📋 Dữ Liệu Thực Tế Trong Supabase</h5>
+            <button class="btn btn-outline-secondary btn-sm" onclick="taiDuLieu()">🔄 Làm mới</button>
+          </div>
+          <div class="table-responsive" style="max-height: 450px;">
+            <table class="table table-hover align-middle">
+              <thead class="table-light sticky-top">
+                <tr>
+                  <th>ID</th>
+                  <th>Họ tên</th>
+                  <th>Nội dung</th>
+                  <th>Thời gian</th>
+                </tr>
+              </thead>
+              <tbody id="bangDuLieu">
+                <tr>
+                  <td colspan="4" class="text-center py-4 text-muted">Đang tải dữ liệu từ Supabase...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="supabase_client.js"></script>
+  <script>
+    const form = document.getElementById('formSupabase');
+    const btnGui = document.getElementById('btnGui');
+    const tbody = document.getElementById('bangDuLieu');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      btnGui.disabled = true;
+      btnGui.innerText = 'Đang lưu lên Supabase...';
+
+      const duLieu = {
+        ho_ten: document.getElementById('hoTen').value,
+        email: document.getElementById('email').value,
+        so_dien_thoai: document.getElementById('soDienThoai').value,
+        noi_dung: document.getElementById('noiDung').value
+      };
+
+      const result = await guiYeuCauSupabase(duLieu);
+      btnGui.disabled = false;
+      btnGui.innerText = 'Gửi lên Supabase Cloud';
+
+      if (result) {
+        alert('🎉 Lưu thành công bản ghi #' + result.id + ' vào Supabase!');
+        form.reset();
+        taiDuLieu();
+      }
+    });
+
+    async function taiDuLieu() {
+      tbody.innerHTML = '<tr><td colspan="4" class="text-center py-3 text-muted">Đang tải dữ liệu...</td></tr>';
+      const danhSach = await layDanhSachSupabase(20);
+      
+      if (!danhSach || danhSach.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" class="text-center py-4 text-muted">Chưa có bản ghi nào trong bảng.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = danhSach.map(item => `
+        <tr>
+          <td><span class="badge bg-primary">#${item.id}</span></td>
+          <td>
+            <div class="fw-bold">${item.ho_ten}</div>
+            <small class="text-muted">${item.email || ''}</small>
+          </td>
+          <td>${item.noi_dung}</td>
+          <td><small class="text-muted">${new Date(item.created_at).toLocaleTimeString('vi-VN')} ${new Date(item.created_at).toLocaleDateString('vi-VN')}</small></td>
+        </tr>
+      `).join('');
+    }
+
+    // Tự động tải dữ liệu khi trang mở
+    taiDuLieu();
+  </script>
+</body>
+</html>

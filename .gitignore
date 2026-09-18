@@ -1,7 +1,7 @@
-﻿node_modules/
-.env
-*.bak*
-*.rar
-*.zip
-Thumbs.db
-.DS_Store
+node_modules/
+.vercel/
+.gemini/
+*.tmp
+*.log
+*.lnk
+~$*

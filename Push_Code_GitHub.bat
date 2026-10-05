@@ -66,7 +66,7 @@ call "%GIT_CMD%" add .
 
 :: Kiem tra co thay doi nao de commit khong
 call "%GIT_CMD%" diff --cached --quiet
-if %errorlevel% neq 0 (
+if errorlevel 1 (
     call "%GIT_CMD%" commit -m "%USER_MSG%"
     echo       - Da tao Commit thanh cong!
 ) else (
@@ -79,8 +79,7 @@ echo [4/4] Dang day ma nguon len GitHub repository (nhanh main)...
 echo       Dia chi: https://github.com/kimquyen-0611/danh_gia_nldd.git
 echo.
 call "%GIT_CMD%" push -u origin main
-
-if %errorlevel% neq 0 (
+if errorlevel 1 (
     echo.
     echo =======================================================================
     echo [CANH BAO] Push that bai! Mot so nguyen nhan pho bien:
@@ -89,7 +88,7 @@ if %errorlevel% neq 0 (
     echo   3. Xung dot du lieu tren GitHub (thu pull truoc khi push)
     echo =======================================================================
     pause
-    exit /b %errorlevel%
+    exit /b 1
 )
 
 echo.

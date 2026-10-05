@@ -1,0 +1,10 @@
+node_modules
+.git
+.gemini
+*.bak
+*.bak*
+*.log
+*.xlsx
+*.csv
+assets/backend/node_modules
+assets/data/backend/node_modules

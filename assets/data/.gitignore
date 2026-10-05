@@ -1,0 +1,30 @@
+﻿# Environment & Secrets (Bảo mật thông tin đăng nhập và khóa bí mật)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Node dependencies & logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vercel
+.env*

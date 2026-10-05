@@ -1,0 +1,12 @@
+node_modules/
+.backup_large_assets/
+assets/backend/node_modules/
+assets/data/backend/
+.vercel/
+.git/
+.gemini/
+.env
+.dev.vars
+*.tmp
+*.log
+*.bak

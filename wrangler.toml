@@ -1,0 +1,14 @@
+name = "danh-gia-nldd-umc"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "."
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[vars]
+SUPABASE_URL = "https://bmnbwofludntkmjeskqj.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "sb_publishable_QdZyIMIhGJmnuG_UG0NL3g_FIjgyYis"
+ALLOWED_ORIGIN = "*"

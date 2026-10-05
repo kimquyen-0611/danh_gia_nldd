@@ -1,0 +1,39 @@
+# Vercel Deployment Ignore File
+# Tối ưu tốc độ tải lên: Loại bỏ các tệp rác, tệp nén dung lượng lớn và node_modules
+
+node_modules/
+assets/backend/node_modules/
+*.bak
+*.bak_*
+*.rar
+*.zip
+*.7z
+*.docx
+*.xlsx
+.git
+.github
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Bỏ qua các tệp test/scratch nội bộ
+assets/backend/inspect_*.js
+assets/backend/scan_*.js
+assets/backend/validate_*.js
+assets/backend/build_*.js
+assets/backend/test_*.js
+assets/backend/fix_*.js
+assets/backend/find_*.js
+assets/backend/check_*.js
+assets/backend/update_*.js
+assets/backend/create_table.js
+assets/backend/seed_data_to_supabase.js
+assets/backend/run_full_system_test.js
+assets/backend/verify_system.js
+assets/backend/*.bat
+assets/*.bat
+*.bat
+assets/tiêu chuẩn đánh giá năng lực/

@@ -303,6 +303,25 @@
     <!-- TOAST NOTIFICATION CONTAINER -->
     <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
+    
+    <!-- DYNAMIC CONTEXT & BREADCRUMB STRIP (Định vị phân cấp tầng giao diện) -->
+    <div class="bg-white/80 backdrop-blur-md border-b border-slate-200/80 shadow-2xs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between text-xs gap-2 flex-wrap">
+        <div id="app-breadcrumb-trail" class="flex items-center gap-1.5 font-bold text-slate-600">
+          <span class="text-[#004b87] flex items-center gap-1"><span>🏥</span> UMC CS2</span>
+          <span class="text-slate-300">/</span>
+          <span id="breadcrumb-current-tab" class="text-blue-900 font-extrabold">Phiếu Tự Đánh Giá Năng Lực</span>
+          <span id="breadcrumb-sub-context" class="text-slate-500 font-medium hidden sm:inline">· 7 Khối Chuyên Môn Chuẩn 2026</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-black border border-emerald-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            Hệ Thống Trực Tuyến 2026
+          </span>
+        </div>
+      </div>
+    </div>
+
     <!-- MAIN APP BODY -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
 
@@ -980,7 +999,15 @@
                   Báo cáo danh sách nhân sự theo họ tên, khoa phòng, điểm năng lực và cấp bậc đạt được
                 </p>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 flex-wrap">
+                <div class="inline-flex items-center bg-white p-0.5 rounded-xl border border-slate-200 text-xs shadow-2xs">
+                  <button type="button" onclick="setStaffRankingViewMode('table')" id="btn-staff-view-table" class="px-2.5 py-1 rounded-lg font-bold transition-all bg-blue-700 text-white shadow-2xs flex items-center gap-1 cursor-pointer">
+                    <span>📊 Bảng Số Liệu</span>
+                  </button>
+                  <button type="button" onclick="setStaffRankingViewMode('card')" id="btn-staff-view-card" class="px-2.5 py-1 rounded-lg font-bold transition-all text-slate-600 hover:text-slate-900 flex items-center gap-1 cursor-pointer">
+                    <span>🗂️ Dạng Thẻ (Card View)</span>
+                  </button>
+                </div>
                 <span id="staff-counter-badge" class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-black">
                   12 Nhân Sự
                 </span>

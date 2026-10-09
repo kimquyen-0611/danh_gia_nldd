@@ -50,13 +50,46 @@ body {
 .level-6 { background-color: #fae8ff; color: #86198f; border: 1px solid #f5d0fe; }
 .level-7 { background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%); color: #78350f; border: 1px solid #d97706; text-shadow: 0 1px 0 rgba(255,255,255,0.4); }
 
-/* Login Page Background - Màu Xanh Da Trời (Sky Blue) Tươi Sáng */
+/* Login Page Background - Màu Xanh Y Tế UMC Trầm Ấm, Dịu Mắt */
 .login-bg {
-  background: radial-gradient(circle at 30% 20%, #38bdf8 0%, #0ea5e9 45%, #0284c7 85%, #0369a1 100%);
+  background: radial-gradient(circle at 20% 20%, #004b87 0%, #002d5a 45%, #071e3d 85%, #051329 100%);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+
+/* Floating Assessment Assistant Dock (Thanh Tiến Độ & Điều Hướng Nổi Thông Minh) */
+.assessment-floating-bar {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 45;
+  width: calc(100% - 2rem);
+  max-width: 62rem;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(0, 75, 135, 0.25);
+  border-radius: 1.25rem;
+  box-shadow: 0 16px 38px -6px rgba(0, 45, 90, 0.25), 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 0.65rem 1rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideUpFloat 0.35s ease-out;
+}
+
+@keyframes slideUpFloat {
+  from { opacity: 0; transform: translate(-50%, 25px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.floating-domain-btn {
+  transition: all 0.15s ease-in-out;
+}
+.floating-domain-btn:hover {
+  transform: translateY(-2px);
+}
+
 
 /* Certificate Styles */
 .certificate-frame {

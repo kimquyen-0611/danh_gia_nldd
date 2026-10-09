@@ -1,8 +1,14 @@
 const fs = require('fs');
-const content = fs.readFileSync('app.js', 'utf8');
-const lines = content.split('\n');
+
+const app = fs.readFileSync('app.js', 'utf8');
+const lines = app.split('\n');
+
 lines.forEach((l, i) => {
-  if (l.includes('function calculateAndUpdateAssessmentSummary')) {
-    console.log((i + 1) + ': ' + l.trim());
+  if (l.includes('function calculateAndUpdateAssessmentSummary') || l.includes('function updateAssessmentSummary')) {
+    console.log(`Line ${i+1}: ${l}`);
+    for (let j = i; j < Math.min(lines.length, i + 50); j++) {
+      console.log(`${j+1}: ${lines[j]}`);
+      if (lines[j].startsWith('}')) break;
+    }
   }
 });

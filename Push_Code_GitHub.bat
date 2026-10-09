@@ -36,13 +36,9 @@ echo [1/4] Phat hien Git hop le:
 "%GIT_CMD%" --version
 echo.
 
-:: 2. Dong bo tai nguyen tinh truoc khi commit (neu co sua doi o root)
-echo [2/4] Dong bo tai nguyen tinh (CSS, JS)...
-if exist styles.css copy /Y styles.css css\styles.css >nul
-if exist app.js copy /Y app.js js\app.js >nul
-if exist api_client.js copy /Y api_client.js js\api_client.js >nul
-if exist supabase_client.js copy /Y supabase_client.js js\supabase_client.js >nul
-echo       - Da dong bo xong tai nguyen!
+:: 2. Kiem tra tai nguyen tinh
+echo [2/4] Kiem tra tai nguyen tinh (CSS, JS, Assets)...
+echo       - Tai nguyen hop le, san sang commit!
 echo.
 
 :: 3. Nhap ghi chu Commit (Commit message)

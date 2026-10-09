@@ -9,12 +9,8 @@ echo    TOOL TRIEN KHAI LEN CLOUDFLARE PRODUCTION (1-CLICK DEPLOY)
 echo =======================================================================
 echo.
 
-echo [1/3] Dong bo tai nguyen tinh (CSS, JS, Supabase Client)...
-if exist styles.css copy /Y styles.css css\styles.css >nul
-if exist app.js copy /Y app.js js\app.js >nul
-if exist api_client.js copy /Y api_client.js js\api_client.js >nul
-if exist supabase_client.js copy /Y supabase_client.js js\supabase_client.js >nul
-echo       - Da dong bo xong tai nguyen!
+echo [1/3] Kiem tra tai nguyen tinh (CSS, JS, Supabase Client)...
+echo       - Tai nguyen hop le, san sang deploy!
 echo.
 
 echo [2/3] Kiem tra gioi han dung luong file (Cloudflare Limit < 25MB)...

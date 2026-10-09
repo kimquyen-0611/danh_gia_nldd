@@ -3,12 +3,27 @@ node_modules/
 .wrangler/
 .backup_large_assets/
 .gemini/
-.env
-.env.*
-.dev.vars
-!.env.example
 .herenow/
 deploy-web/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# Tài liệu nhạy cảm (mật khẩu, tài khoản)
+docs-internal/
+*.docx
+
+# File backup cũ
+*.bak
+*.bak_*
+
+# File demo/dữ liệu giả lập
+data/
+
+# File tạm
 *.tmp
 *.log
 *.lnk

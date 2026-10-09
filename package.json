@@ -2,9 +2,9 @@
   "name": "backend-umc-supabase",
   "version": "1.0.0",
   "description": "Backend API cau noi giua Web Frontend va Supabase Database",
-  "main": "server.js",
+  "main": "assets/backend/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node assets/backend/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

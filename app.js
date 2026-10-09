@@ -20059,16 +20059,24 @@ function renderAssessmentTab() {
             </div>
           </div>
 
-          <!-- Phải: Nút Chuyển Đổi Chế Độ Xem (Bảng Hàng Ngang, Dạng Thẻ, Thu Gọn) -->
-          <div class="flex items-center gap-2 self-end lg:self-center">
-            <span class="text-xs text-slate-400 font-bold hidden sm:inline">Chế độ xem:</span>
+          <!-- Phải: Nút Gập/Mở Toàn Bộ & Chuyển Đổi Chế Độ Xem -->
+          <div class="flex items-center gap-2 self-end lg:self-center flex-wrap">
             <div class="inline-flex items-center bg-slate-100 p-0.5 rounded-xl border border-slate-200 text-xs">
-              <button type="button" onclick="setAssessmentViewMode('grid')" title="Phiếu đánh giá hàng ngang - Tiêu chí & câu trả lời viết trải rộng hết hàng mới xuống hàng" class="px-3.5 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+              <button type="button" onclick="expandAllAssessmentAccordions()" title="Mở rộng tất cả Lĩnh Vực & Tiêu Chuẩn" class="px-2.5 py-1 text-slate-700 hover:text-blue-900 font-bold transition-colors">
+                <span>▼ Mở Hết</span>
+              </button>
+              <button type="button" onclick="collapseAllAssessmentAccordions()" title="Thu gọn tất cả để tiết kiệm không gian cuộn" class="px-2.5 py-1 text-slate-700 hover:text-blue-900 font-bold transition-colors">
+                <span>▲ Thu Gọn</span>
+              </button>
+            </div>
+
+            <div class="inline-flex items-center bg-slate-100 p-0.5 rounded-xl border border-slate-200 text-xs">
+              <button type="button" onclick="setAssessmentViewMode('grid')" title="Phiếu đánh giá hàng ngang - Tiêu chí & câu trả lời viết trải rộng hết hàng mới xuống hàng" class="px-3 py-1 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
                 viewMode === 'grid' || viewMode === 'cards' ? 'bg-white text-blue-800 shadow-2xs' : 'text-slate-600 hover:text-slate-900'
               }">
                 <span>📋 Phiếu Đánh Giá Hàng Ngang</span>
               </button>
-              <button type="button" onclick="setAssessmentViewMode('compact')" title="Thu gọn chấm điểm nhanh" class="px-3.5 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+              <button type="button" onclick="setAssessmentViewMode('compact')" title="Thu gọn chấm điểm nhanh" class="px-3 py-1 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
                 viewMode === 'compact' ? 'bg-white text-blue-800 shadow-2xs' : 'text-slate-600 hover:text-slate-900'
               }">
                 <span>⚡ Thu Gọn</span>
@@ -31557,8 +31565,8 @@ function renderStaffRankingDashboardTab() {
   container.innerHTML = '<table class="w-full text-left border-collapse min-w-[1050px]">' +
     '<thead>' +
       '<tr class="bg-slate-100/90 border-b border-slate-200 text-[11px] font-black text-slate-700 uppercase tracking-wider">' +
-        '<th class="py-3.5 px-3 text-center w-14">STT</th>' +
-        '<th class="py-3.5 px-4 font-black">TÊN NHÂN VIÊN</th>' +
+        '<th class="py-3.5 px-3 text-center w-14 sticky-col-left-1">STT</th>' +
+        '<th class="py-3.5 px-4 font-black sticky-col-left-2">TÊN NHÂN VIÊN</th>' +
         '<th class="py-3.5 px-4 font-black">KHOA / ĐƠN VỊ</th>' +
         '<th class="py-3.5 px-4 text-center font-black w-36">ĐIỂM NĂNG LỰC</th>' +
         '<th class="py-3.5 px-4 text-center font-black w-44">PHÂN CẤP (BẬC)</th>' +
@@ -31605,10 +31613,10 @@ function renderStaffRankingDashboardTab() {
 
         return '<tr class="' + rowHighlightClass + ' transition-colors">' +
           // STT
-          '<td class="py-3 px-3 text-center">' + rankHtml + '</td>' +
+          '<td class="py-3 px-3 text-center sticky-col-left-1">' + rankHtml + '</td>' +
 
           // 1. TÊN NHÂN VIÊN
-          '<td class="py-3 px-4">' +
+          '<td class="py-3 px-4 sticky-col-left-2">' +
             '<div class="flex items-center gap-3">' +
               '<div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-800 text-white font-black text-xs flex items-center justify-center border-2 border-white shadow-sm shrink-0 overflow-hidden">' +
                 (u.avatar ? ('<img src="' + u.avatar + '" class="w-full h-full object-cover" alt="' + u.fullName + '">') : (u.fullName || '').charAt(0)) +
@@ -34762,4 +34770,28 @@ function scrollToNextUnscoredCriterion() {
   } else {
     showToast('Bạn đã hoàn tất tự chấm điểm cho toàn bộ các tiêu chí!', 'success');
   }
+}
+
+
+// =========================================================================
+// TIỆN ÍCH GẬP / MỞ NHANH TOÀN BỘ TIÊU CHÍ (COLLAPSIBLE ACCORDION HELPER)
+// =========================================================================
+function expandAllAssessmentAccordions() {
+  document.querySelectorAll('[id^="domain-body-"]').forEach(el => {
+    el.classList.remove('hidden');
+  });
+  document.querySelectorAll('[id^="domain-icon-"]').forEach(el => {
+    el.style.transform = 'rotate(0deg)';
+  });
+  showToast('Đã mở rộng toàn bộ các Lĩnh Vực & Tiêu Chuẩn!', 'info');
+}
+
+function collapseAllAssessmentAccordions() {
+  document.querySelectorAll('[id^="domain-body-"]').forEach(el => {
+    el.classList.add('hidden');
+  });
+  document.querySelectorAll('[id^="domain-icon-"]').forEach(el => {
+    el.style.transform = 'rotate(-90deg)';
+  });
+  showToast('Đã thu gọn toàn bộ các Lĩnh Vực để tối ưu không gian!', 'info');
 }

@@ -213,6 +213,50 @@ body {
   background-color: #f0fdf4; /* Light emerald tint when scored */
 }
 
+/* Sticky Left Column Support for Wide Data Tables (Khóa Cố Định Cột Bên Trái) */
+.sticky-col-left-1 {
+  position: sticky !important;
+  left: 0 !important;
+  background-color: #ffffff !important;
+  z-index: 15 !important;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.04);
+}
+.sticky-col-left-2 {
+  position: sticky !important;
+  left: 42px !important;
+  background-color: #ffffff !important;
+  z-index: 15 !important;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.04);
+}
+th.sticky-col-left-1, th.sticky-col-left-2 {
+  z-index: 25 !important;
+  background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%) !important;
+}
+tr:hover .sticky-col-left-1, tr:hover .sticky-col-left-2 {
+  background-color: #f8fafc !important;
+}
+tr.row-scored .sticky-col-left-1, tr.row-scored .sticky-col-left-2 {
+  background-color: #f0fdf4 !important;
+}
+
+/* Modal Double-Scrollbar Prevention (Khắc phục cuộn lồng cuộn trong Hộp thoại) */
+.modal-dialog-modern {
+  display: flex !important;
+  flex-direction: column !important;
+  max-height: 92vh !important;
+  overflow: hidden !important;
+}
+.modal-body-scrollable {
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+}
+
+/* WCAG 2.1 AA Contrast Enhancement (Độ tương phản chuẩn y tế) */
+.text-slate-400 {
+  color: #64748b !important; /* Nâng tỷ lệ tương phản từ 2.9:1 lên 4.6:1 */
+}
+
 .clinical-level-btn {
   display: flex;
   flex-direction: column;
